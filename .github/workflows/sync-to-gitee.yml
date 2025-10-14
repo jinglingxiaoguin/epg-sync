@@ -10,41 +10,29 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
-      
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.9'
-        
-    - name: Install dependencies
-      run: pip install requests
-        
     - name: Download EPG file
       run: |
         echo "开始下载EPG文件..."
         curl -s -o swh123_epg.gz "https://epgcloud.swh123.top/epg.php?ch=xml&v=e2all&gz=1"
-        echo "✅ 文件下载完成，大小: $(wc -c < swh123_epg.gz) 字节"
+        FILE_SIZE=$(wc -c < swh123_epg.gz)
+        echo "✅ 文件下载完成，大小: $FILE_SIZE 字节"
         
-    - name: Setup Git
-      run: |
-        git config --global user.email "github-actions@users.noreply.github.com"
-        git config --global user.name "GitHub Actions"
+        # 将文件转换为base64
+        base64 -w 0 swh123_epg.gz > swh123_epg.b64
+        echo "文件已转换为base64"
         
-    - name: Check for changes
-      id: check-changes
+    - name: Upload to Gitee via API
       run: |
-        git add -A
-        echo "has_changes=$(git diff --staged --quiet || echo 'true')" >> $GITHUB_OUTPUT
+        # 读取base64文件内容
+        CONTENT=$(cat swh123_epg.b64)
         
-    - name: Commit and push to Gitee
-      if: steps.check-changes.outputs.has_changes
-      run: |
-        git commit -m "🤖 Auto sync EPG: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
-        # 使用正确的仓库名称
-        git push https://shiwenhua:${{ secrets.GITEE_TOKEN }}@gitee.com/shiwenhua/epg-sync.git main
-      env:
-        GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+        # 使用Gitee API创建/更新文件
+        curl -X POST \
+          "https://gitee.com/api/v5/repos/shiwenhua/epg-sync/contents/swh123_epg.gz" \
+          -H "Content-Type: application/json" \
+          -d "{
+            \"access_token\": \"${{ secrets.GITEE_TOKEN }}\",
+            \"content\": \"${CONTENT}\",
+            \"message\": \"🤖 Auto sync EPG: $(date -u +'%Y-%m-%d %H:%M:%S UTC')\",
+            \"branch\": \"main\"
+          }"
