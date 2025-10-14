@@ -12,7 +12,7 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     
-    # ⭐ 关键修复 1：添加权限配置，授予 GITHUB_TOKEN 写入仓库内容的权限
+    # 授予 GITHUB_TOKEN 写入仓库内容的权限
     permissions: 
       contents: write
       
@@ -21,7 +21,7 @@ jobs:
       uses: actions/checkout@v3
       with:
          token: ${{ secrets.GITHUB_TOKEN }} 
-         # 修复浅克隆问题
+         # 修复浅克隆问题，拉取完整历史记录
          fetch-depth: 0 
          
     - name: Set up Python
@@ -33,9 +33,11 @@ jobs:
       run: pip install requests
 
     - name: Run EPG Sync Script
+      # 运行您的 Python 脚本，它现在会生成 swh123_epg.xml.gz
       run: python sync.py
 
     - name: Configure Git
+      # 配置 Git 用户信息，用于提交
       run: |
         git config --global user.name "GitHub Actions Bot"
         git config --global user.email "actions@github.com"
@@ -43,12 +45,15 @@ jobs:
     - name: Check for Changes and Commit Locally
       id: commit_check
       run: |
-        if git status --porcelain | grep swh123_epg.gz; then
-          echo "Changes detected in swh123_epg.gz, committing..."
+        # ⭐ 关键修改 1: 检查 swh123_epg.xml.gz 文件变化
+        if git status --porcelain | grep swh123_epg.xml.gz; then
+          echo "Changes detected in swh123_epg.xml.gz, committing..."
           
-          git add swh123_epg.gz
+          # ⭐ 关键修改 2: 暂存新文件名
+          git add swh123_epg.xml.gz
           TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
-          COMMIT_MSG="Auto sync swh123_epg.gz: $TIMESTAMP"
+          # ⭐ 关键修改 3: 提交信息中使用新文件名
+          COMMIT_MSG="Auto sync swh123_epg.xml.gz: $TIMESTAMP"
           git commit -m "$COMMIT_MSG"
           
           echo "PUSH_REQUIRED=true" >> $GITHUB_ENV
@@ -63,7 +68,7 @@ jobs:
     - name: Push to Gitee
       if: env.PUSH_REQUIRED == 'true'
       env:
-        GITEE_USERNAME: shiwenhua # <-- ⚠️ 再次确认用户名
+        GITEE_USERNAME: shiwenhua # <-- ⚠️ 确认用户名
         GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
         GITEE_REPO: shiwenhua/epg-sync
         
@@ -83,8 +88,6 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
-        # ⭐ 关键修复 2：移除不支持的 'commit_message' 参数
-        # force: true # 默认已为 true，可选
         
     - name: Final Status
       run: |
