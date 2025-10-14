@@ -30,7 +30,7 @@ jobs:
 
     - name: Run EPG Sync Script
       # 运行您提供的 Python 脚本，它会下载或更新 swh123_epg.gz
-      run: python sync.py # 假设您的脚本名为 sync.py
+      run: python sync_epg.py # 假设您的脚本名为 sync.py
 
     - name: Configure Git
       # 配置 Git 用户信息
