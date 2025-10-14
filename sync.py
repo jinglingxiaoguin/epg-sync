@@ -58,24 +58,22 @@ def sync_file(filename, url):
         print(f"    ❌ 同步失败: {filename} - {e}")
         return False
 
+# 文件路径: sync.py (底部)
+# ...
+
 def run_all_syncs():
     """遍历所有文件并执行同步，返回是否有文件更新。"""
     
+    # 返回值不再重要，因为我们依赖Actions中的git status来判断
     overall_changed = False
     
     for filename, url in SYNC_FILES:
         if sync_file(filename, url):
             overall_changed = True
-    
+            
     return overall_changed
 
 if __name__ == "__main__":
     print(f"--- 全局同步任务开始于: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ---")
-    result = run_all_syncs()
-    
-    if result:
-        # 当有文件更新时，打印一个特定的标记，供Actions脚本识别
-        print("--- PUSH_NEEDED_MARKER ---") 
-        print("🎉 至少一个文件已更新，需要推送。")
-    else:
-        print("ℹ️ 所有文件均无需更新。")
+    run_all_syncs() 
+    print("--- 磁盘文件更新完成，准备检查Git状态。 ---")
