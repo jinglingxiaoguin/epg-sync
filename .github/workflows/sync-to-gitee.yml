@@ -1,6 +1,6 @@
 # 文件路径: .github/workflows/main.yml
 
-name: EPG Sync to GitHub & Push to Gitee
+name: Multi-File EPG Sync to GitHub & Push to Gitee
 
 on:
   schedule:
@@ -32,35 +32,41 @@ jobs:
     - name: Install dependencies
       run: pip install requests
 
-    - name: Run EPG Sync Script
-      # 运行您的 Python 脚本，它现在会生成 swh123_epg.xml.gz
-      run: python sync.py
+    - name: Run EPG Sync Script and Check Output
+      id: run_script
+      # 运行 Python 脚本并将输出保存到变量
+      run: |
+        OUTPUT=$(python sync.py)
+        echo "$OUTPUT"
+        
+        # 检查 Python 脚本输出中是否包含特殊标记
+        if echo "$OUTPUT" | grep "--- PUSH_NEEDED_MARKER ---"; then
+          echo "PUSH_REQUIRED=true" >> $GITHUB_ENV
+          echo "Changes detected."
+        else
+          echo "PUSH_REQUIRED=false" >> $GITHUB_ENV
+          echo "No changes detected."
+        fi
 
-    - name: Configure Git
-      # 配置 Git 用户信息，用于提交
+    # ----------------------------------------------------
+    # Git 操作：如果有文件更新，则执行提交
+    # ----------------------------------------------------
+    - name: Configure Git and Commit Changes
+      if: env.PUSH_REQUIRED == 'true'
       run: |
         git config --global user.name "GitHub Actions Bot"
         git config --global user.email "actions@github.com"
-
-    - name: Check for Changes and Commit Locally
-      id: commit_check
-      run: |
-        # ⭐ 关键修改 1: 检查 swh123_epg.xml.gz 文件变化
-        if git status --porcelain | grep swh123_epg.xml.gz; then
-          echo "Changes detected in swh123_epg.xml.gz, committing..."
-          
-          # ⭐ 关键修改 2: 暂存新文件名
-          git add swh123_epg.xml.gz
-          TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
-          # ⭐ 关键修改 3: 提交信息中使用新文件名
-          COMMIT_MSG="Auto sync swh123_epg.xml.gz: $TIMESTAMP"
-          git commit -m "$COMMIT_MSG"
-          
-          echo "PUSH_REQUIRED=true" >> $GITHUB_ENV
-        else
-          echo "No changes detected, skipping commit."
-          echo "PUSH_REQUIRED=false" >> $GITHUB_ENV
-        fi
+        
+        # 将所有已修改、新增的文件（即SYNC_FILES中的所有文件）添加到暂存区
+        git add swh123_epg.xml.gz tel-epg.xml dm2.xml.gz
+        
+        TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
+        COMMIT_MSG="Auto sync EPG files: $TIMESTAMP"
+        
+        # 提交更改
+        git commit -m "$COMMIT_MSG"
+        
+        echo "COMMIT_MSG=$COMMIT_MSG" >> $GITHUB_ENV # 保存提交信息供后续步骤使用
 
     # ----------------------------------------------------
     # 推送至 Gitee 仓库
@@ -68,21 +74,19 @@ jobs:
     - name: Push to Gitee
       if: env.PUSH_REQUIRED == 'true'
       env:
-        GITEE_USERNAME: shiwenhua # <-- ⚠️ 确认用户名
+        GITEE_USERNAME: shiwenhua 
         GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
         GITEE_REPO: shiwenhua/epg-sync
         
       run: |
         echo "Pushing to Gitee..."
-        # 修复 Gitee 认证和浅克隆问题后的推送命令
         git push -f https://${GITEE_USERNAME}:${GITEE_TOKEN}@gitee.com/${GITEE_REPO}.git HEAD:master
-        echo "PUSH_STATUS=success" >> $GITHUB_ENV
+        echo "GITEE_PUSHED=true" >> $GITHUB_ENV
 
     # ----------------------------------------------------
     # 推送至 GitHub 仓库
     # ----------------------------------------------------
     - name: Push to GitHub
-      # 只有当文件有变化并成功提交到本地后才推送
       if: success() && env.PUSH_REQUIRED == 'true'
       uses: ad-m/github-push-action@master
       with:
@@ -92,7 +96,7 @@ jobs:
     - name: Final Status
       run: |
         if [ "${{ env.PUSH_REQUIRED }}" == "true" ]; then
-          echo "🎉 文件同步成功并已推送到 Gitee 和 GitHub!"
+          echo "🎉 文件同步成功并已推送到 Gitee 和 GitHub！"
         else
-          echo "ℹ️ 文件内容未变化，同步已跳过。"
+          echo "ℹ️ 所有文件内容均未变化，同步已跳过。"
         fi
