@@ -1,47 +1,86 @@
-name: Sync EPG to Gitee
+# 文件路径: .github/workflows/main.yml
+
+name: Sync EPG
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 */6 * * *' # 每六小时运行一次
   workflow_dispatch:
 
 jobs:
-  sync-epg:
+  sync:
     runs-on: ubuntu-latest
     
+    # ... 其他环境变量和配置 ...
+    
     steps:
-    - name: Download EPG file
+    - name: Checkout repository (GitHub)
+      uses: actions/checkout@v3
+      # ⚠️ 必须设置 token，以便 Actions 自动提交到 GitHub (如果您需要提交到 GitHub 的话)
+      with:
+         token: ${{ secrets.GITHUB_TOKEN }} 
+         
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: pip install requests
+
+    - name: Run EPG Sync Script
+      # 运行您提供的 Python 脚本，它会下载或更新 swh123_epg.gz
+      run: python sync.py # 假设您的脚本名为 sync.py
+
+    - name: Configure Git
+      # 配置 Git 用户信息
       run: |
-        echo "🚀 开始同步EPG数据..."
-        curl -s -o swh123_epg.gz "https://epgcloud.swh123.top/epg.php?ch=xml&v=e2all&gz=1"
-        FILE_SIZE=$(wc -c < swh123_epg.gz)
-        echo "✅ EPG文件下载完成"
-        echo "📦 文件大小: $FILE_SIZE 字节"
+        git config --global user.name "GitHub Actions Bot"
+        git config --global user.email "actions@github.com"
+
+    - name: Check for Changes and Push to Gitee
+      id: push_gitee
+      env:
+        # 使用配置好的 Gitee 令牌
+        GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+        # 您的 Gitee 仓库地址：shiwenhua/epg-sync
+        GITEE_REPO: shiwenhua/epg-sync 
         
-    - name: Update Gitee repository
       run: |
-        echo "🔄 更新Gitee仓库..."
+        # 检查 swh123_epg.gz 文件是否有变化 (即同步脚本是否更新了文件)
+        if git status --porcelain | grep swh123_epg.gz; then
+          echo "Changes detected in swh123_epg.gz, committing..."
+          
+          # 提交更改到本地仓库
+          git add swh123_epg.gz
+          TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
+          git commit -m "Auto sync swh123_epg.gz: $TIMESTAMP"
+          
+          echo "Pushing to Gitee..."
+          # 使用 Gitee 令牌和 HTTPS 链接推送到 Gitee 仓库
+          # 格式: https://oauth2:${GITEE_TOKEN}@gitee.com/user/repo.git
+          git push -f https://oauth2:${GITEE_TOKEN}@gitee.com/${GITEE_REPO}.git HEAD:master
+          
+          echo "PUSH_STATUS=success" >> $GITHUB_ENV
+        else
+          echo "No changes detected, skipping Gitee push."
+          echo "PUSH_STATUS=skip" >> $GITHUB_ENV
+        fi
+
+    - name: Final Status
+      run: |
+        if [ "${{ env.PUSH_STATUS }}" == "success" ]; then
+          echo "🎉 文件同步成功并已推送到 Gitee!"
+        elif [ "${{ env.PUSH_STATUS }}" == "skip" ]; then
+          echo "ℹ️ 文件内容未变化，Gitee 同步已跳过。"
+        else
+          echo "❌ Gitee 同步失败或发生其他错误。"
+        fi
         
-        # 克隆Gitee仓库
-        git clone https://shiwenhua:${{ secrets.GITEE_TOKEN }}@gitee.com/shiwenhua/epg-sync.git gitee-repo
-        cd gitee-repo
-        
-        # 复制文件
-        echo "📁 复制文件到仓库..."
-        cp ../swh123_epg.gz ./
-        
-        # 配置Git用户
-        git config user.email "epg-sync@bot.com"
-        git config user.name "EPG Sync Bot"
-        
-        # 提交更改
-        echo "💾 提交更改..."
-        git add swh123_epg.gz
-        git commit -m "🤖 自动同步EPG数据: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
-        
-        # 推送到Gitee
-        echo "📤 推送到Gitee..."
-        git push origin master
-        
-        echo "🎉 同步完成！"
-        echo "🔗 文件地址: https://gitee.com/shiwenhua/epg-sync/raw/master/swh123_epg.gz"
+    # 💡 额外步骤：如果您也想将更新后的文件提交到 GitHub 仓库：
+    - name: Push to GitHub (Optional)
+      if: success() && env.PUSH_STATUS == 'success'
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
