@@ -14,7 +14,7 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-        
+      
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
@@ -35,6 +35,12 @@ jobs:
       run: |
         git add .
         git commit -m "🤖 Auto sync EPG: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" || exit 0
+        
+    - name: Debug Gitee info
+      run: |
+        echo "Gitee Username: ${{ secrets.GITEE_USERNAME }}"
+        echo "Repository Name: ${{ github.event.repository.name }}"
+        echo "Full Gitee URL: https://${{ secrets.GITEE_USERNAME }}:***@gitee.com/${{ secrets.GITEE_USERNAME }}/${{ github.event.repository.name }}.git"
         
     - name: Push to Gitee
       run: |
