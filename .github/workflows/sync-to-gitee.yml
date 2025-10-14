@@ -4,8 +4,6 @@ on:
   schedule:
     - cron: '0 */6 * * *'
   workflow_dispatch:
-  push:
-    branches: [ main ]
 
 jobs:
   sync-epg:
@@ -14,6 +12,8 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
       
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -23,19 +23,28 @@ jobs:
     - name: Install dependencies
       run: pip install requests
         
-    - name: Sync EPG data
-      run: python sync_epg.py
+    - name: Download EPG file
+      run: |
+        echo "开始下载EPG文件..."
+        curl -s -o swh123_epg.gz "https://epgcloud.swh123.top/epg.php?ch=xml&v=e2all&gz=1"
+        echo "✅ 文件下载完成，大小: $(wc -c < swh123_epg.gz) 字节"
         
     - name: Setup Git
       run: |
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions@users.noreply.github.com"
+        git config --global user.name "GitHub Actions"
         
-    - name: Commit changes
+    - name: Check for changes
+      id: check-changes
       run: |
-        git add .
-        git commit -m "🤖 Auto sync EPG: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" || exit 0
+        git add -A
+        echo "has_changes=$(git diff --staged --quiet || echo 'true')" >> $GITHUB_OUTPUT
         
-    - name: Push to Gitee
+    - name: Commit and push to Gitee
+      if: steps.check-changes.outputs.has_changes
       run: |
-        git push https://shiwenhua:${{ secrets.GITEE_TOKEN }}@gitee.com/shiwenhua/sync_epg.git main
+        git commit -m "🤖 Auto sync EPG: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+        # 使用正确的仓库名称
+        git push https://shiwenhua:${{ secrets.GITEE_TOKEN }}@gitee.com/shiwenhua/epg-sync.git main
+      env:
+        GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
