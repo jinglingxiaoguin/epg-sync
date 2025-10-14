@@ -2,9 +2,8 @@ name: Sync EPG to Gitee
 
 on:
   schedule:
-    # 每6小时运行一次 (UTC时间 0,6,12,18点)
     - cron: '0 */6 * * *'
-  workflow_dispatch:  # 允许手动触发
+  workflow_dispatch:
   push:
     branches: [ main, master ]
 
@@ -25,7 +24,6 @@ jobs:
         
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
         pip install requests
         
     - name: Sync EPG data
@@ -35,10 +33,10 @@ jobs:
     - name: Check for changes
       id: git-check
       run: |
-        echo "changes=$(git status --porcelain)" >> $GITHUB_OUTPUT
+        echo "changes=$(git status --porcelain | wc -l)" >> $GITHUB_OUTPUT
         
     - name: Commit and push to GitHub
-      if: steps.git-check.outputs.changes
+      if: steps.git-check.outputs.changes > 0
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
@@ -46,21 +44,17 @@ jobs:
         git commit -m "🤖 Auto sync EPG: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
         git push
         
+    - name: Debug info
+      run: |
+        echo "Gitee Username: ${{ secrets.GITEE_USERNAME }}"
+        echo "Repository: ${{ github.repository }}"
+        
     - name: Mirror to Gitee
       uses: wearerequired/git-mirror-action@v1
       with:
-        source-repo: "https://github.com/${{ github.repository }}.git"
+        source-repo: "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
         destination-repo: "https://${{ secrets.GITEE_USERNAME }}:${{ secrets.GITEE_TOKEN }}@gitee.com/${{ secrets.GITEE_USERNAME }}/${{ github.event.repository.name }}.git"
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
     - name: Success notification
       if: success()
-      run: |
-        echo "🎉 EPG数据同步完成并已推送到Gitee!"
-        echo "📅 下次同步时间: 6小时后"
-        
-    - name: Failure notification
-      if: failure()
-      run: |
-        echo "❌ EPG数据同步失败，请检查日志!"
+      run: echo "🎉 同步完成!"
