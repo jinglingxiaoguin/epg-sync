@@ -14,10 +14,6 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        # 添加这行确保有写权限
-        persist-credentials: true
         
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -30,13 +26,15 @@ jobs:
     - name: Sync EPG data
       run: python sync_epg.py
         
-    - name: Commit and push to GitHub
+    - name: Setup Git
       run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
+        
+    - name: Commit changes
+      run: |
         git add .
-        git commit -m "🤖 Auto sync EPG: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" || echo "No changes to commit"
-        git push
+        git commit -m "🤖 Auto sync EPG: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" || exit 0
         
     - name: Push to Gitee
       run: |
