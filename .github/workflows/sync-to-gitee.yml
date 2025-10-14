@@ -12,27 +12,36 @@ jobs:
     steps:
     - name: Download EPG file
       run: |
-        echo "📥 下载EPG文件中..."
+        echo "🚀 开始同步EPG数据..."
         curl -s -o swh123_epg.gz "https://epgcloud.swh123.top/epg.php?ch=xml&v=e2all&gz=1"
-        echo "✅ 下载完成，文件大小: $(wc -c < swh123_epg.gz) 字节"
+        FILE_SIZE=$(wc -c < swh123_epg.gz)
+        echo "✅ EPG文件下载完成"
+        echo "📦 文件大小: $FILE_SIZE 字节"
         
-    - name: Setup Gitee repository
+    - name: Update Gitee repository
       run: |
-        # 设置Git配置
-        git config --global user.email "epg-sync-bot@users.noreply.github.com"
-        git config --global user.name "EPG Sync Bot"
+        echo "🔄 更新Gitee仓库..."
         
         # 克隆Gitee仓库
-        git clone https://shiwenhua:${{ secrets.GITEE_TOKEN }}@gitee.com/shiwenhua/epg-sync.git epg-repo
-        cd epg-repo
+        git clone https://shiwenhua:${{ secrets.GITEE_TOKEN }}@gitee.com/shiwenhua/epg-sync.git gitee-repo
+        cd gitee-repo
         
-        # 强制复制文件（无论是否变化）
+        # 复制文件
+        echo "📁 复制文件到仓库..."
         cp ../swh123_epg.gz ./
         
-        # 提交并推送
-        git add swh123_epg.gz
-        git commit -m "🤖 强制更新EPG: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
-        git push origin main
+        # 配置Git用户
+        git config user.email "epg-sync@bot.com"
+        git config user.name "EPG Sync Bot"
         
-        echo "🎉 文件已强制更新到Gitee！"
-        echo "📁 文件位置: https://gitee.com/shiwenhua/epg-sync/blob/main/swh123_epg.gz"
+        # 提交更改
+        echo "💾 提交更改..."
+        git add swh123_epg.gz
+        git commit -m "🤖 自动同步EPG数据: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+        
+        # 推送到Gitee
+        echo "📤 推送到Gitee..."
+        git push origin master
+        
+        echo "🎉 同步完成！"
+        echo "🔗 文件地址: https://gitee.com/shiwenhua/epg-sync/raw/master/swh123_epg.gz"
