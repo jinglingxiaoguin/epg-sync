@@ -1,22 +1,23 @@
 # 文件路径: .github/workflows/main.yml
 
-name: Sync EPG
+name: EPG Sync to GitHub & Push to Gitee
 
+# 定义触发器：每六小时运行一次
 on:
   schedule:
-    - cron: '0 */6 * * *' # 每六小时运行一次
+    # Cron 表达式：每天的 0, 6, 12, 18 点的 0 分运行
+    - cron: '0 */6 * * *' 
+  # 允许手动触发，方便调试
   workflow_dispatch:
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     
-    # ... 其他环境变量和配置 ...
-    
     steps:
     - name: Checkout repository (GitHub)
       uses: actions/checkout@v3
-      # ⚠️ 必须设置 token，以便 Actions 自动提交到 GitHub (如果您需要提交到 GitHub 的话)
+      # 必须设置 token，以便 actions 能够操作仓库
       with:
          token: ${{ secrets.GITHUB_TOKEN }} 
          
@@ -29,22 +30,24 @@ jobs:
       run: pip install requests
 
     - name: Run EPG Sync Script
-      # 运行您提供的 Python 脚本，它会下载或更新 swh123_epg.gz
-      run: python sync_epg.py # 假设您的脚本名为 sync.py
+      # 运行您的 Python 脚本，它将下载或更新 swh123_epg.gz
+      # 请确保您的 Python 脚本名为 sync.py 
+      run: python sync.py
 
     - name: Configure Git
-      # 配置 Git 用户信息
+      # 配置 Git 用户信息，用于提交
       run: |
         git config --global user.name "GitHub Actions Bot"
         git config --global user.email "actions@github.com"
 
-- name: Check for Changes and Push to Gitee
+    - name: Check for Changes and Push to Gitee
       id: push_gitee
       env:
-        # 确保 GITEE_TOKEN 已在 GitHub Secrets 中配置
-        GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
-        # 您的 Gitee 仓库地址：shiwenhua/epg-sync
-        GITEE_REPO: shiwenhua/epg-sync 
+        # Gitee 认证信息
+        GITEE_USERNAME: shiwenhua # <-- ⚠️ 请替换为您真实的 Gitee 用户名
+        GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }} # 确保已在 GitHub Secrets 中配置
+        # Gitee 仓库路径
+        GITEE_REPO: shiwenhua/epg-sync # <-- ⚠️ 确保路径正确
         
       run: |
         # 检查 swh123_epg.gz 文件是否有变化
@@ -54,12 +57,13 @@ jobs:
           # 提交更改到本地仓库
           git add swh123_epg.gz
           TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
-          git commit -m "Auto sync swh123_epg.gz: $TIMESTAMP"
+          COMMIT_MSG="Auto sync swh123_epg.gz: $TIMESTAMP"
+          git commit -m "$COMMIT_MSG"
           
           echo "Pushing to Gitee..."
-          # ⭐ 关键修改：使用 Gitee 用户名 (shiwenhua) 和令牌进行认证
+          # ⭐ 关键修复：使用 Gitee 用户名和令牌进行认证
           # 格式: https://<username>:${GITEE_TOKEN}@gitee.com/user/repo.git
-          git push -f https://shiwenhua:${GITEE_TOKEN}@gitee.com/${GITEE_REPO}.git HEAD:master
+          git push -f https://${GITEE_USERNAME}:${GITEE_TOKEN}@gitee.com/${GITEE_REPO}.git HEAD:master
           
           echo "PUSH_STATUS=success" >> $GITHUB_ENV
         else
@@ -67,20 +71,25 @@ jobs:
           echo "PUSH_STATUS=skip" >> $GITHUB_ENV
         fi
 
-    - name: Final Status
-      run: |
-        if [ "${{ env.PUSH_STATUS }}" == "success" ]; then
-          echo "🎉 文件同步成功并已推送到 Gitee!"
-        elif [ "${{ env.PUSH_STATUS }}" == "skip" ]; then
-          echo "ℹ️ 文件内容未变化，Gitee 同步已跳过。"
-        else
-          echo "❌ Gitee 同步失败或发生其他错误。"
-        fi
-        
-    # 💡 额外步骤：如果您也想将更新后的文件提交到 GitHub 仓库：
+    # ----------------------------------------------------
+    # 可选步骤：将更新后的文件也提交到 GitHub 仓库
+    # ----------------------------------------------------
     - name: Push to GitHub (Optional)
+      # 只有当文件有变化，并且 Gitee 推送成功 (或者我们直接使用 git 命令提交到 GitHub)
       if: success() && env.PUSH_STATUS == 'success'
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
+        # 强制推送，确保文件更新
+        force: true
+        
+    - name: Final Status
+      run: |
+        if [ "${{ env.PUSH_STATUS }}" == "success" ]; then
+          echo "🎉 文件同步成功并已推送到 Gitee 和 GitHub!"
+        elif [ "${{ env.PUSH_STATUS }}" == "skip" ]; then
+          echo "ℹ️ 文件内容未变化，同步已跳过。"
+        else
+          echo "❌ 出现错误，请检查日志。"
+        fi
