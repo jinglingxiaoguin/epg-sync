@@ -17,9 +17,13 @@ jobs:
     steps:
     - name: Checkout repository (GitHub)
       uses: actions/checkout@v3
-      # 必须设置 token，以便 actions 能够操作仓库
       with:
+         # 必须设置 token
          token: ${{ secrets.GITHUB_TOKEN }} 
+         # ⭐ 关键修复：设置 fetch-depth 为 0，禁用浅克隆，拉取完整历史记录。
+         fetch-depth: 0 
+         
+    - name: Set up Python
          
     - name: Set up Python
       uses: actions/setup-python@v3
