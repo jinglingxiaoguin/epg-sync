@@ -10,48 +10,23 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Install dependencies
+      run: pip install requests
+        
     - name: Download EPG file
       run: |
-        echo "开始下载EPG文件..."
         curl -s -o swh123_epg.gz "https://epgcloud.swh123.top/epg.php?ch=xml&v=e2all&gz=1"
-        FILE_SIZE=$(wc -c < swh123_epg.gz)
-        echo "✅ 文件下载完成，大小: $FILE_SIZE 字节"
+        echo "文件大小: $(wc -c < swh123_epg.gz) 字节"
         
-    - name: Get existing file SHA (for update)
-      id: get-sha
-      run: |
-        RESPONSE=$(curl -s "https://gitee.com/api/v5/repos/shiwenhua/epg-sync/contents/swh123_epg.gz?access_token=${{ secrets.GITEE_TOKEN }}")
-        echo "sha=$(echo $RESPONSE | grep -o '"sha":"[^"]*' | cut -d'"' -f4)" >> $GITHUB_OUTPUT
-        echo "API响应: $RESPONSE"
-        
-    - name: Upload to Gitee via API
-      run: |
-        # 获取文件SHA（如果存在）
-        SHA_RESPONSE=$(curl -s "https://gitee.com/api/v5/repos/shiwenhua/epg-sync/contents/swh123_epg.gz?access_token=${{ secrets.GITEE_TOKEN }}")
-        SHA=$(echo $SHA_RESPONSE | grep -o '"sha":"[^"]*' | cut -d'"' -f4)
-        
-        echo "文件SHA: $SHA"
-        
-        # 构建请求数据
-        if [ -z "$SHA" ]; then
-          DATA="{
-            \"access_token\": \"${{ secrets.GITEE_TOKEN }}\",
-            \"content\": \"$(base64 -w 0 swh123_epg.gz)\",
-            \"message\": \"🤖 创建EPG文件: $(date -u +'%Y-%m-%d %H:%M:%S UTC')\",
-            \"branch\": \"main\"
-          }"
-        else
-          DATA="{
-            \"access_token\": \"${{ secrets.GITEE_TOKEN }}\",
-            \"content\": \"$(base64 -w 0 swh123_epg.gz)\",
-            \"sha\": \"$SHA\",
-            \"message\": \"🤖 更新EPG文件: $(date -u +'%Y-%m-%d %H:%M:%S UTC')\",
-            \"branch\": \"main\"
-          }"
-        fi
-        
-        # 上传文件
-        curl -X POST \
-          -H "Content-Type: application/json" \
-          -d "$DATA" \
-          "https://gitee.com/api/v5/repos/shiwenhua/epg-sync/contents/swh123_epg.gz"
+    - name: Upload to Gitee via Python
+      env:
+        GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+      run: python upload_to_gitee.py
