@@ -4,7 +4,7 @@ name: Multi-File EPG Sync to GitHub & Push to Gitee
 
 on:
   schedule:
-    # Cron 表达式：每天的 0, 6, 12, 18 点的 0 分运行
+    # 每六小时运行一次
     - cron: '0 */6 * * *' 
   workflow_dispatch:
 
@@ -12,7 +12,6 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     
-    # 授予 GITHUB_TOKEN 写入仓库内容的权限
     permissions: 
       contents: write
       
@@ -21,7 +20,6 @@ jobs:
       uses: actions/checkout@v3
       with:
          token: ${{ secrets.GITHUB_TOKEN }} 
-         # 修复浅克隆问题，拉取完整历史记录
          fetch-depth: 0 
          
     - name: Set up Python
@@ -32,46 +30,48 @@ jobs:
     - name: Install dependencies
       run: pip install requests
 
-    - name: Run EPG Sync Script and Check Output
-      id: run_script
-      # 运行 Python 脚本并将输出保存到变量
-      run: |
-        OUTPUT=$(python sync.py)
-        echo "$OUTPUT"
-        
-        # 检查 Python 脚本输出中是否包含特殊标记
-        if echo "$OUTPUT" | grep "--- PUSH_NEEDED_MARKER ---"; then
-          echo "PUSH_REQUIRED=true" >> $GITHUB_ENV
-          echo "Changes detected."
-        else
-          echo "PUSH_REQUIRED=false" >> $GITHUB_ENV
-          echo "No changes detected."
-        fi
+    - name: Run EPG Sync Script
+      # 运行 Python 脚本。它只负责更新本地磁盘文件。
+      run: python sync.py
 
-    # ----------------------------------------------------
-    # Git 操作：如果有文件更新，则执行提交
-    # ----------------------------------------------------
-    - name: Configure Git and Commit Changes
-      if: env.PUSH_REQUIRED == 'true'
+    - name: Configure Git
+      # 配置 Git 用户信息，用于提交
       run: |
         git config --global user.name "GitHub Actions Bot"
         git config --global user.email "actions@github.com"
-        
-        # 将所有已修改、新增的文件（即SYNC_FILES中的所有文件）添加到暂存区
-        git add swh123_epg.xml.gz tel-epg.xml dm2.xml.gz
-        
-        TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
-        COMMIT_MSG="Auto sync EPG files: $TIMESTAMP"
-        
-        # 提交更改
-        git commit -m "$COMMIT_MSG"
-        
-        echo "COMMIT_MSG=$COMMIT_MSG" >> $GITHUB_ENV # 保存提交信息供后续步骤使用
+
+    # ----------------------------------------------------
+    # ⭐ 核心修复步骤：检查是否有文件变动并提交
+    # ----------------------------------------------------
+    - name: Check for Changes and Commit Locally
+      id: commit_changes
+      run: |
+        # 检查这三个文件是否有任何变动 (修改M, 新增A, 等)
+        # grep -q: 静默模式，只返回 exit code (0=找到变动, 1=没有变动)
+        if git status --porcelain | grep -q 'swh123_epg.xml.gz\|tel-epg.xml\|dm2.xml.gz'; then
+            echo "Changes detected in one or more EPG files, proceeding with commit."
+            
+            # 使用 git add . 将所有未暂存的改动（包括新增和修改）添加到暂存区
+            git add .
+            
+            TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
+            COMMIT_MSG="Auto sync EPG files: $TIMESTAMP"
+            git commit -m "$COMMIT_MSG"
+            
+            # 标记需要推送
+            echo "PUSH_REQUIRED=true" >> $GITHUB_ENV
+            echo "COMMIT_MSG=$COMMIT_MSG" >> $GITHUB_ENV
+        else
+            echo "No changes detected in any EPG files. Skipping commit and push."
+            # 标记不需要推送
+            echo "PUSH_REQUIRED=false" >> $GITHUB_ENV
+        fi
 
     # ----------------------------------------------------
     # 推送至 Gitee 仓库
     # ----------------------------------------------------
     - name: Push to Gitee
+      # 只有当 'PUSH_REQUIRED' 为 'true' 时才执行
       if: env.PUSH_REQUIRED == 'true'
       env:
         GITEE_USERNAME: shiwenhua 
@@ -79,14 +79,14 @@ jobs:
         GITEE_REPO: shiwenhua/epg-sync
         
       run: |
-        echo "Pushing to Gitee..."
+        echo "Pushing committed changes to Gitee..."
         git push -f https://${GITEE_USERNAME}:${GITEE_TOKEN}@gitee.com/${GITEE_REPO}.git HEAD:master
-        echo "GITEE_PUSHED=true" >> $GITHUB_ENV
 
     # ----------------------------------------------------
     # 推送至 GitHub 仓库
     # ----------------------------------------------------
     - name: Push to GitHub
+      # 只有当 'PUSH_REQUIRED' 为 'true' 时才执行
       if: success() && env.PUSH_REQUIRED == 'true'
       uses: ad-m/github-push-action@master
       with:
