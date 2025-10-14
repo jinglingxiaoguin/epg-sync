@@ -38,16 +38,16 @@ jobs:
         git config --global user.name "GitHub Actions Bot"
         git config --global user.email "actions@github.com"
 
-    - name: Check for Changes and Push to Gitee
+- name: Check for Changes and Push to Gitee
       id: push_gitee
       env:
-        # 使用配置好的 Gitee 令牌
+        # 确保 GITEE_TOKEN 已在 GitHub Secrets 中配置
         GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
         # 您的 Gitee 仓库地址：shiwenhua/epg-sync
         GITEE_REPO: shiwenhua/epg-sync 
         
       run: |
-        # 检查 swh123_epg.gz 文件是否有变化 (即同步脚本是否更新了文件)
+        # 检查 swh123_epg.gz 文件是否有变化
         if git status --porcelain | grep swh123_epg.gz; then
           echo "Changes detected in swh123_epg.gz, committing..."
           
@@ -57,9 +57,9 @@ jobs:
           git commit -m "Auto sync swh123_epg.gz: $TIMESTAMP"
           
           echo "Pushing to Gitee..."
-          # 使用 Gitee 令牌和 HTTPS 链接推送到 Gitee 仓库
-          # 格式: https://oauth2:${GITEE_TOKEN}@gitee.com/user/repo.git
-          git push -f https://oauth2:${GITEE_TOKEN}@gitee.com/${GITEE_REPO}.git HEAD:master
+          # ⭐ 关键修改：使用 Gitee 用户名 (shiwenhua) 和令牌进行认证
+          # 格式: https://<username>:${GITEE_TOKEN}@gitee.com/user/repo.git
+          git push -f https://shiwenhua:${GITEE_TOKEN}@gitee.com/${GITEE_REPO}.git HEAD:master
           
           echo "PUSH_STATUS=success" >> $GITHUB_ENV
         else
