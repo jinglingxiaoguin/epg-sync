@@ -38,4 +38,4 @@ jobs:
         
     - name: Push to Gitee
       run: |
-        git push https://shiwenhua:${{ secrets.GITEE_TOKEN }}@gitee.com/shiwenhua/epg_sync.git main
+        git push https://shiwenhua:${{ secrets.GITEE_TOKEN }}@gitee.com/shiwenhua/sync_epg.git main
