@@ -10,36 +10,29 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Download EPG file directly
+    - name: Download EPG file
       run: |
-        echo "📥 正在下载EPG文件..."
+        echo "📥 下载EPG文件中..."
         curl -s -o swh123_epg.gz "https://epgcloud.swh123.top/epg.php?ch=xml&v=e2all&gz=1"
-        echo "✅ 文件下载完成"
-        echo "📦 文件大小: $(wc -c < swh123_epg.gz) 字节"
+        echo "✅ 下载完成，文件大小: $(wc -c < swh123_epg.gz) 字节"
         
-    - name: Clone Gitee repo and update
+    - name: Setup Gitee repository
       run: |
-        echo "🔄 准备更新Gitee仓库..."
+        # 设置Git配置
+        git config --global user.email "epg-sync-bot@users.noreply.github.com"
+        git config --global user.name "EPG Sync Bot"
         
         # 克隆Gitee仓库
-        git clone https://shiwenhua:${{ secrets.GITEE_TOKEN }}@gitee.com/shiwenhua/epg-sync.git gitee-repo
-        cd gitee-repo
+        git clone https://shiwenhua:${{ secrets.GITEE_TOKEN }}@gitee.com/shiwenhua/epg-sync.git epg-repo
+        cd epg-repo
         
-        # 复制新文件
+        # 强制复制文件（无论是否变化）
         cp ../swh123_epg.gz ./
-        
-        # 配置git
-        git config user.email "epg-sync-bot@users.noreply.github.com"
-        git config user.name "EPG Sync Bot"
         
         # 提交并推送
         git add swh123_epg.gz
-        git commit -m "🤖 Auto sync EPG: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" || echo "没有变化，无需提交"
+        git commit -m "🤖 强制更新EPG: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+        git push origin main
         
-        # 只有有变化时才推送
-        if ! git diff --cached --quiet; then
-          git push origin main
-          echo "✅ 已成功推送到Gitee"
-        else
-          echo "🔄 文件内容相同，跳过推送"
-        fi
+        echo "🎉 文件已强制更新到Gitee！"
+        echo "📁 文件位置: https://gitee.com/shiwenhua/epg-sync/blob/main/swh123_epg.gz"
