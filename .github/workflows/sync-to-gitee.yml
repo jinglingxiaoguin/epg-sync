@@ -17,22 +17,41 @@ jobs:
         FILE_SIZE=$(wc -c < swh123_epg.gz)
         echo "✅ 文件下载完成，大小: $FILE_SIZE 字节"
         
-        # 将文件转换为base64
-        base64 -w 0 swh123_epg.gz > swh123_epg.b64
-        echo "文件已转换为base64"
+    - name: Get existing file SHA (for update)
+      id: get-sha
+      run: |
+        RESPONSE=$(curl -s "https://gitee.com/api/v5/repos/shiwenhua/epg-sync/contents/swh123_epg.gz?access_token=${{ secrets.GITEE_TOKEN }}")
+        echo "sha=$(echo $RESPONSE | grep -o '"sha":"[^"]*' | cut -d'"' -f4)" >> $GITHUB_OUTPUT
+        echo "API响应: $RESPONSE"
         
     - name: Upload to Gitee via API
       run: |
-        # 读取base64文件内容
-        CONTENT=$(cat swh123_epg.b64)
+        # 获取文件SHA（如果存在）
+        SHA_RESPONSE=$(curl -s "https://gitee.com/api/v5/repos/shiwenhua/epg-sync/contents/swh123_epg.gz?access_token=${{ secrets.GITEE_TOKEN }}")
+        SHA=$(echo $SHA_RESPONSE | grep -o '"sha":"[^"]*' | cut -d'"' -f4)
         
-        # 使用Gitee API创建/更新文件
-        curl -X POST \
-          "https://gitee.com/api/v5/repos/shiwenhua/epg-sync/contents/swh123_epg.gz" \
-          -H "Content-Type: application/json" \
-          -d "{
+        echo "文件SHA: $SHA"
+        
+        # 构建请求数据
+        if [ -z "$SHA" ]; then
+          DATA="{
             \"access_token\": \"${{ secrets.GITEE_TOKEN }}\",
-            \"content\": \"${CONTENT}\",
-            \"message\": \"🤖 Auto sync EPG: $(date -u +'%Y-%m-%d %H:%M:%S UTC')\",
+            \"content\": \"$(base64 -w 0 swh123_epg.gz)\",
+            \"message\": \"🤖 创建EPG文件: $(date -u +'%Y-%m-%d %H:%M:%S UTC')\",
             \"branch\": \"main\"
           }"
+        else
+          DATA="{
+            \"access_token\": \"${{ secrets.GITEE_TOKEN }}\",
+            \"content\": \"$(base64 -w 0 swh123_epg.gz)\",
+            \"sha\": \"$SHA\",
+            \"message\": \"🤖 更新EPG文件: $(date -u +'%Y-%m-%d %H:%M:%S UTC')\",
+            \"branch\": \"main\"
+          }"
+        fi
+        
+        # 上传文件
+        curl -X POST \
+          -H "Content-Type: application/json" \
+          -d "$DATA" \
+          "https://gitee.com/api/v5/repos/shiwenhua/epg-sync/contents/swh123_epg.gz"
