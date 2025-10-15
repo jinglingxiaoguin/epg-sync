@@ -76,7 +76,7 @@ jobs:
       env:
         GITEE_USERNAME: ecloud 
         GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
-        GITEE_REPO: ecloud/epg-sync
+        GITEE_REPO: epgcloud/epg-sync
         
       run: |
         echo "Pushing committed changes to Gitee..."
