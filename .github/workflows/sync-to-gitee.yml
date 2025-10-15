@@ -74,7 +74,7 @@ jobs:
       # 只有当 'PUSH_REQUIRED' 为 'true' 时才执行
       if: env.PUSH_REQUIRED == 'true'
       env:
-        GITEE_USERNAME: ecloud 
+        GITEE_USERNAME: epgcloud 
         GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
         GITEE_REPO: epgcloud/epg-sync
         
