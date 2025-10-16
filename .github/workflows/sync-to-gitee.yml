@@ -34,6 +34,20 @@ jobs:
       # 运行 Python 脚本。它负责更新本地磁盘文件，并将文件名列表输出到 epg_files.txt。
       run: python sync.py
 
+    # ----------------------------------------------------
+    # ⭐ 调试步骤：检查 epg_files.txt 是否存在和内容
+    # ----------------------------------------------------
+    - name: Debug EPG File List Creation
+      run: |
+        if [ -f epg_files.txt ]; then
+          echo "✅ epg_files.txt was successfully created."
+          echo "Content: $(cat epg_files.txt)"
+        else
+          echo "❌ epg_files.txt was NOT found. Check sync.py script and permissions."
+          # 虽然在下一步会退出，但这里强制退出能让问题更早暴露
+          exit 1 
+        fi
+
     - name: Configure Git
       # 配置 Git 用户信息，用于提交
       run: |
@@ -49,14 +63,7 @@ jobs:
         COMMIT_NEEDED=false
         
         # 1. 从 epg_files.txt 中读取需要检查和提交的文件列表
-        if [ ! -f epg_files.txt ]; then
-            echo "Error: epg_files.txt not found after sync. Exiting."
-            # 设置 PUSH_REQUIRED=false 确保后续步骤跳过
-            echo "PUSH_REQUIRED=false" >> $GITHUB_ENV
-            exit 0
-        fi
-        
-        # 文件列表为 bash 字符串，例如: "swh123_epg.xml.gz tel-epg.xml dm2.xml.gz"
+        # 由于上一步已经确认文件存在，这里可以安全读取
         EPG_FILES=$(cat epg_files.txt)
         echo "Dynamically loaded EPG files: $EPG_FILES"
         
@@ -74,7 +81,7 @@ jobs:
         # 3. 如果至少有一个文件被添加到暂存区，则进行提交
         if [ "$COMMIT_NEEDED" = true ]; then
             
-            # 最终检查：确认暂存区确实有内容（防止其他文件变动导致误判）
+            # 最终检查：确认暂存区确实有内容
             if git diff --cached --quiet; then
                 echo "No actual EPG changes were staged. Skipping commit."
                 echo "PUSH_REQUIRED=false" >> $GITHUB_ENV
@@ -107,23 +114,4 @@ jobs:
         
       run: |
         echo "Pushing committed changes to Gitee..."
-        git push -f https://${GITEE_USERNAME}:${GITEE_TOKEN}@gitee.com/${GITEE_REPO}.git HEAD:master
-
-    # ----------------------------------------------------
-    # 推送至 GitHub 仓库
-    # ----------------------------------------------------
-    - name: Push to GitHub
-      # 只有当 'PUSH_REQUIRED' 为 'true' 时才执行
-      if: success() && env.PUSH_REQUIRED == 'true'
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
-        
-    - name: Final Status
-      run: |
-        if [ "${{ env.PUSH_REQUIRED }}" == "true" ]; then
-          echo "🎉 文件同步成功并已推送到 Gitee 和 GitHub！"
-        else
-          echo "ℹ️ 所有文件内容均未变化，同步已跳过。"
-        fi
+        git
