@@ -97,8 +97,8 @@ jobs:
             echo "PUSH_REQUIRED=false" >> $GITHUB_ENV
         fi
 
-    # ----------------------------------------------------
-    # 推送至 Gitee 仓库 (包含超时和 URL 编码修复)
+# ----------------------------------------------------
+    # 推送至 Gitee 仓库 (修复 Bash 语法错误)
     # ----------------------------------------------------
     - name: Push to Gitee
       # 只有当 'PUSH_REQUIRED' 为 'true' 时才执行
@@ -116,6 +116,12 @@ jobs:
         git config --global http.lowSpeedLimit 1024  # 速度低于 1KB/s
         git config --global http.lowSpeedTime 300    # 持续 300 秒则超时
         
-        # 【核心修改】将 GITEE_TOKEN 进行 URL 编码以避免特殊字符导致失败
-        ENCODED_TOKEN=$(python -c 'import sys, urllib.parse; print(urllib.parse.quote(sys.argv[1]))' "${GITEE_TOKEN}")
-        REMOTE_URL="https://${GITEE_USERNAME}:${ENCODED_TOKEN
+        # 【核心修复】使用临时文件存储编码后的 Token，以避免 Bash 语法错误
+        python -c "import sys, urllib.parse; print(urllib.parse.quote(sys.argv[1]))" "${GITEE_TOKEN}" > /tmp/encoded_token.txt
+        ENCODED_TOKEN=$(cat /tmp/encoded_token.txt)
+        
+        REMOTE_URL="https://${GITEE_USERNAME}:${ENCODED_TOKEN}@gitee.com/${GITEE_REPO}.git"
+        
+        # 强制推送
+        echo "Attempting to push to $GITEE_REPO..."
+        git push --force "$REMOTE_URL" HEAD:master
