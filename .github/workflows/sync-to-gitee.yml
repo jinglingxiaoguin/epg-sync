@@ -1,10 +1,10 @@
 # 文件路径: .github/workflows/main.yml
 
-name: Multi-File EPG Sync to GitHub & Push to Gitee
+name: EPG Sync to GitHub & Push to Gitee
 
 on:
   schedule:
-    # 每六小时运行一次
+    # Cron 表达式：每天的 0, 6, 12, 18 点的 0 分运行
     - cron: '0 */6 * * *' 
   workflow_dispatch:
 
@@ -12,6 +12,7 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     
+    # ⭐ 关键修复 1：添加权限配置，授予 GITHUB_TOKEN 写入仓库内容的权限
     permissions: 
       contents: write
       
@@ -20,6 +21,7 @@ jobs:
       uses: actions/checkout@v3
       with:
          token: ${{ secrets.GITHUB_TOKEN }} 
+         # 修复浅克隆问题
          fetch-depth: 0 
          
     - name: Set up Python
@@ -31,72 +33,63 @@ jobs:
       run: pip install requests
 
     - name: Run EPG Sync Script
-      # 运行 Python 脚本。它只负责更新本地磁盘文件。
       run: python sync.py
 
     - name: Configure Git
-      # 配置 Git 用户信息，用于提交
       run: |
         git config --global user.name "GitHub Actions Bot"
         git config --global user.email "actions@github.com"
 
-    # ----------------------------------------------------
-    # ⭐ 核心修复步骤：检查是否有文件变动并提交
-    # ----------------------------------------------------
     - name: Check for Changes and Commit Locally
-      id: commit_changes
+      id: commit_check
       run: |
-        # 检查这三个文件是否有任何变动 (修改M, 新增A, 等)
-        # grep -q: 静默模式，只返回 exit code (0=找到变动, 1=没有变动)
-        if git status --porcelain | grep -q 'swh123_epg.xml.gz\|tel-epg.xml\|dm2.xml.gz'; then
-            echo "Changes detected in one or more EPG files, proceeding with commit."
-            
-            # 使用 git add . 将所有未暂存的改动（包括新增和修改）添加到暂存区
-            git add .
-            
-            TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
-            COMMIT_MSG="Auto sync EPG files: $TIMESTAMP"
-            git commit -m "$COMMIT_MSG"
-            
-            # 标记需要推送
-            echo "PUSH_REQUIRED=true" >> $GITHUB_ENV
-            echo "COMMIT_MSG=$COMMIT_MSG" >> $GITHUB_ENV
+        if git status --porcelain | grep swh123_epg.gz; then
+          echo "Changes detected in swh123_epg.gz, committing..."
+          
+          git add swh123_epg.gz
+          TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
+          COMMIT_MSG="Auto sync swh123_epg.gz: $TIMESTAMP"
+          git commit -m "$COMMIT_MSG"
+          
+          echo "PUSH_REQUIRED=true" >> $GITHUB_ENV
         else
-            echo "No changes detected in any EPG files. Skipping commit and push."
-            # 标记不需要推送
-            echo "PUSH_REQUIRED=false" >> $GITHUB_ENV
+          echo "No changes detected, skipping commit."
+          echo "PUSH_REQUIRED=false" >> $GITHUB_ENV
         fi
 
     # ----------------------------------------------------
     # 推送至 Gitee 仓库
     # ----------------------------------------------------
     - name: Push to Gitee
-      # 只有当 'PUSH_REQUIRED' 为 'true' 时才执行
       if: env.PUSH_REQUIRED == 'true'
       env:
-        GITEE_USERNAME: shiwenhua 
+        GITEE_USERNAME: shiwenhua # <-- ⚠️ 再次确认用户名
         GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
         GITEE_REPO: shiwenhua/epg-sync
         
       run: |
-        echo "Pushing committed changes to Gitee..."
+        echo "Pushing to Gitee..."
+        # 修复 Gitee 认证和浅克隆问题后的推送命令
         git push -f https://${GITEE_USERNAME}:${GITEE_TOKEN}@gitee.com/${GITEE_REPO}.git HEAD:master
+        echo "PUSH_STATUS=success" >> $GITHUB_ENV
 
     # ----------------------------------------------------
     # 推送至 GitHub 仓库
     # ----------------------------------------------------
     - name: Push to GitHub
-      # 只有当 'PUSH_REQUIRED' 为 'true' 时才执行
+      # 只有当文件有变化并成功提交到本地后才推送
       if: success() && env.PUSH_REQUIRED == 'true'
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
+        # ⭐ 关键修复 2：移除不支持的 'commit_message' 参数
+        # force: true # 默认已为 true，可选
         
     - name: Final Status
       run: |
         if [ "${{ env.PUSH_REQUIRED }}" == "true" ]; then
-          echo "🎉 文件同步成功并已推送到 Gitee 和 GitHub！"
+          echo "🎉 文件同步成功并已推送到 Gitee 和 GitHub!"
         else
-          echo "ℹ️ 所有文件内容均未变化，同步已跳过。"
+          echo "ℹ️ 文件内容未变化，同步已跳过。"
         fi
