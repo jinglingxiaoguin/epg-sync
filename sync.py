@@ -75,7 +75,6 @@ def run_all_syncs():
             f.write(file_content + '\n')
             print(f"    📄 已创建 epg_files.txt，内容: {file_content}")
     except Exception as e:
-        # 增加错误处理，如果写入失败，输出到日志
         print(f"    ❌ 写入 epg_files.txt 失败: {e}")
             
     return overall_changed
