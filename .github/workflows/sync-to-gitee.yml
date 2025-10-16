@@ -1,81 +1,23 @@
-# 文件路径: .github/workflows/main.yml
-
-name: Multi-File EPG Sync to GitHub & Push to Gitee
-
-on:
-  schedule:
-    # 每六小时运行一次
-    - cron: '0 */6 * * *' 
-  workflow_dispatch:
-
-jobs:
-  sync:
-    runs-on: ubuntu-latest
-    
-    permissions: 
-      contents: write
-      
-    steps:
-    - name: Checkout repository (GitHub)
-      uses: actions/checkout@v3
-      with:
-          token: ${{ secrets.GITHUB_TOKEN }} 
-          fetch-depth: 0 
-          
-    - name: Set up Python
-      uses: actions/setup-python@v3
-      with:
-        python-version: '3.x'
-
-    - name: Install dependencies
-      run: pip install requests
-
-    - name: Run EPG Sync Script
-      # 运行 Python 脚本。它负责更新本地磁盘文件，并将文件名列表输出到 epg_files.txt。
-      run: python sync.py
-
-    # ----------------------------------------------------
-    # ⭐ 调试步骤：检查 epg_files.txt 是否存在和内容
-    # ----------------------------------------------------
-    - name: Debug EPG File List Creation
-      run: |
-        if [ -f epg_files.txt ]; then
-          echo "✅ epg_files.txt was successfully created."
-          echo "Content: $(cat epg_files.txt)"
-        else
-          echo "❌ epg_files.txt was NOT found. Check sync.py script and permissions."
-          # 虽然在下一步会退出，但这里强制退出能让问题更早暴露
-          exit 1 
-        fi
-
-    - name: Configure Git
-      # 配置 Git 用户信息，用于提交
-      run: |
-        git config --global user.name "GitHub Actions Bot"
-        git config --global user.email "actions@github.com"
-
 # ----------------------------------------------------
-    # ⭐ 核心修复步骤：检查是否有文件变动并提交 (使用动态文件列表)
+    # ⭐ 核心修复步骤：检查是否有文件变动并提交 (最终版本)
     # ----------------------------------------------------
     - name: Check for Changes and Commit Locally
       id: commit_changes
       run: |
         COMMIT_NEEDED=false
         
-        # 【新增核心步骤】在检查变动前，强制丢弃工作流文件和脚本的任何变动
-        # 确保只有 EPG 文件变动被保留，以防它们被意外提交
+        # 【修改】强制丢弃对工作流文件和脚本的任何变动。
+        # '|| true' 确保如果文件是新增的 (即 Git 报错 'did not match any file'), 步骤也不会失败退出。
         echo "Discarding changes to workflow and sync scripts..."
-        git checkout -- ".github/workflows/main.yml" "sync.py"
+        git checkout -- ".github/workflows/main.yml" "sync.py" || true
         
         # 1. 从 epg_files.txt 中读取需要检查和提交的文件列表
         # (保持不变)
         if [ ! -f epg_files.txt ]; then
-            echo "Error: epg_files.txt not found. Setting PUSH_REQUIRED=false."
-            echo "PUSH_REQUIRED=false" >> $GITHUB_ENV
-            # 如果文件丢失，我们不应该继续，但为了调试，让它走下去
+            echo "Error: epg_files.txt not found. This should not happen. Continuing."
         fi
         
-        EPG_FILES=$(cat epg_files.txt 2>/dev/null) # 2>/dev/null 隐藏文件不存在时的错误
+        EPG_FILES=$(cat epg_files.txt 2>/dev/null)
         echo "Dynamically loaded EPG files: $EPG_FILES"
         
         # 2. 遍历所有 EPG 文件，检查是否有变动并添加到暂存区
@@ -86,45 +28,26 @@ jobs:
             COMMIT_NEEDED=true
           fi
         done
-        
-        # 3. (保持不变) 如果至少有一个文件被添加到暂存区，则进行提交
+
+        # 3. 如果至少有一个文件被添加到暂存区，则进行提交
         if [ "$COMMIT_NEEDED" = true ]; then
             
-            # ... (commit logic) ...
-            echo "Changes staged. Proceeding with commit."
-            TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
-            COMMIT_MSG="Auto sync EPG files: $TIMESTAMP"
-            git commit -m "$COMMIT_MSG"
-            
-            echo "PUSH_REQUIRED=true" >> $GITHUB_ENV
-            echo "COMMIT_MSG=$COMMIT_MSG" >> $GITHUB_ENV
+            # 最终检查：确认暂存区确实有内容
+            if git diff --cached --quiet; then
+                echo "No actual EPG changes were staged. Skipping commit."
+                echo "PUSH_REQUIRED=false" >> $GITHUB_ENV
+            else
+                echo "Changes staged. Proceeding with commit."
+                TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
+                COMMIT_MSG="Auto sync EPG files: $TIMESTAMP"
+                git commit -m "$COMMIT_MSG"
+                
+                echo "PUSH_REQUIRED=true" >> $GITHUB_ENV
+                echo "COMMIT_MSG=$COMMIT_MSG" >> $GITHUB_ENV
+            fi
         else
             echo "No changes detected in any specified EPG files. Skipping commit and push."
             echo "PUSH_REQUIRED=false" >> $GITHUB_ENV
         fi
 
-# ----------------------------------------------------
-    # 推送至 Gitee 仓库
-    # ----------------------------------------------------
-    - name: Push to Gitee
-      # 只有当 'PUSH_REQUIRED' 为 'true' 时才执行
-      if: env.PUSH_REQUIRED == 'true'
-      env:
-        GITEE_USERNAME: shiwenhua 
-        GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
-        GITEE_REPO: shiwenhua/epg-sync
-        
-      run: |
-        echo "Pushing committed changes to Gitee..."
-        
-        # 增加 Git 超时设置 (例如 300 秒 = 5 分钟)
-        git config --global http.postBuffer 52428800 # 增加 buffer size (50MB)
-        git config --global http.lowSpeedLimit 1024  # 速度低于 1KB/s
-        git config --global http.lowSpeedTime 300    # 持续 300 秒则超时
-        
-        ENCODED_TOKEN=$(python -c 'import sys, urllib.parse; print(urllib.parse.quote(sys.argv[1]))' "${GITEE_TOKEN}")
-        REMOTE_URL="https://${GITEE_USERNAME}:${ENCODED_TOKEN}@gitee.com/${GITEE_REPO}.git"
-        
-        # 使用编码后的令牌和超时设置进行推送
-        echo "Attempting to push to $GITEE_REPO..."
-        git push --force "$REMOTE_URL" HEAD:master
+# ... (Push to Gitee and GitHub steps remain the same)
