@@ -34,6 +34,9 @@ jobs:
       # 运行 Python 脚本。它负责更新本地磁盘文件，并将文件名列表输出到 epg_files.txt。
       run: python sync.py
 
+    # ----------------------------------------------------
+    # (保留) 检查 epg_files.txt 是否存在和内容
+    # ----------------------------------------------------
     - name: Debug EPG File List Creation
       run: |
         if [ -f epg_files.txt ]; then
@@ -51,7 +54,7 @@ jobs:
         git config --global user.email "actions@github.com"
 
     # ----------------------------------------------------
-    # ⭐ 核心修复步骤：检查是否有文件变动并提交
+    # (保留) 核心修复步骤：动态提交 & 防止额外文件同步
     # ----------------------------------------------------
     - name: Check for Changes and Commit Locally
       id: commit_changes
@@ -59,7 +62,7 @@ jobs:
         COMMIT_NEEDED=false
         
         # 【重要修复】强制丢弃对工作流文件和脚本的任何变动。
-        # '|| true' 确保如果文件是新增的 (即 Git 报错 'did not match'), 步骤也不会失败退出。
+        # '|| true' 确保即使文件是新增的，Git 报错也不会导致步骤失败。
         echo "Discarding changes to workflow and sync scripts..."
         git checkout -- ".github/workflows/main.yml" "sync.py" || true
         
@@ -97,8 +100,8 @@ jobs:
             echo "PUSH_REQUIRED=false" >> $GITHUB_ENV
         fi
 
-# ----------------------------------------------------
-    # 推送至 Gitee 仓库 (修复 Bash 语法错误)
+    # ----------------------------------------------------
+    # 推送至 Gitee 仓库 (恢复原始代码以提高速度)
     # ----------------------------------------------------
     - name: Push to Gitee
       # 只有当 'PUSH_REQUIRED' 为 'true' 时才执行
@@ -110,18 +113,24 @@ jobs:
         
       run: |
         echo "Pushing committed changes to Gitee..."
+        # 恢复使用原始简洁的推送命令
+        git push -f https://${GITEE_USERNAME}:${GITEE_TOKEN}@gitee.com/${GITEE_REPO}.git HEAD:master
+
+    # ----------------------------------------------------
+    # 推送至 GitHub 仓库
+    # ----------------------------------------------------
+    - name: Push to GitHub
+      # 只有当 'PUSH_REQUIRED' 为 'true' 时才执行
+      if: success() && env.PUSH_REQUIRED == 'true'
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
         
-        # 增加 Git 超时设置以解决卡顿问题
-        git config --global http.postBuffer 52428800 # 增加 buffer size (50MB)
-        git config --global http.lowSpeedLimit 1024  # 速度低于 1KB/s
-        git config --global http.lowSpeedTime 300    # 持续 300 秒则超时
-        
-        # 【核心修复】使用临时文件存储编码后的 Token，以避免 Bash 语法错误
-        python -c "import sys, urllib.parse; print(urllib.parse.quote(sys.argv[1]))" "${GITEE_TOKEN}" > /tmp/encoded_token.txt
-        ENCODED_TOKEN=$(cat /tmp/encoded_token.txt)
-        
-        REMOTE_URL="https://${GITEE_USERNAME}:${ENCODED_TOKEN}@gitee.com/${GITEE_REPO}.git"
-        
-        # 强制推送
-        echo "Attempting to push to $GITEE_REPO..."
-        git push --force "$REMOTE_URL" HEAD:master
+    - name: Final Status
+      run: |
+        if [ "${{ env.PUSH_REQUIRED }}" == "true" ]; then
+          echo "🎉 文件同步成功并已推送到 Gitee 和 GitHub！"
+        else
+          echo "ℹ️ 所有文件内容均未变化，同步已跳过。"
+        fi
