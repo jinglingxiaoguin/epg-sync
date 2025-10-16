@@ -58,16 +58,18 @@ def sync_file(filename, url):
         print(f"    ❌ 同步失败: {filename} - {e}")
         return False
 
+
 def run_all_syncs():
     """遍历所有文件并执行同步，返回是否有文件更新。"""
     
-    # 返回值不再重要，因为我们依赖Actions中的git status来判断
+    # 这里的返回值不再重要，因为我们依赖Actions中的git status来判断
     overall_changed = False
     
     for filename, url in SYNC_FILES:
         if sync_file(filename, url):
             overall_changed = True
             
+    # 返回值可以忽略，但函数结构保留
     return overall_changed
 
 if __name__ == "__main__":
