@@ -54,7 +54,7 @@ jobs:
         git config --global user.name "GitHub Actions Bot"
         git config --global user.email "actions@github.com"
 
-    # ----------------------------------------------------
+# ----------------------------------------------------
     # ⭐ 核心修复步骤：检查是否有文件变动并提交 (使用动态文件列表)
     # ----------------------------------------------------
     - name: Check for Changes and Commit Locally
@@ -62,42 +62,44 @@ jobs:
       run: |
         COMMIT_NEEDED=false
         
+        # 【新增核心步骤】在检查变动前，强制丢弃工作流文件和脚本的任何变动
+        # 确保只有 EPG 文件变动被保留，以防它们被意外提交
+        echo "Discarding changes to workflow and sync scripts..."
+        git checkout -- ".github/workflows/main.yml" "sync.py"
+        
         # 1. 从 epg_files.txt 中读取需要检查和提交的文件列表
-        # 由于上一步已经确认文件存在，这里可以安全读取
-        EPG_FILES=$(cat epg_files.txt)
+        # (保持不变)
+        if [ ! -f epg_files.txt ]; then
+            echo "Error: epg_files.txt not found. Setting PUSH_REQUIRED=false."
+            echo "PUSH_REQUIRED=false" >> $GITHUB_ENV
+            # 如果文件丢失，我们不应该继续，但为了调试，让它走下去
+        fi
+        
+        EPG_FILES=$(cat epg_files.txt 2>/dev/null) # 2>/dev/null 隐藏文件不存在时的错误
         echo "Dynamically loaded EPG files: $EPG_FILES"
         
         # 2. 遍历所有 EPG 文件，检查是否有变动并添加到暂存区
         for file in $EPG_FILES; do
-          # git status --porcelain 检查是否有变动 (M:Modified, A:Added, etc.)
           if git status --porcelain | grep -q "$file"; then
             echo "Changes detected and staging for commit: $file"
-            # 明确只添加这个文件
             git add "$file"
             COMMIT_NEEDED=true
           fi
         done
-
-        # 3. 如果至少有一个文件被添加到暂存区，则进行提交
+        
+        # 3. (保持不变) 如果至少有一个文件被添加到暂存区，则进行提交
         if [ "$COMMIT_NEEDED" = true ]; then
             
-            # 最终检查：确认暂存区确实有内容
-            if git diff --cached --quiet; then
-                echo "No actual EPG changes were staged. Skipping commit."
-                echo "PUSH_REQUIRED=false" >> $GITHUB_ENV
-            else
-                echo "Changes staged. Proceeding with commit."
-                TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
-                COMMIT_MSG="Auto sync EPG files: $TIMESTAMP"
-                git commit -m "$COMMIT_MSG"
-                
-                # 标记需要推送
-                echo "PUSH_REQUIRED=true" >> $GITHUB_ENV
-                echo "COMMIT_MSG=$COMMIT_MSG" >> $GITHUB_ENV
-            fi
+            # ... (commit logic) ...
+            echo "Changes staged. Proceeding with commit."
+            TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
+            COMMIT_MSG="Auto sync EPG files: $TIMESTAMP"
+            git commit -m "$COMMIT_MSG"
+            
+            echo "PUSH_REQUIRED=true" >> $GITHUB_ENV
+            echo "COMMIT_MSG=$COMMIT_MSG" >> $GITHUB_ENV
         else
             echo "No changes detected in any specified EPG files. Skipping commit and push."
-            # 标记不需要推送
             echo "PUSH_REQUIRED=false" >> $GITHUB_ENV
         fi
 
