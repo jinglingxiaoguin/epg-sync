@@ -115,14 +115,14 @@ jobs:
       run: |
         echo "Pushing committed changes to Gitee..."
         
-        # 【核心修改】将 GITEE_TOKEN 进行 URL 编码以避免特殊字符导致失败
-        # 使用 Python 的 urllib.parse 模块进行安全编码
-        # 注意: 依赖 Python/pip，但前面的步骤已经安装了。
+        # 增加 Git 超时设置 (例如 300 秒 = 5 分钟)
+        git config --global http.postBuffer 52428800 # 增加 buffer size (50MB)
+        git config --global http.lowSpeedLimit 1024  # 速度低于 1KB/s
+        git config --global http.lowSpeedTime 300    # 持续 300 秒则超时
+        
         ENCODED_TOKEN=$(python -c 'import sys, urllib.parse; print(urllib.parse.quote(sys.argv[1]))' "${GITEE_TOKEN}")
-
-        # 使用编码后的令牌进行推送
         REMOTE_URL="https://${GITEE_USERNAME}:${ENCODED_TOKEN}@gitee.com/${GITEE_REPO}.git"
         
-        # -u 或 --set-upstream 设置上游分支，确保下次 pull/push 顺利
-        # git push -f 使用 HEAD:master 推送到 Gitee 仓库的 master 分支
+        # 使用编码后的令牌和超时设置进行推送
+        echo "Attempting to push to $GITEE_REPO..."
         git push --force "$REMOTE_URL" HEAD:master
