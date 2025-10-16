@@ -1,22 +1,69 @@
-# ----------------------------------------------------
-    # ⭐ 核心修复步骤：检查是否有文件变动并提交 (最终版本)
+# 文件路径: .github/workflows/main.yml
+
+name: Multi-File EPG Sync to GitHub & Push to Gitee
+
+on:
+  schedule:
+    # 每六小时运行一次
+    - cron: '0 */6 * * *' 
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    
+    permissions: 
+      contents: write
+      
+    steps:
+    - name: Checkout repository (GitHub)
+      uses: actions/checkout@v3
+      with:
+          token: ${{ secrets.GITHUB_TOKEN }} 
+          fetch-depth: 0 
+          
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: pip install requests
+
+    - name: Run EPG Sync Script
+      # 运行 Python 脚本。它负责更新本地磁盘文件，并将文件名列表输出到 epg_files.txt。
+      run: python sync.py
+
+    - name: Debug EPG File List Creation
+      run: |
+        if [ -f epg_files.txt ]; then
+          echo "✅ epg_files.txt was successfully created."
+          echo "Content: $(cat epg_files.txt)"
+        else
+          echo "❌ epg_files.txt was NOT found. Check sync.py script."
+          exit 1 
+        fi
+
+    - name: Configure Git
+      # 配置 Git 用户信息，用于提交
+      run: |
+        git config --global user.name "GitHub Actions Bot"
+        git config --global user.email "actions@github.com"
+
+    # ----------------------------------------------------
+    # ⭐ 核心修复步骤：检查是否有文件变动并提交
     # ----------------------------------------------------
     - name: Check for Changes and Commit Locally
       id: commit_changes
       run: |
         COMMIT_NEEDED=false
         
-        # 【修改】强制丢弃对工作流文件和脚本的任何变动。
-        # '|| true' 确保如果文件是新增的 (即 Git 报错 'did not match any file'), 步骤也不会失败退出。
+        # 【重要修复】强制丢弃对工作流文件和脚本的任何变动。
+        # '|| true' 确保如果文件是新增的 (即 Git 报错 'did not match'), 步骤也不会失败退出。
         echo "Discarding changes to workflow and sync scripts..."
         git checkout -- ".github/workflows/main.yml" "sync.py" || true
         
         # 1. 从 epg_files.txt 中读取需要检查和提交的文件列表
-        # (保持不变)
-        if [ ! -f epg_files.txt ]; then
-            echo "Error: epg_files.txt not found. This should not happen. Continuing."
-        fi
-        
         EPG_FILES=$(cat epg_files.txt 2>/dev/null)
         echo "Dynamically loaded EPG files: $EPG_FILES"
         
@@ -50,4 +97,25 @@
             echo "PUSH_REQUIRED=false" >> $GITHUB_ENV
         fi
 
-# ... (Push to Gitee and GitHub steps remain the same)
+    # ----------------------------------------------------
+    # 推送至 Gitee 仓库 (包含超时和 URL 编码修复)
+    # ----------------------------------------------------
+    - name: Push to Gitee
+      # 只有当 'PUSH_REQUIRED' 为 'true' 时才执行
+      if: env.PUSH_REQUIRED == 'true'
+      env:
+        GITEE_USERNAME: shiwenhua 
+        GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+        GITEE_REPO: shiwenhua/epg-sync
+        
+      run: |
+        echo "Pushing committed changes to Gitee..."
+        
+        # 增加 Git 超时设置以解决卡顿问题
+        git config --global http.postBuffer 52428800 # 增加 buffer size (50MB)
+        git config --global http.lowSpeedLimit 1024  # 速度低于 1KB/s
+        git config --global http.lowSpeedTime 300    # 持续 300 秒则超时
+        
+        # 【核心修改】将 GITEE_TOKEN 进行 URL 编码以避免特殊字符导致失败
+        ENCODED_TOKEN=$(python -c 'import sys, urllib.parse; print(urllib.parse.quote(sys.argv[1]))' "${GITEE_TOKEN}")
+        REMOTE_URL="https://${GITEE_USERNAME}:${ENCODED_TOKEN
