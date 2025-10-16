@@ -1,9 +1,10 @@
-# 文件路径: .github/workflows/main.yml (最终版本)
+# 文件路径: .github/workflows/main.yml
 
 name: Multi-File EPG Sync to GitHub & Push to Gitee
 
 on:
   schedule:
+    # 每六小时运行一次
     - cron: '0 */6 * * *' 
   workflow_dispatch:
 
@@ -21,61 +22,48 @@ jobs:
          token: ${{ secrets.GITHUB_TOKEN }} 
          fetch-depth: 0 
          
-    - name: Set up Python and Install dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y python3-pip
-        pip3 install requests
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: pip install requests
 
     - name: Run EPG Sync Script
-      run: python3 sync.py # 建议使用 python3 明确指定版本
+      # 运行 Python 脚本。它只负责更新本地磁盘文件。
+      run: python sync.py
 
     - name: Configure Git
+      # 配置 Git 用户信息，用于提交
       run: |
         git config --global user.name "GitHub Actions Bot"
         git config --global user.email "actions@github.com"
 
     # ----------------------------------------------------
-    # ⭐ 核心修复步骤：只同步指定列表的文件
+    # ⭐ 核心修复步骤：检查是否有文件变动并提交
     # ----------------------------------------------------
-    - name: Check for Changes and Commit Locally (SYNC_FILES only)
+    - name: Check for Changes and Commit Locally
       id: commit_changes
-      env:
-        # 定义需要检查的文件列表，以空格分隔
-        SYNC_FILE_LIST: "swh123_epg.xml.gz tel-epg.xml dm2.xml.gz"
-        
       run: |
-        CHANGED_FILES=""
-        
-        # 遍历需要同步的文件列表
-        for FILE in $SYNC_FILE_LIST; do
-          # 检查该文件是否有变动 (M=修改, A=新增)
-          # 注意：使用 'git status' 时，新增文件 (Untracked) 不会显示 M/A 状态。
-          # 最好先尝试添加到暂存区，然后检查变动。
-          
-          # 1. 尝试将文件添加到暂存区
-          git add "$FILE" 2>/dev/null || true
-          
-          # 2. 检查暂存区或工作目录中是否有变动
-          if git status --porcelain | grep -q "$FILE"; then
-            CHANGED_FILES="$CHANGED_FILES $FILE"
-          fi
-        done
-        
-        # 移除 CHANGED_FILES 开头的空格
-        CHANGED_FILES=$(echo $CHANGED_FILES | xargs)
-        
-        if [ -n "$CHANGED_FILES" ]; then
-            echo "Changes detected in: $CHANGED_FILES"
+        # 检查这三个文件是否有任何变动 (修改M, 新增A, 等)
+        # grep -q: 静默模式，只返回 exit code (0=找到变动, 1=没有变动)
+        if git status --porcelain | grep -q 'swh123_epg.xml.gz\|tel-epg.xml\|dm2.xml.gz'; then
+            echo "Changes detected in one or more EPG files, proceeding with commit."
             
-            # 由于上面已经 git add 成功，这里只需要提交即可。
+            # 使用 git add . 将所有未暂存的改动（包括新增和修改）添加到暂存区
+            git add .
+            
             TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
             COMMIT_MSG="Auto sync EPG files: $TIMESTAMP"
             git commit -m "$COMMIT_MSG"
             
+            # 标记需要推送
             echo "PUSH_REQUIRED=true" >> $GITHUB_ENV
+            echo "COMMIT_MSG=$COMMIT_MSG" >> $GITHUB_ENV
         else
-            echo "No changes detected in SYNC_FILES. Skipping commit and push."
+            echo "No changes detected in any EPG files. Skipping commit and push."
+            # 标记不需要推送
             echo "PUSH_REQUIRED=false" >> $GITHUB_ENV
         fi
 
@@ -83,6 +71,7 @@ jobs:
     # 推送至 Gitee 仓库
     # ----------------------------------------------------
     - name: Push to Gitee
+      # 只有当 'PUSH_REQUIRED' 为 'true' 时才执行
       if: env.PUSH_REQUIRED == 'true'
       env:
         GITEE_USERNAME: shiwenhua 
@@ -97,6 +86,7 @@ jobs:
     # 推送至 GitHub 仓库
     # ----------------------------------------------------
     - name: Push to GitHub
+      # 只有当 'PUSH_REQUIRED' 为 'true' 时才执行
       if: success() && env.PUSH_REQUIRED == 'true'
       uses: ad-m/github-push-action@master
       with:
