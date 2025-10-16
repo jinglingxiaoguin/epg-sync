@@ -58,18 +58,25 @@ def sync_file(filename, url):
         print(f"    ❌ 同步失败: {filename} - {e}")
         return False
 
-# 文件路径: sync.py (底部)
-# ...
-
 def run_all_syncs():
-    """遍历所有文件并执行同步，返回是否有文件更新。"""
+    """遍历所有文件并执行同步，同时将文件名列表写入文件。"""
     
-    # 返回值不再重要，因为我们依赖Actions中的git status来判断
     overall_changed = False
     
     for filename, url in SYNC_FILES:
         if sync_file(filename, url):
             overall_changed = True
+            
+    # 【核心逻辑】将文件名列表（用空格分隔）写入 epg_files.txt
+    filename_list = [f[0] for f in SYNC_FILES]
+    try:
+        with open('epg_files.txt', 'w') as f:
+            file_content = ' '.join(filename_list)
+            f.write(file_content + '\n')
+            print(f"    📄 已创建 epg_files.txt，内容: {file_content}")
+    except Exception as e:
+        # 增加错误处理，如果写入失败，输出到日志
+        print(f"    ❌ 写入 epg_files.txt 失败: {e}")
             
     return overall_changed
 
