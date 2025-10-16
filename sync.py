@@ -15,7 +15,7 @@ def sync_epg_file():
         response.raise_for_status()
         
         # 使用固定文件名
-        filename = "swh123_epg.gz"
+        filename = "swh123_epg.xml.gz"
         
         # 检查文件是否发生变化
         file_changed = True
