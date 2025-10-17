@@ -6,7 +6,7 @@ from datetime import datetime
 
 # 定义需要同步的文件列表
 SYNC_FILES = [
-    ("swh123_epg.xml.gz", "https://epgcloud.swh123.top/epg.php?ch=xml&v=e2all&gz=1"),
+    ("swh123_epg.xml.gz", "https://epgcloud.swh123.top/epg.php?ch=xml&v=e2all&s=bfgd&gz=1"),
     ("tel-epg.xml", "https://epg.deny.vip/sh/tel-epg.xml"),
     ("dm2.xml.gz", "https://epg.swh123.link:4443/live.php?ch=xml&v=dm2&gz=1"),
 ]
