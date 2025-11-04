@@ -47,15 +47,16 @@ jobs:
     - name: Commit Changed Files
       if: env.changed == 'true'
       run: |
-        # 💡 新增：清除所有未跟踪的文件和目录，确保仓库干净
-        git clean -fd      
         echo "🔍 检查哪些文件变化..."
+        # 1. 读取文件列表
         FILES_TO_COMMIT=$(cat files_to_commit.txt)
         echo "待提交文件列表: $FILES_TO_COMMIT"
         
-        # --- 确保只添加所需文件 ---
+        # 2. 核心：只添加列表中的文件到暂存区。
+        #    如果这些文件是新的，它们现在被跟踪；如果是修改的，则更新暂存区。
         git add $FILES_TO_COMMIT
         
+        # 3. 检查是否有实际变化需要提交
         if git diff --cached --quiet; then
           echo "No changes to commit."
           echo "PUSH_REQUIRED=false" >> $GITHUB_ENV
@@ -64,7 +65,7 @@ jobs:
           git commit -m "Auto sync EPG files: $TIMESTAMP"
           echo "PUSH_REQUIRED=true" >> $GITHUB_ENV
           
-          # 💡 新增：强制 Git 重新打包对象，这有助于解决数据流卡住的问题
+          # 4. 强制重新打包 Git 对象 (用于解决之前卡住的问题)
           echo "📦 强制重新打包 Git 对象..."
           git repack -a -d
         fi
