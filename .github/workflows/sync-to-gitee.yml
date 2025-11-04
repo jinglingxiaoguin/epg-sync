@@ -48,11 +48,10 @@ jobs:
       if: env.changed == 'true'
       run: |
         echo "🔍 检查哪些文件变化..."
-        # 核心修改：从文件中读取需要提交的文件列表
         FILES_TO_COMMIT=$(cat files_to_commit.txt)
         echo "待提交文件列表: $FILES_TO_COMMIT"
         
-        # 只添加列表中的文件
+        # --- 确保只添加所需文件 ---
         git add $FILES_TO_COMMIT
         
         if git diff --cached --quiet; then
@@ -62,6 +61,10 @@ jobs:
           TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
           git commit -m "Auto sync EPG files: $TIMESTAMP"
           echo "PUSH_REQUIRED=true" >> $GITHUB_ENV
+          
+          # 💡 新增：强制 Git 重新打包对象，这有助于解决数据流卡住的问题
+          echo "📦 强制重新打包 Git 对象..."
+          git repack -a -d
         fi
 
     - name: Push to Gitee
