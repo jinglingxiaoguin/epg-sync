@@ -47,7 +47,7 @@ jobs:
       if: env.changed == 'true'
       run: |
         echo "🔍 检查哪些文件变化..."
-        FILES_TO_COMMIT="e2_epg.xml.gz tel-epg.xml dm2.xml.gz bfgd.xml"
+        FILES_TO_COMMIT="e2_epg.xml.gz tel-epg.xml bfgd.xml"
         git add $FILES_TO_COMMIT
         if git diff --cached --quiet; then
           echo "No changes to commit."
