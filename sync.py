@@ -7,7 +7,7 @@ from datetime import datetime
 SYNC_FILES = [
     ("e2_epg.xml.gz", "https://epgcloud.swh123.top/epg.php?ch=xml&v=e2all&s=bfgd&gz=1"),
     ("tel-epg.xml", "https://epg.deny.vip/sh/tel-epg.xml"),
-    ("dm2.xml.gz", "https://epg.swh123.link:4443/live.php?ch=xml&v=dm2&gz=1"),
+#    ("dm2.xml.gz", "https://epg.swh123.link:4443/live.php?ch=xml&v=dm2&gz=1"),
     ("bfgd.xml", "https://epgcloud.swh123.top/epg.php?ch=xml&m=bfgd"),
 ]
 
