@@ -21,6 +21,7 @@ def download_and_check(filename, url):
     """
     try:
         print(f"\n🚀 开始同步: {filename}")
+        # ... (下载和检查文件内容的逻辑保持不变)
         response = requests.get(url, timeout=30)
         response.raise_for_status()
         content = response.content
@@ -65,7 +66,7 @@ def main():
     print(f"\n📝 已将文件列表写入 {FILES_LIST_NAME}")
 
     if any_changed:
-        print("\n🎉 有文件更新，准备提交到仓库")
+        print("\n🎉 有文件更新，准备提交到仓库") # 关键输出，用于 Actions 判断
     else:
         print("\nℹ️ 所有文件均无变化，无需提交")
 
@@ -73,9 +74,5 @@ def main():
 
 
 if __name__ == "__main__":
-    result = main()
-    # 使用 $GITHUB_ENV 传递变量给后续步骤
-    if result:
-        print("changed_in_script=true" >> $GITHUB_ENV) # 配合 sync-to-gitee.yml 的修改
-    else:
-        print("changed_in_script=false" >> $GITHUB_ENV)
+    main()
+    # 脚本现在只负责运行和输出，不再尝试写入 $GITHUB_ENV
