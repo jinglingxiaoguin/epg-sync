@@ -47,6 +47,8 @@ jobs:
     - name: Commit Changed Files
       if: env.changed == 'true'
       run: |
+        # 💡 新增：清除所有未跟踪的文件和目录，确保仓库干净
+        git clean -fd      
         echo "🔍 检查哪些文件变化..."
         FILES_TO_COMMIT=$(cat files_to_commit.txt)
         echo "待提交文件列表: $FILES_TO_COMMIT"
@@ -69,19 +71,15 @@ jobs:
 
     - name: Push to Gitee
       if: env.PUSH_REQUIRED == 'true'
-      timeout-minutes: 5 # <--- 增加超时设置，防止无限期卡住
+      timeout-minutes: 5
       env:
         GITEE_USERNAME: shiwenhua
         GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
         GITEE_REPO: shiwenhua/epg-sync
       run: |
-        echo "🚀 推送至 Gitee (Verbose)..."
-        # 核心修改：使用 GIT_CURL_VERBOSE=1 和 --verbose 增加诊断输出
-        # 使用 -c http.sslVerify=false 尝试忽略 SSL 问题 (如果存在)
-        GIT_CURL_VERBOSE=1 git push -f --verbose \
-        https://${GITEE_USERNAME}:${GITEE_TOKEN}@gitee.com/${GITEE_REPO}.git HEAD:master
-        
-        # 如果推送成功，继续设置变量
+        echo "🚀 推送至 Gitee..."
+        # 使用更简洁的命令，明确指定 HEAD:master
+        git push -f https://${GITEE_USERNAME}:${GITEE_TOKEN}@gitee.com/${GITEE_REPO}.git HEAD:master
         echo "PUSH_STATUS=success" >> $GITHUB_ENV
 
     - name: Push to GitHub
