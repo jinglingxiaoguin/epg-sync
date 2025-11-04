@@ -11,6 +11,9 @@ SYNC_FILES = [
     ("bfgd.xml", "https://epgcloud.swh123.top/epg.php?ch=xml&m=bfgd"),
 ]
 
+# 用于存储文件名列表的文件名
+FILES_LIST_NAME = "files_to_commit.txt"
+
 
 def download_and_check(filename, url):
     """
@@ -49,10 +52,17 @@ def download_and_check(filename, url):
 
 def main():
     any_changed = False
+    filenames = []
     for filename, url in SYNC_FILES:
+        filenames.append(filename) # 收集所有需要同步的文件名
         changed = download_and_check(filename, url)
         if changed:
             any_changed = True
+
+    # 将所有需要同步的文件名写入文件，供 GitHub Actions 读取
+    with open(FILES_LIST_NAME, 'w') as f:
+        f.write(' '.join(filenames))
+    print(f"\n📝 已将文件列表写入 {FILES_LIST_NAME}")
 
     if any_changed:
         print("\n🎉 有文件更新，准备提交到仓库")
@@ -64,8 +74,8 @@ def main():
 
 if __name__ == "__main__":
     result = main()
-    # 输出环境变量以供 GitHub Actions 读取
+    # 使用 $GITHUB_ENV 传递变量给后续步骤
     if result:
-        print("::set-output name=changed::true")
+        print("changed_in_script=true" >> $GITHUB_ENV) # 配合 sync-to-gitee.yml 的修改
     else:
-        print("::set-output name=changed::false")
+        print("changed_in_script=false" >> $GITHUB_ENV)
