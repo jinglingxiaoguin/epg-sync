@@ -11,9 +11,6 @@ SYNC_FILES = [
     ("bfgd.xml", "https://epgcloud.swh123.top/epg.php?ch=xml&m=bfgd"),
 ]
 
-# 用于存储文件名列表的文件名
-FILES_LIST_NAME = "files_to_commit.txt"
-
 
 def download_and_check(filename, url):
     """
@@ -21,7 +18,6 @@ def download_and_check(filename, url):
     """
     try:
         print(f"\n🚀 开始同步: {filename}")
-        # ... (下载和检查文件内容的逻辑保持不变)
         response = requests.get(url, timeout=30)
         response.raise_for_status()
         content = response.content
@@ -53,20 +49,13 @@ def download_and_check(filename, url):
 
 def main():
     any_changed = False
-    filenames = []
     for filename, url in SYNC_FILES:
-        filenames.append(filename) # 收集所有需要同步的文件名
         changed = download_and_check(filename, url)
         if changed:
             any_changed = True
 
-    # 将所有需要同步的文件名写入文件，供 GitHub Actions 读取
-    with open(FILES_LIST_NAME, 'w') as f:
-        f.write(' '.join(filenames))
-    print(f"\n📝 已将文件列表写入 {FILES_LIST_NAME}")
-
     if any_changed:
-        print("\n🎉 有文件更新，准备提交到仓库") # 关键输出，用于 Actions 判断
+        print("\n🎉 有文件更新，准备提交到仓库")
     else:
         print("\nℹ️ 所有文件均无变化，无需提交")
 
@@ -74,5 +63,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
-    # 脚本现在只负责运行和输出，不再尝试写入 $GITHUB_ENV
+    result = main()
+    # 输出环境变量以供 GitHub Actions 读取
+    if result:
+        print("::set-output name=changed::true")
+    else:
+        print("::set-output name=changed::false")
