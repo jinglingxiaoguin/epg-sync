@@ -29,10 +29,9 @@ jobs:
     - name: Run EPG Sync Script
       id: sync
       run: |
-        # 运行脚本，并将输出重定向到日志文件
         python sync.py > sync.log 2>&1
         cat sync.log
-        # 从输出中判断是否有变化，并设置环境变量
+        # 从输出中判断是否有变化
         if grep -q "🎉 有文件更新" sync.log; then
           echo "changed=true" >> $GITHUB_ENV
         else
@@ -48,15 +47,8 @@ jobs:
       if: env.changed == 'true'
       run: |
         echo "🔍 检查哪些文件变化..."
-        # 1. 读取文件列表
-        FILES_TO_COMMIT=$(cat files_to_commit.txt)
-        echo "待提交文件列表: $FILES_TO_COMMIT"
-        
-        # 2. 核心：只添加列表中的文件到暂存区。
-        #    如果这些文件是新的，它们现在被跟踪；如果是修改的，则更新暂存区。
+        FILES_TO_COMMIT="e2_epg.xml.gz tel-epg.xml bfgd.xml"
         git add $FILES_TO_COMMIT
-        
-        # 3. 检查是否有实际变化需要提交
         if git diff --cached --quiet; then
           echo "No changes to commit."
           echo "PUSH_REQUIRED=false" >> $GITHUB_ENV
@@ -64,22 +56,16 @@ jobs:
           TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
           git commit -m "Auto sync EPG files: $TIMESTAMP"
           echo "PUSH_REQUIRED=true" >> $GITHUB_ENV
-          
-          # 4. 强制重新打包 Git 对象 (用于解决之前卡住的问题)
-          echo "📦 强制重新打包 Git 对象..."
-          git repack -a -d
         fi
 
     - name: Push to Gitee
       if: env.PUSH_REQUIRED == 'true'
-      timeout-minutes: 5
       env:
         GITEE_USERNAME: shiwenhua
         GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
         GITEE_REPO: shiwenhua/epg-sync
       run: |
         echo "🚀 推送至 Gitee..."
-        # 使用更简洁的命令，明确指定 HEAD:master
         git push -f https://${GITEE_USERNAME}:${GITEE_TOKEN}@gitee.com/${GITEE_REPO}.git HEAD:master
         echo "PUSH_STATUS=success" >> $GITHUB_ENV
 
