@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tv generator-info-name="swh123 2025-11-21 02:15:42" source-info-name="Nanning IPTV Spider">
+<tv generator-info-name="swh123 2025-11-21 08:49:14" source-info-name="Nanning IPTV Spider">
  <channel id="BRTV纪实科教">
   <display-name lang="zh">BRTV纪实科教</display-name>
   <source>bfgd</source>
@@ -21038,18 +21038,18 @@
   <desc lang="zh"></desc>
   <source>bfgd</source>
  </programme>
- <programme channel="CCTV5+" start="20251121000000 +0800" stop="20251121010600 +0800">
+ <programme channel="CCTV5+" start="20251121000000 +0800" stop="20251121013100 +0800">
   <title lang="zh">2025/2026花样滑冰大奖赛美国站</title>
   <desc lang="zh"></desc>
   <source>bfgd</source>
  </programme>
- <programme channel="CCTV5+" start="20251121010600 +0800" stop="20251121023600 +0800">
+ <programme channel="CCTV5+" start="20251121013100 +0800" stop="20251121030100 +0800">
   <title lang="zh">2024/2025赛季CBA季后赛半决赛</title>
   <desc lang="zh"></desc>
   <source>bfgd</source>
  </programme>
- <programme channel="CCTV5+" start="20251121023600 +0800" stop="20251121040000 +0800">
-  <title lang="zh">英超联赛第8轮:曼城-埃弗顿</title>
+ <programme channel="CCTV5+" start="20251121030100 +0800" stop="20251121040000 +0800">
+  <title lang="zh">2025-2026英超第8轮:曼城-埃弗顿</title>
   <desc lang="zh"></desc>
   <source>bfgd</source>
  </programme>
@@ -21084,7 +21084,7 @@
   <source>bfgd</source>
  </programme>
  <programme channel="CCTV5+" start="20251121133000 +0800" stop="20251121153300 +0800">
-  <title lang="zh">第十五届全运会羽毛球单项决赛</title>
+  <title lang="zh">第15届全国运动会羽毛球单项决赛</title>
   <desc lang="zh"></desc>
   <source>bfgd</source>
  </programme>
@@ -21109,8 +21109,8 @@
   <source>bfgd</source>
  </programme>
  <programme channel="CCTV5+" start="20251121211000 +0800" stop="20251121212800 +0800">
-  <title lang="zh">赛事集锦:全运新势力</title>
-  <desc lang="zh">各种精彩比赛的集合。</desc>
+  <title lang="zh">赛事集锦:全运新势力(1)</title>
+  <desc lang="zh"></desc>
   <source>bfgd</source>
  </programme>
  <programme channel="CCTV5+" start="20251121212800 +0800" stop="20251121230000 +0800">
@@ -21778,11 +21778,6 @@
   <desc lang="zh">播放人文社会历史类纪录片，多角度展示社会风情和世间百态。</desc>
   <source>bfgd</source>
  </programme>
- <programme channel="CCTV9" start="20251121074300 +0800" stop="20251121075900 +0800">
-  <title lang="zh">9视频(324):攀登者(5)</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
  <programme channel="CCTV9" start="20251121075900 +0800" stop="20251121083100 +0800">
   <title lang="zh">活力·源(341):奇趣动物园(3)</title>
   <desc lang="zh"></desc>
@@ -21884,7 +21879,7 @@
   <source>sc96655</source>
  </programme>
  <programme channel="CETV1" start="20251121000100 +0800" stop="20251121002000 +0800">
-  <title lang="zh">等着我(61)</title>
+  <title lang="zh">开始</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
@@ -22529,7 +22524,7 @@
   <source>sc96655</source>
  </programme>
  <programme channel="东方卫视" start="20251121000100 +0800" stop="20251121001700 +0800">
-  <title lang="zh">永远的行走-与中国相遇第三季(2)</title>
+  <title lang="zh">开始</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
@@ -22993,27 +22988,27 @@
   <desc lang="zh">讲述了摄影师、导演和演员之间的三角恋，面对错综复杂的关系，他们又该如何选择呢？</desc>
   <source>bfgd</source>
  </programme>
- <programme channel="云南卫视" start="20251121000000 +0800" stop="20251121002000 +0800">
+ <programme channel="云南卫视" start="20251121000000 +0800" stop="20251121003500 +0800">
   <title lang="zh">鹿鼎记(27)</title>
   <desc lang="zh">以清代康熙年间的社会历史为背景，描写了一个出身于社会最底层的少年韦小宝的传奇经历的故事。</desc>
   <source>bfgd</source>
  </programme>
- <programme channel="云南卫视" start="20251121002000 +0800" stop="20251121005500 +0800">
+ <programme channel="云南卫视" start="20251121003500 +0800" stop="20251121010700 +0800">
   <title lang="zh">鹿鼎记(28)</title>
   <desc lang="zh">以清代康熙年间的社会历史为背景，描写了一个出身于社会最底层的少年韦小宝的传奇经历的故事。</desc>
   <source>bfgd</source>
  </programme>
- <programme channel="云南卫视" start="20251121005500 +0800" stop="20251121013000 +0800">
+ <programme channel="云南卫视" start="20251121010700 +0800" stop="20251121014500 +0800">
   <title lang="zh">鹿鼎记(29)</title>
   <desc lang="zh">以清代康熙年间的社会历史为背景，描写了一个出身于社会最底层的少年韦小宝的传奇经历的故事。</desc>
   <source>bfgd</source>
  </programme>
- <programme channel="云南卫视" start="20251121013000 +0800" stop="20251121020500 +0800">
+ <programme channel="云南卫视" start="20251121014500 +0800" stop="20251121022000 +0800">
   <title lang="zh">鹿鼎记(30)</title>
   <desc lang="zh">以清代康熙年间的社会历史为背景，描写了一个出身于社会最底层的少年韦小宝的传奇经历的故事。</desc>
   <source>bfgd</source>
  </programme>
- <programme channel="云南卫视" start="20251121020500 +0800" stop="20251121044600 +0800">
+ <programme channel="云南卫视" start="20251121022000 +0800" stop="20251121044600 +0800">
   <title lang="zh">百年巨匠</title>
   <desc lang="zh">国内第一部大规模、全方位拍摄制作的关于20世纪画坛巨匠、艺苑大师、文坛泰斗的大型人物传记纪录片，分为美术篇、书法篇、京剧篇、话剧篇、音乐篇、文学篇，以百集的规模拍摄40余位20世纪中国文艺领域的杰出代表</desc>
   <source>bfgd</source>
@@ -23166,26 +23161,6 @@
  <programme channel="云南卫视" start="20251121230300 +0800" stop="20251121235959 +0800">
   <title lang="zh">鹿鼎记(33)</title>
   <desc lang="zh">以清代康熙年间的社会历史为背景，描写了一个出身于社会最底层的少年韦小宝的传奇经历的故事。</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="亚洲影院" start="20251121011300 +0800" stop="20251121024700 +0800">
-  <title lang="zh">倾城之恋</title>
-  <desc lang="zh">中国二十世纪三十年代的旧上海，家道中落的白家祖上曾盛极一时，可坐吃山空又因循守旧，落得日子过得捉襟见肘。白家为解除窘境，把自家六小姐白流苏嫁给暴发户唐家少爷唐一元。白流苏原以为这样就可以逃离白公馆里众人的处处挤兑算计、张张尖刻嘴脸，可游手好闲的花花公子唐一元在婚后更是变本加厉</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="亚洲影院" start="20251121024700 +0800" stop="20251121044200 +0800">
-  <title lang="zh">少林寺</title>
-  <desc lang="zh">隋朝末年，隋将王世充的侄子王仁则在督建河防工事时，杀死了起来反抗的神腿张，但令其儿子小虎子跳河逃离。小虎子被少林僧人救起收入寺中后，削发为僧，法名“觉远”。王仁则的侍卫长遇见牧羊女白无瑕后垂涎其美色，强行将其抢回府并欲酒后施暴，恰巧被觉远发现</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="亚洲影院" start="20251121044200 +0800" stop="20251121050000 +0800">
-  <title lang="zh">实境之旅:桂林</title>
-  <desc lang="zh">采用第一人称角度拍摄，呈现最真实细腻、最贴近自然的影像美学，并使用原地原声的收音方式，所有虫鸣鸟叫、流风细雨、海涛树摇，甚至连阳光洒落彷彿都能感受那温暖的热度。最后利用高画质影像压缩技术搭配5.1环绕立体声道，展现最原始自然如临现场的影音之美</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="亚洲影院" start="20251121050000 +0800" stop="20251121063400 +0800">
-  <title lang="zh">至尊一剑</title>
-  <desc lang="zh">魔山派秦五新连败九十九名剑手，终在最后一战败在剑神手上。五新杀死著名铸剑师老鹰夺取其宝剑，老鹰之子燕北矢志为父报仇。</desc>
   <source>bfgd</source>
  </programme>
  <programme channel="亚洲影院" start="20251121063400 +0800" stop="20251121081000 +0800">
@@ -23913,265 +23888,285 @@
   <desc lang="zh">恐龙星发生大爆炸危机，超星特工猪猪侠、阿五、六六与扭蛋机器人阿七收到迷糊老师的任务-将恐龙转移回方舟。搜索到恐龙信号后，他们第一时间乘坐风神翼龙飞往目的地。在寻找目标时，超星特工帮助恐龙解决危机，成功保护了恐龙们的安全，还与恐龙成为好朋友</desc>
   <source>bfgd</source>
  </programme>
- <programme channel="发现之旅" start="20251121010000 +0800" stop="20251121060000 +0800">
+ <programme channel="发现之旅" start="20251121000000 +0800" stop="20251121000100 +0800">
+  <title lang="zh">喜事</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251121000100 +0800" stop="20251121001500 +0800">
+  <title lang="zh">国家生态</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251121001500 +0800" stop="20251121003000 +0800">
+  <title lang="zh">国家生态</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251121003000 +0800" stop="20251121010000 +0800">
+  <title lang="zh">美丽中华行</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251121010000 +0800" stop="20251121040000 +0800">
   <title lang="zh">测试图</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251121040000 +0800" stop="20251121042000 +0800">
+  <title lang="zh">测试图</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251121042000 +0800" stop="20251121060000 +0800">
+  <title lang="zh">测试图</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121060000 +0800" stop="20251121063000 +0800">
   <title lang="zh">空姐新发现</title>
-  <desc lang="zh">以空姐的视角，把南航国际航线目的地的雄浑奇绝的自然景观及风土人情展现给观众。同时，南航豪华舒适的飞机客舱、Skytrax星级服务及企业文化也将在节目中呈现，最后，每一期将选一位南航空姐做主持人</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121063000 +0800" stop="20251121064500 +0800">
   <title lang="zh">筑梦新时代</title>
-  <desc lang="zh">聚焦京津冀协同发展、雄安新区规划建设、北京冬奥会筹办“三件大事”，全面展示河北举全省之力的作为与担当，取得的丰硕成果。将目光投向更多的普通人和建设者，发现记录他们在新时代的发展大潮中，用双手书写出一个个不平凡的故事，汇聚成燕赵大地上一幅拼搏竞进、万众一心的壮美画卷</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121064500 +0800" stop="20251121070000 +0800">
   <title lang="zh">国家生态</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121070000 +0800" stop="20251121073000 +0800">
   <title lang="zh">发现汇</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121073000 +0800" stop="20251121073500 +0800">
   <title lang="zh">青春之我(53)</title>
-  <desc lang="zh">1918年的上海，为给码头工人筹备扫盲班，女学生钟婉和休学务工的同学谢一白意外合作。两人在为工人权益并肩作战中，逐渐拥有共同的信仰与向往。五四运动前夕，众人帮助学生代表何葆仁顺利前往北京，助力五四运动开展</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121073500 +0800" stop="20251121074000 +0800">
   <title lang="zh">青春之我(46)</title>
-  <desc lang="zh">1918年的上海，为给码头工人筹备扫盲班，女学生钟婉和休学务工的同学谢一白意外合作。两人在为工人权益并肩作战中，逐渐拥有共同的信仰与向往。五四运动前夕，众人帮助学生代表何葆仁顺利前往北京，助力五四运动开展</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121074000 +0800" stop="20251121074500 +0800">
   <title lang="zh">翦商</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121074500 +0800" stop="20251121075000 +0800">
   <title lang="zh">晓屯聊摄影</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121075000 +0800" stop="20251121080000 +0800">
   <title lang="zh">佳酿之旅</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
- <programme channel="发现之旅" start="20251121080000 +0800" stop="20251121085700 +0800">
+ <programme channel="发现之旅" start="20251121080000 +0800" stop="20251121090000 +0800">
   <title lang="zh">光影史诗</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="发现之旅" start="20251121085700 +0800" stop="20251121090000 +0800">
-  <title lang="zh">频道宣传片</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121090000 +0800" stop="20251121095000 +0800">
   <title lang="zh">西南联大</title>
-  <desc lang="zh">深刻挖掘西南联大精神，描绘了在伟大的抗日战争和新中国建设中涌现的杰出知识分子形象，充分展示了中华民族文化精英的家国情怀、治学精神和人文修养，感人至深，催人奋进。</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121095000 +0800" stop="20251121100000 +0800">
   <title lang="zh">佳酿之旅</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121100000 +0800" stop="20251121103000 +0800">
   <title lang="zh">喜事</title>
-  <desc lang="zh">⼀个融合传统与现代，连接古⽼与未来，专注⺠族⽂化基因守护，促进⺠族认同、让世界读懂中国的国际⽂化品牌。⼀部关于中国⼈活法（包括⽣活习俗、⽣活⽅式、⽣活态度，以及⽂化精神与信仰）的系列⼈⽂纪录⽚</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121103000 +0800" stop="20251121103500 +0800">
   <title lang="zh">青春之我(53)</title>
-  <desc lang="zh">1918年的上海，为给码头工人筹备扫盲班，女学生钟婉和休学务工的同学谢一白意外合作。两人在为工人权益并肩作战中，逐渐拥有共同的信仰与向往。五四运动前夕，众人帮助学生代表何葆仁顺利前往北京，助力五四运动开展</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121103500 +0800" stop="20251121104000 +0800">
   <title lang="zh">青春之我(46)</title>
-  <desc lang="zh">1918年的上海，为给码头工人筹备扫盲班，女学生钟婉和休学务工的同学谢一白意外合作。两人在为工人权益并肩作战中，逐渐拥有共同的信仰与向往。五四运动前夕，众人帮助学生代表何葆仁顺利前往北京，助力五四运动开展</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121104000 +0800" stop="20251121111200 +0800">
   <title lang="zh">你要倾听的大地</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121111200 +0800" stop="20251121114400 +0800">
   <title lang="zh">你要倾听的大地</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121114400 +0800" stop="20251121115200 +0800">
   <title lang="zh">重建中国茶道(28)</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121115200 +0800" stop="20251121120000 +0800">
   <title lang="zh">重建中国茶道(29)</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121120000 +0800" stop="20251121123000 +0800">
   <title lang="zh">空姐新发现</title>
-  <desc lang="zh">以空姐的视角，把南航国际航线目的地的雄浑奇绝的自然景观及风土人情展现给观众。同时，南航豪华舒适的飞机客舱、Skytrax星级服务及企业文化也将在节目中呈现，最后，每一期将选一位南航空姐做主持人</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121123000 +0800" stop="20251121124500 +0800">
   <title lang="zh">国家生态</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121124500 +0800" stop="20251121130000 +0800">
   <title lang="zh">筑梦新时代</title>
-  <desc lang="zh">聚焦京津冀协同发展、雄安新区规划建设、北京冬奥会筹办“三件大事”，全面展示河北举全省之力的作为与担当，取得的丰硕成果。将目光投向更多的普通人和建设者，发现记录他们在新时代的发展大潮中，用双手书写出一个个不平凡的故事，汇聚成燕赵大地上一幅拼搏竞进、万众一心的壮美画卷</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121130000 +0800" stop="20251121133000 +0800">
   <title lang="zh">发现汇</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121133000 +0800" stop="20251121140000 +0800">
   <title lang="zh">新昌悟语</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121140000 +0800" stop="20251121140500 +0800">
   <title lang="zh">青春之我(53)</title>
-  <desc lang="zh">1918年的上海，为给码头工人筹备扫盲班，女学生钟婉和休学务工的同学谢一白意外合作。两人在为工人权益并肩作战中，逐渐拥有共同的信仰与向往。五四运动前夕，众人帮助学生代表何葆仁顺利前往北京，助力五四运动开展</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121140500 +0800" stop="20251121141000 +0800">
   <title lang="zh">青春之我(46)</title>
-  <desc lang="zh">1918年的上海，为给码头工人筹备扫盲班，女学生钟婉和休学务工的同学谢一白意外合作。两人在为工人权益并肩作战中，逐渐拥有共同的信仰与向往。五四运动前夕，众人帮助学生代表何葆仁顺利前往北京，助力五四运动开展</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121141000 +0800" stop="20251121150000 +0800">
   <title lang="zh">家国</title>
-  <desc lang="zh">以“家国”为轴线，通过叙述中国古代历史人物修身齐家、治国理政、勤勉奉公、清廉为政的故事，从不同侧面展现中华文化中的德治礼序和家国情怀，传播“孝悌忠信礼义廉耻”的传统美德，弘扬中华民族一脉相承的精神追求和精神特质</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121150000 +0800" stop="20251121150500 +0800">
   <title lang="zh">翦商</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121150500 +0800" stop="20251121153600 +0800">
   <title lang="zh">你要倾听的大地</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121153600 +0800" stop="20251121160800 +0800">
   <title lang="zh">你要倾听的大地(5)</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121160800 +0800" stop="20251121164000 +0800">
   <title lang="zh">你要倾听的大地(6)</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121164000 +0800" stop="20251121164500 +0800">
   <title lang="zh">晓屯聊摄影</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121164500 +0800" stop="20251121165000 +0800">
   <title lang="zh">青春之我(53)</title>
-  <desc lang="zh">1918年的上海，为给码头工人筹备扫盲班，女学生钟婉和休学务工的同学谢一白意外合作。两人在为工人权益并肩作战中，逐渐拥有共同的信仰与向往。五四运动前夕，众人帮助学生代表何葆仁顺利前往北京，助力五四运动开展</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121165000 +0800" stop="20251121165500 +0800">
   <title lang="zh">青春之我(46)</title>
-  <desc lang="zh">1918年的上海，为给码头工人筹备扫盲班，女学生钟婉和休学务工的同学谢一白意外合作。两人在为工人权益并肩作战中，逐渐拥有共同的信仰与向往。五四运动前夕，众人帮助学生代表何葆仁顺利前往北京，助力五四运动开展</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121165500 +0800" stop="20251121170200 +0800">
   <title lang="zh">重建中国茶道(21)</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
- <programme channel="发现之旅" start="20251121170200 +0800" stop="20251121175900 +0800">
+ <programme channel="发现之旅" start="20251121170200 +0800" stop="20251121180000 +0800">
   <title lang="zh">光影史诗</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="发现之旅" start="20251121175900 +0800" stop="20251121180000 +0800">
-  <title lang="zh">频道宣传片</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121180000 +0800" stop="20251121183000 +0800">
   <title lang="zh">新昌悟语</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121183000 +0800" stop="20251121190000 +0800">
   <title lang="zh">美丽中华行</title>
-  <desc lang="zh">以“生态文明、可持续发展”为主题，通过外景主持人和美丽体验员的深度体验，展示生态美景，品味健康美食，体验休闲农业，推介最有特色的生态旅游资源，提供全面丰富的旅游资讯，全景式描绘中国生态旅游画卷，让观众足不出户领略地域中华的自然之美、和谐之美、人文之美，倡导新型生态旅游模式</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121190000 +0800" stop="20251121195000 +0800">
   <title lang="zh">家国</title>
-  <desc lang="zh">以“家国”为轴线，通过叙述中国古代历史人物修身齐家、治国理政、勤勉奉公、清廉为政的故事，从不同侧面展现中华文化中的德治礼序和家国情怀，传播“孝悌忠信礼义廉耻”的传统美德，弘扬中华民族一脉相承的精神追求和精神特质</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121195000 +0800" stop="20251121202000 +0800">
   <title lang="zh">喜事</title>
-  <desc lang="zh">⼀个融合传统与现代，连接古⽼与未来，专注⺠族⽂化基因守护，促进⺠族认同、让世界读懂中国的国际⽂化品牌。⼀部关于中国⼈活法（包括⽣活习俗、⽣活⽅式、⽣活态度，以及⽂化精神与信仰）的系列⼈⽂纪录⽚</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121202000 +0800" stop="20251121203000 +0800">
   <title lang="zh">佳酿之旅</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121203000 +0800" stop="20251121212000 +0800">
   <title lang="zh">西南联大</title>
-  <desc lang="zh">深刻挖掘西南联大精神，描绘了在伟大的抗日战争和新中国建设中涌现的杰出知识分子形象，充分展示了中华民族文化精英的家国情怀、治学精神和人文修养，感人至深，催人奋进。</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121212000 +0800" stop="20251121213000 +0800">
   <title lang="zh">重建中国茶道(5)</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121213000 +0800" stop="20251121213500 +0800">
   <title lang="zh">青春之我(54)</title>
-  <desc lang="zh">1918年的上海，为给码头工人筹备扫盲班，女学生钟婉和休学务工的同学谢一白意外合作。两人在为工人权益并肩作战中，逐渐拥有共同的信仰与向往。五四运动前夕，众人帮助学生代表何葆仁顺利前往北京，助力五四运动开展</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121213500 +0800" stop="20251121214000 +0800">
   <title lang="zh">青春之我(47)</title>
-  <desc lang="zh">1918年的上海，为给码头工人筹备扫盲班，女学生钟婉和休学务工的同学谢一白意外合作。两人在为工人权益并肩作战中，逐渐拥有共同的信仰与向往。五四运动前夕，众人帮助学生代表何葆仁顺利前往北京，助力五四运动开展</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121214000 +0800" stop="20251121223000 +0800">
   <title lang="zh">家国</title>
-  <desc lang="zh">以“家国”为轴线，通过叙述中国古代历史人物修身齐家、治国理政、勤勉奉公、清廉为政的故事，从不同侧面展现中华文化中的德治礼序和家国情怀，传播“孝悌忠信礼义廉耻”的传统美德，弘扬中华民族一脉相承的精神追求和精神特质</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121223000 +0800" stop="20251121230000 +0800">
   <title lang="zh">新昌悟语</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121230000 +0800" stop="20251121233000 +0800">
   <title lang="zh">空姐新发现</title>
-  <desc lang="zh">以空姐的视角，把南航国际航线目的地的雄浑奇绝的自然景观及风土人情展现给观众。同时，南航豪华舒适的飞机客舱、Skytrax星级服务及企业文化也将在节目中呈现，最后，每一期将选一位南航空姐做主持人</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="发现之旅" start="20251121233000 +0800" stop="20251121235959 +0800">
   <title lang="zh">你要倾听的大地</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="吉林卫视" start="20251121000000 +0800" stop="20251121001900 +0800">
   <title lang="zh">鲜花盛开的山村(12)</title>
@@ -24698,27 +24693,27 @@
   <desc lang="zh">讲述了以许半夏为首的有志者怀抱雄心壮志在改革开放的大潮中，奔流涌动，积极探索，不断创新的故事，也展现了上世纪九十年代中小企业在时代浪潮中生存并寻求发展的现实故事。</desc>
   <source>bfgd</source>
  </programme>
- <programme channel="天津卫视" start="20251121000000 +0800" stop="20251121002500 +0800">
+ <programme channel="天津卫视" start="20251121000000 +0800" stop="20251121005000 +0800">
   <title lang="zh">英雄烈(21)</title>
   <desc lang="zh">1924年，张家口梁记皮庄二公子梁天赐新婚大喜，却遭遇日商迫害，一夜间家破人亡。命运的安排让他成了死囚，获救后做了被官府当作土匪的大青山义军。日寇的铁蹄呼啸而至，梁天赐和兄弟们一路南征北战，为掩护友军撤退，被日军包围，梁天赐在指挥狙击手成功射杀了日军指挥官佐藤毅后，终因寡不敌众，壮烈牺牲</desc>
   <source>bfgd</source>
  </programme>
- <programme channel="天津卫视" start="20251121002500 +0800" stop="20251121041000 +0800">
+ <programme channel="天津卫视" start="20251121005000 +0800" stop="20251121033700 +0800">
   <title lang="zh">英雄烈(22)</title>
   <desc lang="zh">1924年，张家口梁记皮庄二公子梁天赐新婚大喜，却遭遇日商迫害，一夜间家破人亡。命运的安排让他成了死囚，获救后做了被官府当作土匪的大青山义军。日寇的铁蹄呼啸而至，梁天赐和兄弟们一路南征北战，为掩护友军撤退，被日军包围，梁天赐在指挥狙击手成功射杀了日军指挥官佐藤毅后，终因寡不敌众，壮烈牺牲</desc>
   <source>bfgd</source>
  </programme>
- <programme channel="天津卫视" start="20251121041000 +0800" stop="20251121045600 +0800">
+ <programme channel="天津卫视" start="20251121033700 +0800" stop="20251121042400 +0800">
   <title lang="zh">正者无敌(22)</title>
   <desc lang="zh">大字不识一筐的冯天魁是川军永州警备司令兼66师师长，心血来潮的他自封陆海空三军司令，却在上任大典上遭英国炮艇轰击，军委会中将参谋长贺国光认为冯就是一个什么都不懂的莽夫。由于冯天魁手握川军重兵，国民党反动势力、日伪侵略势力等都对他不敢掉以轻心，并伺机拉拢他为已用</desc>
   <source>bfgd</source>
  </programme>
- <programme channel="天津卫视" start="20251121045600 +0800" stop="20251121054300 +0800">
+ <programme channel="天津卫视" start="20251121042400 +0800" stop="20251121053200 +0800">
   <title lang="zh">正者无敌(23)</title>
   <desc lang="zh">大字不识一筐的冯天魁是川军永州警备司令兼66师师长，心血来潮的他自封陆海空三军司令，却在上任大典上遭英国炮艇轰击，军委会中将参谋长贺国光认为冯就是一个什么都不懂的莽夫。由于冯天魁手握川军重兵，国民党反动势力、日伪侵略势力等都对他不敢掉以轻心，并伺机拉拢他为已用</desc>
   <source>bfgd</source>
  </programme>
- <programme channel="天津卫视" start="20251121054300 +0800" stop="20251121063000 +0800">
+ <programme channel="天津卫视" start="20251121053200 +0800" stop="20251121063000 +0800">
   <title lang="zh">正者无敌(24)</title>
   <desc lang="zh">大字不识一筐的冯天魁是川军永州警备司令兼66师师长，心血来潮的他自封陆海空三军司令，却在上任大典上遭英国炮艇轰击，军委会中将参谋长贺国光认为冯就是一个什么都不懂的莽夫。由于冯天魁手握川军重兵，国民党反动势力、日伪侵略势力等都对他不敢掉以轻心，并伺机拉拢他为已用</desc>
   <source>bfgd</source>
@@ -25236,56 +25231,6 @@
  <programme channel="安徽卫视" start="20251121235900 +0800" stop="20251121235959 +0800">
   <title lang="zh">国宝时刻(21)</title>
   <desc lang="zh">该工程用视听语言讲述文物故事，用超高清技术赋能文化传承，以每集拍摄一件文物、每个文物5分钟的精炼体量制作传播。</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="少儿动漫" start="20251121003300 +0800" stop="20251121020400 +0800">
-  <title lang="zh">虫虫危机</title>
-  <desc lang="zh">菲力在蚂蚁王国里并不怎么受欢迎，尽管他发明了先进的收割机，然而阴差阳错，他竟然惹了大祸，公主妹妹小不点因此被蝗虫敌人捉去，而且蚂蚁的粮食也受到了蝗虫的威胁。即使菲力救出了小不点，但还是被赶出蚂蚁王国</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="少儿动漫" start="20251121020400 +0800" stop="20251121034100 +0800">
-  <title lang="zh">超能陆战队</title>
-  <desc lang="zh">未来世界的超级都市旧京山，天才少年小宏参加了罗伯特·卡拉汉教授主持的理工学院机器人专业的入学大赛。他凭借神奇的微型磁力机器人赢得众人好评，谁知突如其来的大火烧毁了展示会场，哥哥为了救出受困的卡拉汉教授命丧火场</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="少儿动漫" start="20251121034100 +0800" stop="20251121050000 +0800">
-  <title lang="zh">实境之旅:桂林</title>
-  <desc lang="zh">采用第一人称角度拍摄，呈现最真实细腻、最贴近自然的影像美学，并使用原地原声的收音方式，所有虫鸣鸟叫、流风细雨、海涛树摇，甚至连阳光洒落彷彿都能感受那温暖的热度。最后利用高画质影像压缩技术搭配5.1环绕立体声道，展现最原始自然如临现场的影音之美</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="少儿动漫" start="20251121050000 +0800" stop="20251121051200 +0800">
-  <title lang="zh">天天成长记Ⅲ(10)</title>
-  <desc lang="zh">在美丽的村庄里，天天有了可爱的小鸡、小羊和小兔子，还认识了新的小伙伴。有了小动物和朋友们的陪伴，天天越来越自信，还学会了照顾生病的妈妈，帮助有困难的小伙伴，以及包粽子和做饭</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="少儿动漫" start="20251121051200 +0800" stop="20251121052500 +0800">
-  <title lang="zh">天天成长记Ⅲ(11)</title>
-  <desc lang="zh">在美丽的村庄里，天天有了可爱的小鸡、小羊和小兔子，还认识了新的小伙伴。有了小动物和朋友们的陪伴，天天越来越自信，还学会了照顾生病的妈妈，帮助有困难的小伙伴，以及包粽子和做饭</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="少儿动漫" start="20251121052500 +0800" stop="20251121053700 +0800">
-  <title lang="zh">天天成长记Ⅲ(12)</title>
-  <desc lang="zh">在美丽的村庄里，天天有了可爱的小鸡、小羊和小兔子，还认识了新的小伙伴。有了小动物和朋友们的陪伴，天天越来越自信，还学会了照顾生病的妈妈，帮助有困难的小伙伴，以及包粽子和做饭</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="少儿动漫" start="20251121053700 +0800" stop="20251121054900 +0800">
-  <title lang="zh">天天成长记Ⅲ(13)</title>
-  <desc lang="zh">在美丽的村庄里，天天有了可爱的小鸡、小羊和小兔子，还认识了新的小伙伴。有了小动物和朋友们的陪伴，天天越来越自信，还学会了照顾生病的妈妈，帮助有困难的小伙伴，以及包粽子和做饭</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="少儿动漫" start="20251121054900 +0800" stop="20251121060200 +0800">
-  <title lang="zh">怪怪奇小怪(1)</title>
-  <desc lang="zh">奇小怪真奇怪，不乐意写作业却喜欢上学，热衷捣蛋却常受表扬，还总能遇见奇怪的事。奇小怪是天性自由的小妖怪，也是搞笑逗乐的好伙伴。和怪怪奇小怪一起，走进与众不同的神奇学校，做快乐自在的小学生</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="少儿动漫" start="20251121060200 +0800" stop="20251121061500 +0800">
-  <title lang="zh">怪怪奇小怪(2)</title>
-  <desc lang="zh">奇小怪真奇怪，不乐意写作业却喜欢上学，热衷捣蛋却常受表扬，还总能遇见奇怪的事。奇小怪是天性自由的小妖怪，也是搞笑逗乐的好伙伴。和怪怪奇小怪一起，走进与众不同的神奇学校，做快乐自在的小学生</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="少儿动漫" start="20251121061500 +0800" stop="20251121074800 +0800">
-  <title lang="zh">海底总动员-多莉去哪儿</title>
-  <desc lang="zh"></desc>
   <source>bfgd</source>
  </programme>
  <programme channel="少儿动漫" start="20251121074800 +0800" stop="20251121080100 +0800">
@@ -26123,17 +26068,27 @@
   <desc lang="zh"></desc>
   <source>bfgd</source>
  </programme>
- <programme channel="广西卫视" start="20251121030500 +0800" stop="20251121040000 +0800">
+ <programme channel="广西卫视" start="20251121030500 +0800" stop="20251121031400 +0800">
   <title lang="zh">自办节目</title>
   <desc lang="zh"></desc>
   <source>bfgd</source>
  </programme>
- <programme channel="广西卫视" start="20251121040000 +0800" stop="20251121044000 +0800">
-  <title lang="zh">纪录中国故事</title>
-  <desc lang="zh">纪录片以平实的创作视角，轻松有趣、精巧灵动的内容，讲述发生在中国的重大事件和鲜为人知的故事。</desc>
+ <programme channel="广西卫视" start="20251121031400 +0800" stop="20251121034400 +0800">
+  <title lang="zh">寻声而动</title>
+  <desc lang="zh"></desc>
   <source>bfgd</source>
  </programme>
- <programme channel="广西卫视" start="20251121044000 +0800" stop="20251121062000 +0800">
+ <programme channel="广西卫视" start="20251121034400 +0800" stop="20251121040900 +0800">
+  <title lang="zh">时尚中国</title>
+  <desc lang="zh">是广西电视台面向全国电视观众尤其是女性观众的大型时尚类节目，以服装、模特为重点，以时尚高端采访为核心及特色，汇聚国内各大重要时尚活动、重要赛事活动和信息动态，涉猎世界著名时尚之都的先锋时尚，努力成为国内最具影响的时尚电视传播平台</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="广西卫视" start="20251121040900 +0800" stop="20251121042600 +0800">
+  <title lang="zh">家园</title>
+  <desc lang="zh">讲述了在社会迅速崩溃期间，一个富人的山区大院发生的故事。</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="广西卫视" start="20251121042600 +0800" stop="20251121062000 +0800">
   <title lang="zh">英雄虎胆</title>
   <desc lang="zh">解放初期，在广西南部的十万大山地区，有一股为数三千余人的顽匪主力部队。他们的首领是惯匪李汉光和他的老婆李月桂，这股狡猾的敌人经常化整为零凭借深山老林和我军作着垂死的挣扎。</desc>
   <source>bfgd</source>
@@ -26418,51 +26373,6 @@
   <desc lang="zh">一档关注老年人身体健康的节目。</desc>
   <source>bfgd</source>
  </programme>
- <programme channel="探索纪录" start="20251121014400 +0800" stop="20251121021300 +0800">
-  <title lang="zh">大美肃北(3)</title>
-  <desc lang="zh">这里是甘肃省地域最辽阔的边陲县，河西走廊将这里一分为二，众多野生动物在此迁徙、生存，这里是以蒙古族为聚居区的少数民族自治县。原始的自然景观、古老的民族文化在这里保存至今，肃北蒙古族人世代守护着这方稀世净土</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="探索纪录" start="20251121021300 +0800" stop="20251121024300 +0800">
-  <title lang="zh">大美肃北(4)</title>
-  <desc lang="zh">这里是甘肃省地域最辽阔的边陲县，河西走廊将这里一分为二，众多野生动物在此迁徙、生存，这里是以蒙古族为聚居区的少数民族自治县。原始的自然景观、古老的民族文化在这里保存至今，肃北蒙古族人世代守护着这方稀世净土</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="探索纪录" start="20251121024300 +0800" stop="20251121032100 +0800">
-  <title lang="zh">葛洪医道(1)</title>
-  <desc lang="zh">展示了葛洪的生平事迹、著作、道家思想及其在医学方面的贡献，传承和纪念葛洪“民生为本”的医学情怀。他是第一次明确提出给百姓的药要方便、便宜观点的人，葛洪和一个个深受病痛折磨的百姓一起共同体悟生命的无常，探索永恒的真理</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="探索纪录" start="20251121032100 +0800" stop="20251121040000 +0800">
-  <title lang="zh">葛洪医道(2)</title>
-  <desc lang="zh">展示了葛洪的生平事迹、著作、道家思想及其在医学方面的贡献，传承和纪念葛洪“民生为本”的医学情怀。他是第一次明确提出给百姓的药要方便、便宜观点的人，葛洪和一个个深受病痛折磨的百姓一起共同体悟生命的无常，探索永恒的真理</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="探索纪录" start="20251121040000 +0800" stop="20251121050000 +0800">
-  <title lang="zh">实境之旅:桂林</title>
-  <desc lang="zh">这里的山，平地拔起，千姿百态；漓江的水，蜿蜒曲折，明洁如镜；山多有洞，洞幽景奇；洞中怪石，鬼斧神工，琳琅满目，于是形成了“山青、水秀、洞奇、石美”的“桂林四绝”，而自古就有“桂林山水甲天下”的美称</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="探索纪录" start="20251121050000 +0800" stop="20251121054900 +0800">
-  <title lang="zh">寻味顺德(1)</title>
-  <desc lang="zh">从美食出发，讲述顺德人的故事，展示这方水土的过去和现在，介绍了顺德人在美食之上和美食之外的功夫，在无数顺德传奇背后蕴含着顺德人的工匠精神。通过这里的人们对期待一顿普通家常饭菜的态度，看到他们的生活观、价值观</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="探索纪录" start="20251121054900 +0800" stop="20251121063900 +0800">
-  <title lang="zh">寻味顺德(2)</title>
-  <desc lang="zh">从美食出发，讲述顺德人的故事，展示这方水土的过去和现在，介绍了顺德人在美食之上和美食之外的功夫，在无数顺德传奇背后蕴含着顺德人的工匠精神。通过这里的人们对期待一顿普通家常饭菜的态度，看到他们的生活观、价值观</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="探索纪录" start="20251121063900 +0800" stop="20251121072900 +0800">
-  <title lang="zh">寻味顺德(3)</title>
-  <desc lang="zh">从美食出发，讲述顺德人的故事，展示这方水土的过去和现在，介绍了顺德人在美食之上和美食之外的功夫，在无数顺德传奇背后蕴含着顺德人的工匠精神。通过这里的人们对期待一顿普通家常饭菜的态度，看到他们的生活观、价值观</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="探索纪录" start="20251121072900 +0800" stop="20251121075400 +0800">
-  <title lang="zh">帝都风云(1)</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
  <programme channel="探索纪录" start="20251121075400 +0800" stop="20251121081900 +0800">
   <title lang="zh">帝都风云(2)</title>
   <desc lang="zh"></desc>
@@ -26653,11 +26563,6 @@
   <desc lang="zh">苏州顾家子弟顾易中从宾夕法尼亚大学建筑系学成回国，抗战爆发后，在一次协助地下党女友的营救行动失败后，苏州地下组织联络点也全部暴露。顾易中因日伪故意栽赃陷害被误认为是党内叛徒，在无法自证清白的情况下，他主动潜入日伪，几经周折后终于成为我党在苏州特工站中的一名潜伏人员</desc>
   <source>bfgd</source>
  </programme>
- <programme channel="新疆卫视" start="20251121070900 +0800" stop="20251121075900 +0800">
-  <title lang="zh">孤舟(19)</title>
-  <desc lang="zh">苏州顾家子弟顾易中从宾夕法尼亚大学建筑系学成回国，抗战爆发后，在一次协助地下党女友的营救行动失败后，苏州地下组织联络点也全部暴露。顾易中因日伪故意栽赃陷害被误认为是党内叛徒，在无法自证清白的情况下，他主动潜入日伪，几经周折后终于成为我党在苏州特工站中的一名潜伏人员</desc>
-  <source>bfgd</source>
- </programme>
  <programme channel="新疆卫视" start="20251121075900 +0800" stop="20251121080000 +0800">
   <title lang="zh">中华人民共和国国歌</title>
   <desc lang="zh">《义勇军进行曲》是由田汉作词，聂耳作曲的歌曲，被称为中华民族解放的号角，自1935年在民族危亡的关头诞生以来，对激励中国人民的爱国主义精神起了巨大的作用，后成为中华人民共和国国歌</desc>
@@ -26783,9 +26688,14 @@
   <desc lang="zh">于一段历史中领悟，在一种人生中感动，一次跨越时空的相遇，新疆卫视全新纪录片栏目《真实纪录》精彩呈现！</desc>
   <source>bfgd</source>
  </programme>
- <programme channel="新疆卫视" start="20251121233000 +0800" stop="20251121235959 +0800">
+ <programme channel="新疆卫视" start="20251121233000 +0800" stop="20251121235000 +0800">
   <title lang="zh">新闻夜班车</title>
   <desc lang="zh">由新疆电视台精心打造的新闻夜班车正式出发，开始每天半个小时的精彩旅程，浏览车窗外的新闻风景，抵达不同的新闻现场，去接触各种那人寻味的新闻人物。</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="新疆卫视" start="20251121235000 +0800" stop="20251121235959 +0800">
+  <title lang="zh">国宝时刻</title>
+  <desc lang="zh">该工程用视听语言讲述文物故事，用超高清技术赋能文化传承，以每集拍摄一件文物、每个文物5分钟的精炼体量制作传播。</desc>
   <source>bfgd</source>
  </programme>
  <programme channel="朝阳新闻综合" start="20251121000000 +0800" stop="20251121001000 +0800">
@@ -27128,21 +27038,6 @@
   <desc lang="zh"></desc>
   <source>bfgd</source>
  </programme>
- <programme channel="欧美影院" start="20251121015600 +0800" stop="20251121034400 +0800">
-  <title lang="zh">极盗车神</title>
-  <desc lang="zh">Baby专门负责帮银行抢劫犯开车逃脱。Baby因童年的一场事故导致耳疾，要靠专属的音乐来掌控开车节奏。偶然的一次邂逅，他与餐厅女服务生坠入爱河，并想就此金盆洗手。头目老大道哥表示，只要Baby再完成最后一次任务，就可以给他自由</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="欧美影院" start="20251121034400 +0800" stop="20251121050000 +0800">
-  <title lang="zh">实境之旅:桂林</title>
-  <desc lang="zh">采用第一人称角度拍摄，呈现最真实细腻、最贴近自然的影像美学，并使用原地原声的收音方式，所有虫鸣鸟叫、流风细雨、海涛树摇，甚至连阳光洒落彷彿都能感受那温暖的热度。最后利用高画质影像压缩技术搭配5.1环绕立体声道，展现最原始自然如临现场的影音之美</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="欧美影院" start="20251121050000 +0800" stop="20251121070700 +0800">
-  <title lang="zh">异星战场</title>
-  <desc lang="zh">美国内战时期，饱受创伤的前军官约翰·卡特无意间穿越到了火星。由于引力不同，约翰成为了力大无穷、弹跳如飞的“超人”，也因此卷入当地几大族群的冲突，周旋于美丽的公主德佳·索丽斯、英勇的盟友塔斯·塔卡斯与狡猾的敌人萨博·赞恩之间</desc>
-  <source>bfgd</source>
- </programme>
  <programme channel="欧美影院" start="20251121070700 +0800" stop="20251121090000 +0800">
   <title lang="zh">小妇人</title>
   <desc lang="zh">讲述了美国南北战争时期的四位姐妹，在寻找新生活、真爱与理想时，由女孩逐渐成长为女人的过程。</desc>
@@ -27181,46 +27076,6 @@
  <programme channel="欧美影院" start="20251121223200 +0800" stop="20251121235959 +0800">
   <title lang="zh">奇幻森林</title>
   <desc lang="zh">茂密的原始森林中，生活着人类小孩毛克利。因某种原因他很小就成为了孤儿，黑豹巴希拉最先找到了他，并将毛克利托付给狼族的首领阿克拉。从此以后，毛克利以狼的身份在森林里成长起来，和他的兄弟姐妹们学习捕猎和求生技巧</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索动物" start="20251121015900 +0800" stop="20251121020000 +0800">
-  <title lang="zh">宣传片</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索动物" start="20251121020000 +0800" stop="20251121024400 +0800">
-  <title lang="zh">顶尖钓手(1)</title>
-  <desc lang="zh">杰若米韦德已在《河中巨怪》追捕水中传说怪物长达5季；在《混水摸鱼去》节目中，大伙捕捉鲶鱼的过程深受各地观众喜爱。但《顶尖钓手》带来全新的气象，10位世界钓鱼好手要一决高下，挑战一连串别具创意的钓鱼比赛，彻底考验他们的智慧、肌力和钓鱼技术</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索动物" start="20251121024400 +0800" stop="20251121032700 +0800">
-  <title lang="zh">河中巨怪(5)</title>
-  <desc lang="zh">杰里米韦德要去寻找两百多年前一位著名探险家所描述过的一种神秘的食人鱼。体长八英尺的怪兽其实只是道听途说，还是有血有肉的真实存在？它真的会攻击潜水员、抓走小孩、吞吃绵羊？新西兰的淡水流域一直是游泳的安全地带，但杰里米发现，偏远的河流与深邃的湖泊给这种古老且诡异的食人鱼提供了庇身之所，让它们隐藏了一百多年</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索动物" start="20251121032700 +0800" stop="20251121041100 +0800">
-  <title lang="zh">恐龙无敌(4)</title>
-  <desc lang="zh">古生物学家和科学家将借助先进的电脑绘画技术和生物力学研究，剥开恐龙的皮肤、肌肉和骨骼，发现恐龙如何在一个极其暴力的世界里生存。</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索动物" start="20251121041100 +0800" stop="20251121045700 +0800">
-  <title lang="zh">大脚怪传说Ⅱ(19)</title>
-  <desc lang="zh">一名徒步者兰迪蔡斯在银星山拍摄到一张奇怪的照片，他的家人告诉他照片上的东西看起来很像大脚怪。一群大脚怪调查组织成员联系到兰迪，准备带领他再一次去往银星山，寻找大脚怪存在的证据</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索动物" start="20251121045700 +0800" stop="20251121054400 +0800">
-  <title lang="zh">动物爱美餐(1)</title>
-  <desc lang="zh">在饲养员的指导下，我们将进入围栏和幕后，了解动物们挑剔的饮食习惯和各具特色的性格。</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索动物" start="20251121054400 +0800" stop="20251121063100 +0800">
-  <title lang="zh">德州兽医三人组Ⅱ(12)</title>
-  <desc lang="zh">兽医迪亚拉·布鲁博士、奥布里·罗斯博士和迈克尔·拉维涅博士最近搬到休斯顿，共同开办了一家提供全套服务的兽医医院和动物收容所。他们在经营一家新企业的同时，还要管理配偶、父母、姻亲、孩子、宠物和朋友的家庭生活，以及他们在诊所拯救动物生命的紧张时刻</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索动物" start="20251121063100 +0800" stop="20251121071800 +0800">
-  <title lang="zh">猫狗大战(4)</title>
-  <desc lang="zh">猫咪和狗狗的大战已经过去了数年之久，而来之不易的和平再一次受到威胁。它们的敌人是原猫咪间谍组织的顶级特工，为了报复狗狗组织和人类，它设计了一个恐怖而毒辣的计划意图控制全世界</desc>
   <source>bfgd</source>
  </programme>
  <programme channel="求索动物" start="20251121071800 +0800" stop="20251121080400 +0800">
@@ -27331,51 +27186,6 @@
  <programme channel="求索动物" start="20251121231800 +0800" stop="20251121235959 +0800">
   <title lang="zh">同食人动物生活(1)</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索生活" start="20251121013000 +0800" stop="20251121021300 +0800">
-  <title lang="zh">抢救餐厅总动员ⅩⅨ(5)</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索生活" start="20251121021300 +0800" stop="20251121025700 +0800">
-  <title lang="zh">时尚大买家(3)</title>
-  <desc lang="zh">这几乎是所有女性的终极梦想，走进高档百货，采购自己喜爱的服饰、配件、高跟鞋，不用考虑衣服吊牌标价，重点是不须为自己疯狂血拼后所留下的账单懊恼不已，而是通通带回家！</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索生活" start="20251121025700 +0800" stop="20251121034300 +0800">
-  <title lang="zh">伴娘也要美Ⅲ(3)</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索生活" start="20251121034300 +0800" stop="20251121042700 +0800">
-  <title lang="zh">树屋大师Ⅵ(7)</title>
-  <desc lang="zh">让观众跟随富有想像力的彼特尼尔森，一起爬入高踞在树顶上的壮丽空间，欣赏他为崇尚自然的人士所设计的私人别墅。彼特为许多客人冒险打造精彩的树屋，他设计过多卧房的梦幻树屋，还配有可使用的洗手间和电力设备，他也设计过简单的单房阁楼</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索生活" start="20251121042700 +0800" stop="20251121051200 +0800">
-  <title lang="zh">十口之家Ⅳ(20)</title>
-  <desc lang="zh">美籍韩国人Jon和他的美国妻子Kate一共生了8个孩子，主要讲述他们一起生活的故事，讲述孩子的教育管理以及一些很生活的事情。</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索生活" start="20251121051200 +0800" stop="20251121055400 +0800">
-  <title lang="zh">业余厨师大作战Ⅳ(7)</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索生活" start="20251121055400 +0800" stop="20251121060000 +0800">
-  <title lang="zh">宣传片</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索生活" start="20251121060000 +0800" stop="20251121064700 +0800">
-  <title lang="zh">宝宝震撼弹Ⅲ(2)</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索生活" start="20251121064700 +0800" stop="20251121073100 +0800">
-  <title lang="zh">小小强森一家亲(13)</title>
-  <desc lang="zh">前所未有地深入探访侏儒症患者的世界，摄像机将跟拍小矮人一家：一个不同寻常的家庭，捕捉他们在日常生活中的成功与奋斗，并从小矮人本身的视角出发去观察他们的生活。</desc>
   <source>bfgd</source>
  </programme>
  <programme channel="求索生活" start="20251121073100 +0800" stop="20251121081500 +0800">
@@ -27500,51 +27310,6 @@
  </programme>
  <programme channel="求索生活" start="20251121235300 +0800" stop="20251121235959 +0800">
   <title lang="zh">宣传片</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索科学" start="20251121012800 +0800" stop="20251121021200 +0800">
-  <title lang="zh">巨无霸大搬家Ⅴ(5)</title>
-  <desc lang="zh">搬家，简直就是一场噩梦！但你有没有想过给一整栋房子搬家？包括设备、家具、砖墙、烟囱、窗户、屋顶及所有的一切，穿过城市、翻过高山或越过冰湖！而这，正是专业搬家团队所要倾力完成的非凡壮举</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索科学" start="20251121021200 +0800" stop="20251121025600 +0800">
-  <title lang="zh">宇宙有道理(6)</title>
-  <desc lang="zh">共分为八个单元，从追溯浩瀚宇宙的起因与时间，到造访银河系之外的许多不同星系。当人抬头凝视夜空，一定免不了猜想，那些闪烁的小星星到底离我们多远？星星之外又是什麼？我们的星球到底又扮演什麼角色？伽利略首度将他的望远镜指向天际时，我们对宇宙的认识仅局限于我们视线所及的范围，并就此出现了许多思考模式或想法</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索科学" start="20251121025600 +0800" stop="20251121033800 +0800">
-  <title lang="zh">成为百万富翁发明家(4)</title>
-  <desc lang="zh">是寻访和挖掘被隐没的发明，并养成发明家为创业者的一档创客节目。</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索科学" start="20251121033800 +0800" stop="20251121042200 +0800">
-  <title lang="zh">同心协力救地球(6)</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索科学" start="20251121042200 +0800" stop="20251121050500 +0800">
-  <title lang="zh">英国皇家方舟号(2)</title>
-  <desc lang="zh">皇家方舟号飞船开始了为期五个月的任务，带领一支国际工作队横跨大西洋，进行为期十年的和平时期最大规模的海军部署。 </desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索科学" start="20251121050500 +0800" stop="20251121055100 +0800">
-  <title lang="zh">鬼怪汽车工程(6)</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索科学" start="20251121055100 +0800" stop="20251121060000 +0800">
-  <title lang="zh">宣传片</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索科学" start="20251121060000 +0800" stop="20251121064500 +0800">
-  <title lang="zh">怪诞心理学(4)</title>
-  <desc lang="zh">人类有这样那样的奇怪行为，我们的任务是展开调查，看看我们为什么那么奇怪。我们要秘密的拍摄人们在离谱情况下的反应，资讯一些脑科学专家，帮助我们确定是否有科学可以解释我们的疯狂行为</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="求索科学" start="20251121064500 +0800" stop="20251121073000 +0800">
-  <title lang="zh">顶级改装车厂Ⅵ(1)</title>
   <desc lang="zh"></desc>
   <source>bfgd</source>
  </programme>
@@ -27679,7 +27444,7 @@
   <source>sc96655</source>
  </programme>
  <programme channel="江苏卫视" start="20251121000100 +0800" stop="20251121000800 +0800">
-  <title lang="zh">林深见鹿</title>
+  <title lang="zh">开始</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
@@ -27849,7 +27614,7 @@
   <source>sc96655</source>
  </programme>
  <programme channel="江西卫视" start="20251121000100 +0800" stop="20251121001700 +0800">
-  <title lang="zh">薄冰(27)</title>
+  <title lang="zh">开始</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
@@ -28249,7 +28014,7 @@
   <source>sc96655</source>
  </programme>
  <programme channel="河南卫视" start="20251121000100 +0800" stop="20251121001300 +0800">
-  <title lang="zh">西北岁月(38)</title>
+  <title lang="zh">开始</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
@@ -28814,7 +28579,7 @@
   <source>sc96655</source>
  </programme>
  <programme channel="浙江卫视" start="20251121000100 +0800" stop="20251121000800 +0800">
-  <title lang="zh">山河枕(20)</title>
+  <title lang="zh">开始</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
@@ -29169,7 +28934,7 @@
   <source>sc96655</source>
  </programme>
  <programme channel="深圳卫视" start="20251121000100 +0800" stop="20251121001200 +0800">
-  <title lang="zh">科创最前沿</title>
+  <title lang="zh">开始</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
@@ -29253,38 +29018,63 @@
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251121070100 +0800" stop="20251121074200 +0800">
+ <programme channel="深圳卫视" start="20251121070100 +0800" stop="20251121074300 +0800">
   <title lang="zh">直播港澳台</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251121074200 +0800" stop="20251121075200 +0800">
+ <programme channel="深圳卫视" start="20251121074300 +0800" stop="20251121075300 +0800">
   <title lang="zh">专题</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251121075200 +0800" stop="20251121080000 +0800">
+ <programme channel="深圳卫视" start="20251121075300 +0800" stop="20251121080000 +0800">
   <title lang="zh">直播港澳台</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251121080000 +0800" stop="20251121090000 +0800">
+ <programme channel="深圳卫视" start="20251121080000 +0800" stop="20251121080600 +0800">
+  <title lang="zh">美好生活深圳创造:创想3D打印机</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251121080600 +0800" stop="20251121085300 +0800">
   <title lang="zh">白狼(24)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251121090000 +0800" stop="20251121095500 +0800">
+ <programme channel="深圳卫视" start="20251121085300 +0800" stop="20251121093300 +0800">
   <title lang="zh">白狼(25)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251121095500 +0800" stop="20251121105000 +0800">
+ <programme channel="深圳卫视" start="20251121093300 +0800" stop="20251121095000 +0800">
+  <title lang="zh">专题</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251121095000 +0800" stop="20251121103000 +0800">
   <title lang="zh">白狼(26)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251121105000 +0800" stop="20251121115000 +0800">
+ <programme channel="深圳卫视" start="20251121103000 +0800" stop="20251121104700 +0800">
+  <title lang="zh">专题</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251121104700 +0800" stop="20251121112800 +0800">
   <title lang="zh">白狼(27)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251121112800 +0800" stop="20251121114300 +0800">
+  <title lang="zh">专题</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251121114300 +0800" stop="20251121115000 +0800">
+  <title lang="zh">美好生活深圳创造:创想3D打印机</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
@@ -29298,43 +29088,73 @@
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251121124500 +0800" stop="20251121125500 +0800">
+ <programme channel="深圳卫视" start="20251121124500 +0800" stop="20251121130300 +0800">
   <title lang="zh">直财经</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251121125500 +0800" stop="20251121134500 +0800">
+ <programme channel="深圳卫视" start="20251121130300 +0800" stop="20251121134000 +0800">
   <title lang="zh">天狼星行动(34)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251121134500 +0800" stop="20251121144000 +0800">
+ <programme channel="深圳卫视" start="20251121134000 +0800" stop="20251121135600 +0800">
+  <title lang="zh">专题</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251121135600 +0800" stop="20251121143300 +0800">
   <title lang="zh">天狼星行动(35)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251121144000 +0800" stop="20251121153500 +0800">
+ <programme channel="深圳卫视" start="20251121143300 +0800" stop="20251121144900 +0800">
+  <title lang="zh">专题</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251121144900 +0800" stop="20251121152800 +0800">
   <title lang="zh">天狼星行动(36)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251121153500 +0800" stop="20251121163000 +0800">
+ <programme channel="深圳卫视" start="20251121152800 +0800" stop="20251121154300 +0800">
+  <title lang="zh">专题</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251121154300 +0800" stop="20251121162200 +0800">
   <title lang="zh">天狼星行动(37)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251121163000 +0800" stop="20251121172500 +0800">
+ <programme channel="深圳卫视" start="20251121162200 +0800" stop="20251121164100 +0800">
+  <title lang="zh">专题</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251121164100 +0800" stop="20251121172000 +0800">
   <title lang="zh">天狼星行动(38)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251121172500 +0800" stop="20251121182000 +0800">
+ <programme channel="深圳卫视" start="20251121172000 +0800" stop="20251121173900 +0800">
+  <title lang="zh">专题</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251121173900 +0800" stop="20251121181900 +0800">
   <title lang="zh">天狼星行动(39)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251121182000 +0800" stop="20251121183000 +0800">
+ <programme channel="深圳卫视" start="20251121181900 +0800" stop="20251121182400 +0800">
   <title lang="zh">国宝时刻(21)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251121182400 +0800" stop="20251121183000 +0800">
+  <title lang="zh">美好生活深圳创造:卧安AI网球机</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
@@ -29348,43 +29168,43 @@
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251121193000 +0800" stop="20251121212000 +0800">
+ <programme channel="深圳卫视" start="20251121193000 +0800" stop="20251121195600 +0800">
+  <title lang="zh">十五运会闭幕式特别节目</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251121195600 +0800" stop="20251121213000 +0800">
   <title lang="zh">第十五届全国运动会闭幕式</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251121212000 +0800" stop="20251121213500 +0800">
+ <programme channel="深圳卫视" start="20251121213000 +0800" stop="20251121214700 +0800">
   <title lang="zh">科创最前沿</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251121213500 +0800" stop="20251121221000 +0800">
-  <title lang="zh">粤菜大师</title>
+ <programme channel="深圳卫视" start="20251121214700 +0800" stop="20251121222500 +0800">
+  <title lang="zh">粤菜大师(5)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251121221000 +0800" stop="20251121222500 +0800">
+ <programme channel="深圳卫视" start="20251121222500 +0800" stop="20251121223500 +0800">
   <title lang="zh">直财经</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251121222500 +0800" stop="20251121231000 +0800">
+ <programme channel="深圳卫视" start="20251121223500 +0800" stop="20251121232000 +0800">
   <title lang="zh">直播港澳台</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251121231000 +0800" stop="20251121231500 +0800">
+ <programme channel="深圳卫视" start="20251121232000 +0800" stop="20251121233200 +0800">
   <title lang="zh">国宝时刻(21)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251121231500 +0800" stop="20251121234800 +0800">
+ <programme channel="深圳卫视" start="20251121233200 +0800" stop="20251121235959 +0800">
   <title lang="zh">探秘时刻</title>
-  <desc lang="zh"></desc>
-  <source>sc96655</source>
- </programme>
- <programme channel="深圳卫视" start="20251121234800 +0800" stop="20251121235959 +0800">
-  <title lang="zh">科创最前沿</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
@@ -29564,7 +29384,7 @@
   <source>sc96655</source>
  </programme>
  <programme channel="湖南卫视" start="20251121000100 +0800" stop="20251121020000 +0800">
-  <title lang="zh">初入职场·中医季(6)</title>
+  <title lang="zh">开始</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
@@ -29737,91 +29557,6 @@
   <title lang="zh">向往的生活-戏如人生(9)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
- </programme>
- <programme channel="炫动3D" start="20251121015800 +0800" stop="20251121022000 +0800">
-  <title lang="zh">女性调理瑜伽课(13)</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="炫动3D" start="20251121022000 +0800" stop="20251121025600 +0800">
-  <title lang="zh">女性调理瑜伽课(14)</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="炫动3D" start="20251121025600 +0800" stop="20251121031800 +0800">
-  <title lang="zh">女性调理瑜伽课(15)</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="炫动3D" start="20251121031800 +0800" stop="20251121033900 +0800">
-  <title lang="zh">女性调理瑜伽课(16)</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="炫动3D" start="20251121033900 +0800" stop="20251121050000 +0800">
-  <title lang="zh">实境之旅:桂林</title>
-  <desc lang="zh">采用第一人称角度拍摄，呈现最真实细腻、最贴近自然的影像美学，并使用原地原声的收音方式，所有虫鸣鸟叫、流风细雨、海涛树摇，甚至连阳光洒落彷彿都能感受那温暖的热度。最后利用高画质影像压缩技术搭配5.1环绕立体声道，展现最原始自然如临现场的影音之美</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="炫动3D" start="20251121050000 +0800" stop="20251121052000 +0800">
-  <title lang="zh">冥想瑜伽专注呼吸:基础冥想耐心</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="炫动3D" start="20251121052000 +0800" stop="20251121061100 +0800">
-  <title lang="zh">规律生活瑜伽修行</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="炫动3D" start="20251121061100 +0800" stop="20251121061800 +0800">
-  <title lang="zh">精讲精练八段锦(1):八段锦预备式</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="炫动3D" start="20251121061800 +0800" stop="20251121062600 +0800">
-  <title lang="zh">精讲精练八段锦(2):一式</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="炫动3D" start="20251121062600 +0800" stop="20251121063700 +0800">
-  <title lang="zh">精讲精练八段锦(3):二式</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="炫动3D" start="20251121063700 +0800" stop="20251121064400 +0800">
-  <title lang="zh">精讲精练八段锦(4):三式</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="炫动3D" start="20251121064400 +0800" stop="20251121065100 +0800">
-  <title lang="zh">精讲精练八段锦(5):四式</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="炫动3D" start="20251121065100 +0800" stop="20251121070400 +0800">
-  <title lang="zh">精讲精练八段锦(6):五式</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="炫动3D" start="20251121070400 +0800" stop="20251121071300 +0800">
-  <title lang="zh">精讲精练八段锦(7):六式</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="炫动3D" start="20251121071300 +0800" stop="20251121072100 +0800">
-  <title lang="zh">精讲精练八段锦(8):七式</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="炫动3D" start="20251121072100 +0800" stop="20251121072800 +0800">
-  <title lang="zh">精讲精练八段锦(9):八式</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="炫动3D" start="20251121072800 +0800" stop="20251121074000 +0800">
-  <title lang="zh">精讲精练八段锦:八段锦整套演练</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
  </programme>
  <programme channel="炫动3D" start="20251121074000 +0800" stop="20251121080200 +0800">
   <title lang="zh">瑜伽课(14):睡前瑜伽塑形训练</title>
@@ -30018,235 +29753,255 @@
   <desc lang="zh"></desc>
   <source>bfgd</source>
  </programme>
+ <programme channel="环球旅游" start="20251121000000 +0800" stop="20251121000100 +0800">
+  <title lang="zh">乡间物语、小导游大视界</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="环球旅游" start="20251121000100 +0800" stop="20251121003000 +0800">
+  <title lang="zh">爱上川菜、寰行迹</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="环球旅游" start="20251121003000 +0800" stop="20251121010000 +0800">
+  <title lang="zh">乡间物语、小导游大视界</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="环球旅游" start="20251121010000 +0800" stop="20251121013000 +0800">
+  <title lang="zh">爱上川菜、寰行迹</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
  <programme channel="环球旅游" start="20251121013000 +0800" stop="20251121020000 +0800">
   <title lang="zh">乡间物语、小导游大视界</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121020000 +0800" stop="20251121023000 +0800">
   <title lang="zh">爱上川菜、寰行迹</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121023000 +0800" stop="20251121030000 +0800">
   <title lang="zh">乡间物语、小导游大视界</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121030000 +0800" stop="20251121033000 +0800">
   <title lang="zh">爱上川菜、寰行迹</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121033000 +0800" stop="20251121040000 +0800">
   <title lang="zh">乡间物语、小导游大视界</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121040000 +0800" stop="20251121043000 +0800">
   <title lang="zh">爱上川菜、寰行迹</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121043000 +0800" stop="20251121050000 +0800">
   <title lang="zh">乡间物语、小导游大视界</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121050000 +0800" stop="20251121053000 +0800">
   <title lang="zh">爱上川菜、寰行迹</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121053000 +0800" stop="20251121060000 +0800">
   <title lang="zh">乡间物语、小导游大视界</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121060000 +0800" stop="20251121063000 +0800">
   <title lang="zh">爱上川菜、寰行迹</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121063000 +0800" stop="20251121070000 +0800">
   <title lang="zh">乡间物语、小导游大视界</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121070000 +0800" stop="20251121073000 +0800">
   <title lang="zh">爱上川菜、寰行迹</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121073000 +0800" stop="20251121080000 +0800">
   <title lang="zh">乡间物语、小导游大视界</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121080000 +0800" stop="20251121083000 +0800">
   <title lang="zh">爱上川菜、寰行迹</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121083000 +0800" stop="20251121090000 +0800">
   <title lang="zh">乡间物语、小导游大视界</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121090000 +0800" stop="20251121093000 +0800">
   <title lang="zh">爱上川菜、寰行迹</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121093000 +0800" stop="20251121100000 +0800">
   <title lang="zh">乡间物语、小导游大视界</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121100000 +0800" stop="20251121103000 +0800">
   <title lang="zh">爱上川菜、寰行迹</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121103000 +0800" stop="20251121110000 +0800">
   <title lang="zh">乡间物语、小导游大视界</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121110000 +0800" stop="20251121113000 +0800">
   <title lang="zh">爱上川菜、寰行迹</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121113000 +0800" stop="20251121120000 +0800">
   <title lang="zh">乡间物语、小导游大视界</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121120000 +0800" stop="20251121123000 +0800">
   <title lang="zh">爱上川菜、寰行迹</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121123000 +0800" stop="20251121130000 +0800">
   <title lang="zh">乡间物语、小导游大视界</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121130000 +0800" stop="20251121133000 +0800">
   <title lang="zh">爱上川菜、寰行迹</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121133000 +0800" stop="20251121140000 +0800">
   <title lang="zh">乡间物语、小导游大视界</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121140000 +0800" stop="20251121143000 +0800">
   <title lang="zh">爱上川菜、寰行迹</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121143000 +0800" stop="20251121150000 +0800">
   <title lang="zh">乡间物语、小导游大视界</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121150000 +0800" stop="20251121153000 +0800">
   <title lang="zh">爱上川菜、寰行迹</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121153000 +0800" stop="20251121160000 +0800">
   <title lang="zh">乡间物语、小导游大视界</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121160000 +0800" stop="20251121163000 +0800">
   <title lang="zh">爱上川菜、寰行迹</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121163000 +0800" stop="20251121170000 +0800">
   <title lang="zh">乡间物语、小导游大视界</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121170000 +0800" stop="20251121173000 +0800">
   <title lang="zh">爱上川菜、寰行迹</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121173000 +0800" stop="20251121180000 +0800">
   <title lang="zh">乡间物语、小导游大视界</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121180000 +0800" stop="20251121183000 +0800">
   <title lang="zh">美丽密码</title>
-  <desc lang="zh">一档美妆综艺类节目，向大家传授韩流明星的美妆秘籍以及韩国女性的化妆方法。节目不仅限于介绍最基础的护肤及化妆方法，还将通过邀请美妆达人、美妆博主、韩流明星来到现场，一起分析当下最流行的美妆及娱乐资讯</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121183000 +0800" stop="20251121190000 +0800">
   <title lang="zh">爱上川菜、寰行迹</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121190000 +0800" stop="20251121193000 +0800">
   <title lang="zh">乡间物语、小导游大视界</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121193000 +0800" stop="20251121195000 +0800">
   <title lang="zh">和田宣传片</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121195000 +0800" stop="20251121200000 +0800">
   <title lang="zh">科普好书(1)</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121200000 +0800" stop="20251121203000 +0800">
   <title lang="zh">美丽密码</title>
-  <desc lang="zh">一档美妆综艺类节目，向大家传授韩流明星的美妆秘籍以及韩国女性的化妆方法。节目不仅限于介绍最基础的护肤及化妆方法，还将通过邀请美妆达人、美妆博主、韩流明星来到现场，一起分析当下最流行的美妆及娱乐资讯</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121203000 +0800" stop="20251121210000 +0800">
   <title lang="zh">爱上川菜、寰行迹</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121210000 +0800" stop="20251121213000 +0800">
   <title lang="zh">美丽密码</title>
-  <desc lang="zh">一档美妆综艺类节目，向大家传授韩流明星的美妆秘籍以及韩国女性的化妆方法。节目不仅限于介绍最基础的护肤及化妆方法，还将通过邀请美妆达人、美妆博主、韩流明星来到现场，一起分析当下最流行的美妆及娱乐资讯</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121213000 +0800" stop="20251121220000 +0800">
   <title lang="zh">爱上川菜、寰行迹</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121220000 +0800" stop="20251121223000 +0800">
   <title lang="zh">乡间物语、小导游大视界</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121223000 +0800" stop="20251121230000 +0800">
   <title lang="zh">美丽密码</title>
-  <desc lang="zh">一档美妆综艺类节目，向大家传授韩流明星的美妆秘籍以及韩国女性的化妆方法。节目不仅限于介绍最基础的护肤及化妆方法，还将通过邀请美妆达人、美妆博主、韩流明星来到现场，一起分析当下最流行的美妆及娱乐资讯</desc>
-  <source>bfgd</source>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121230000 +0800" stop="20251121233000 +0800">
   <title lang="zh">爱上川菜、寰行迹</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="环球旅游" start="20251121233000 +0800" stop="20251121235959 +0800">
   <title lang="zh">乡间物语、小导游大视界</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
+  <source>sc96655</source>
  </programme>
  <programme channel="甘肃卫视" start="20251121000000 +0800" stop="20251121000100 +0800">
   <title lang="zh">大漠枪神(36)</title>
@@ -30254,32 +30009,32 @@
   <source>sc96655</source>
  </programme>
  <programme channel="甘肃卫视" start="20251121000100 +0800" stop="20251121002000 +0800">
-  <title lang="zh">大漠枪神(36)</title>
+  <title lang="zh">生活服务</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121002000 +0800" stop="20251121005300 +0800">
-  <title lang="zh">晚间剧场</title>
+ <programme channel="甘肃卫视" start="20251121002000 +0800" stop="20251121005200 +0800">
+  <title lang="zh">大漠枪神(37)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121005300 +0800" stop="20251121012600 +0800">
-  <title lang="zh">纪录30分</title>
+ <programme channel="甘肃卫视" start="20251121005200 +0800" stop="20251121012600 +0800">
+  <title lang="zh">纪录30分:向新出发(4)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
  <programme channel="甘肃卫视" start="20251121012600 +0800" stop="20251121015900 +0800">
-  <title lang="zh">晚间剧场</title>
+  <title lang="zh">绝密543(49)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
  <programme channel="甘肃卫视" start="20251121015900 +0800" stop="20251121023400 +0800">
-  <title lang="zh">晚间剧场</title>
+  <title lang="zh">绝密543(50)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
  <programme channel="甘肃卫视" start="20251121023400 +0800" stop="20251121030400 +0800">
-  <title lang="zh">晚间剧场</title>
+  <title lang="zh">父母爱情(1)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
@@ -30294,36 +30049,41 @@
   <source>sc96655</source>
  </programme>
  <programme channel="甘肃卫视" start="20251121035600 +0800" stop="20251121040000 +0800">
-  <title lang="zh">早间剧场</title>
+  <title lang="zh">父母爱情(2)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121040000 +0800" stop="20251121042600 +0800">
-  <title lang="zh">早间剧场</title>
+ <programme channel="甘肃卫视" start="20251121040000 +0800" stop="20251121042500 +0800">
+  <title lang="zh">父母爱情(2)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121042600 +0800" stop="20251121045400 +0800">
-  <title lang="zh">早间剧场</title>
+ <programme channel="甘肃卫视" start="20251121042500 +0800" stop="20251121045400 +0800">
+  <title lang="zh">父母爱情(3)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
  <programme channel="甘肃卫视" start="20251121045400 +0800" stop="20251121052700 +0800">
-  <title lang="zh">早间剧场</title>
+  <title lang="zh">父母爱情(4)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121052700 +0800" stop="20251121055800 +0800">
-  <title lang="zh">早间剧场</title>
+ <programme channel="甘肃卫视" start="20251121052700 +0800" stop="20251121055700 +0800">
+  <title lang="zh">大漠枪神(38)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121055800 +0800" stop="20251121064700 +0800">
-  <title lang="zh">早间剧场</title>
+ <programme channel="甘肃卫视" start="20251121055700 +0800" stop="20251121062700 +0800">
+  <title lang="zh">大漠枪神(39)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121064700 +0800" stop="20251121070100 +0800">
+ <programme channel="甘肃卫视" start="20251121062700 +0800" stop="20251121064800 +0800">
+  <title lang="zh">生活服务</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="甘肃卫视" start="20251121064800 +0800" stop="20251121070100 +0800">
   <title lang="zh">今日聚焦</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
@@ -30333,92 +30093,147 @@
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121072500 +0800" stop="20251121075000 +0800">
+ <programme channel="甘肃卫视" start="20251121072500 +0800" stop="20251121075100 +0800">
   <title lang="zh">法治伴你行</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121075000 +0800" stop="20251121080000 +0800">
-  <title lang="zh">雄关剧场</title>
+ <programme channel="甘肃卫视" start="20251121075100 +0800" stop="20251121080000 +0800">
+  <title lang="zh">猎鹰1949(41)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121080000 +0800" stop="20251121084800 +0800">
-  <title lang="zh">雄关剧场</title>
+ <programme channel="甘肃卫视" start="20251121080000 +0800" stop="20251121081800 +0800">
+  <title lang="zh">猎鹰1949(41)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121084800 +0800" stop="20251121094300 +0800">
-  <title lang="zh">雄关剧场</title>
+ <programme channel="甘肃卫视" start="20251121081800 +0800" stop="20251121084800 +0800">
+  <title lang="zh">生活服务</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121094300 +0800" stop="20251121103800 +0800">
-  <title lang="zh">雄关剧场</title>
+ <programme channel="甘肃卫视" start="20251121084800 +0800" stop="20251121091500 +0800">
+  <title lang="zh">猎鹰1949(42)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121103800 +0800" stop="20251121112600 +0800">
-  <title lang="zh">雄关剧场</title>
+ <programme channel="甘肃卫视" start="20251121091500 +0800" stop="20251121094300 +0800">
+  <title lang="zh">生活服务</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121112600 +0800" stop="20251121121300 +0800">
-  <title lang="zh">雄关剧场</title>
+ <programme channel="甘肃卫视" start="20251121094300 +0800" stop="20251121101000 +0800">
+  <title lang="zh">猎鹰1949(43)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121121300 +0800" stop="20251121122900 +0800">
+ <programme channel="甘肃卫视" start="20251121101000 +0800" stop="20251121103800 +0800">
+  <title lang="zh">生活服务</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="甘肃卫视" start="20251121103800 +0800" stop="20251121110500 +0800">
+  <title lang="zh">猎鹰1949(44)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="甘肃卫视" start="20251121110500 +0800" stop="20251121112600 +0800">
+  <title lang="zh">生活服务</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="甘肃卫视" start="20251121112600 +0800" stop="20251121115300 +0800">
+  <title lang="zh">猎鹰1949(45)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="甘肃卫视" start="20251121115300 +0800" stop="20251121121300 +0800">
+  <title lang="zh">生活服务</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="甘肃卫视" start="20251121121300 +0800" stop="20251121123000 +0800">
   <title lang="zh">同心筑梦</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121122900 +0800" stop="20251121125000 +0800">
+ <programme channel="甘肃卫视" start="20251121123000 +0800" stop="20251121125000 +0800">
   <title lang="zh">午间20分</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121125000 +0800" stop="20251121130400 +0800">
-  <title lang="zh">劳模纪录工程</title>
+ <programme channel="甘肃卫视" start="20251121125000 +0800" stop="20251121130000 +0800">
+  <title lang="zh">劳模纪录工程:郭彦兵</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121130400 +0800" stop="20251121131600 +0800">
-  <title lang="zh">纪录片</title>
+ <programme channel="甘肃卫视" start="20251121130000 +0800" stop="20251121130500 +0800">
+  <title lang="zh">午间天气预报</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121131600 +0800" stop="20251121140500 +0800">
-  <title lang="zh">花雨剧场</title>
+ <programme channel="甘肃卫视" start="20251121130500 +0800" stop="20251121131600 +0800">
+  <title lang="zh">国宝时刻:&amp;lt;桃源仙境图&amp;gt;轴</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121140500 +0800" stop="20251121145800 +0800">
-  <title lang="zh">花雨剧场</title>
+ <programme channel="甘肃卫视" start="20251121131600 +0800" stop="20251121134300 +0800">
+  <title lang="zh">飞虎神鹰(31)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121145800 +0800" stop="20251121154800 +0800">
-  <title lang="zh">花雨剧场</title>
+ <programme channel="甘肃卫视" start="20251121134300 +0800" stop="20251121140500 +0800">
+  <title lang="zh">生活服务</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121154800 +0800" stop="20251121163700 +0800">
-  <title lang="zh">花雨剧场</title>
+ <programme channel="甘肃卫视" start="20251121140500 +0800" stop="20251121143200 +0800">
+  <title lang="zh">飞虎神鹰(32)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121163700 +0800" stop="20251121173400 +0800">
-  <title lang="zh">花雨剧场</title>
+ <programme channel="甘肃卫视" start="20251121143200 +0800" stop="20251121145800 +0800">
+  <title lang="zh">生活服务</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121173400 +0800" stop="20251121180900 +0800">
-  <title lang="zh">动画片</title>
+ <programme channel="甘肃卫视" start="20251121145800 +0800" stop="20251121152500 +0800">
+  <title lang="zh">飞虎神鹰(33)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121180900 +0800" stop="20251121183000 +0800">
+ <programme channel="甘肃卫视" start="20251121152500 +0800" stop="20251121154800 +0800">
+  <title lang="zh">生活服务</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="甘肃卫视" start="20251121154800 +0800" stop="20251121161500 +0800">
+  <title lang="zh">飞虎神鹰(34)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="甘肃卫视" start="20251121161500 +0800" stop="20251121163700 +0800">
+  <title lang="zh">生活服务</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="甘肃卫视" start="20251121163700 +0800" stop="20251121170400 +0800">
+  <title lang="zh">飞虎神鹰(35)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="甘肃卫视" start="20251121170400 +0800" stop="20251121173500 +0800">
+  <title lang="zh">生活服务</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="甘肃卫视" start="20251121173500 +0800" stop="20251121181000 +0800">
+  <title lang="zh">孔小西和哈基姆(12)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="甘肃卫视" start="20251121181000 +0800" stop="20251121183000 +0800">
   <title lang="zh">今日聚焦</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
@@ -30429,7 +30244,7 @@
   <source>sc96655</source>
  </programme>
  <programme channel="甘肃卫视" start="20251121185500 +0800" stop="20251121190000 +0800">
-  <title lang="zh">天气预报</title>
+  <title lang="zh">晚间天气预报</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
@@ -30438,80 +30253,60 @@
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121193300 +0800" stop="20251121202400 +0800">
-  <title lang="zh">飞天剧场</title>
+ <programme channel="甘肃卫视" start="20251121193300 +0800" stop="20251121202500 +0800">
+  <title lang="zh">锻刀(7)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121202400 +0800" stop="20251121211000 +0800">
-  <title lang="zh">飞天剧场</title>
+ <programme channel="甘肃卫视" start="20251121202500 +0800" stop="20251121211100 +0800">
+  <title lang="zh">锻刀(8)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121211000 +0800" stop="20251121211900 +0800">
-  <title lang="zh">劳模纪录工程</title>
+ <programme channel="甘肃卫视" start="20251121211100 +0800" stop="20251121212000 +0800">
+  <title lang="zh">劳模纪录工程:杨永林</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121211900 +0800" stop="20251121213100 +0800">
-  <title lang="zh">纪录片</title>
+ <programme channel="甘肃卫视" start="20251121212000 +0800" stop="20251121213000 +0800">
+  <title lang="zh">国宝时刻:镶金兽首玛瑙杯</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121213100 +0800" stop="20251121215900 +0800">
+ <programme channel="甘肃卫视" start="20251121213000 +0800" stop="20251121220000 +0800">
   <title lang="zh">法治伴你行</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121215900 +0800" stop="20251121221900 +0800">
+ <programme channel="甘肃卫视" start="20251121220000 +0800" stop="20251121222000 +0800">
   <title lang="zh">新闻晚高峰</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121221900 +0800" stop="20251121222900 +0800">
+ <programme channel="甘肃卫视" start="20251121222000 +0800" stop="20251121223000 +0800">
   <title lang="zh">瞰新区</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121222900 +0800" stop="20251121225400 +0800">
+ <programme channel="甘肃卫视" start="20251121223000 +0800" stop="20251121225400 +0800">
   <title lang="zh">甘肃新闻</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121225400 +0800" stop="20251121225900 +0800">
-  <title lang="zh">纪录片</title>
+ <programme channel="甘肃卫视" start="20251121225400 +0800" stop="20251121230800 +0800">
+  <title lang="zh">一件红毛衣</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121225900 +0800" stop="20251121233000 +0800">
-  <title lang="zh">纪录30分</title>
+ <programme channel="甘肃卫视" start="20251121230800 +0800" stop="20251121233100 +0800">
+  <title lang="zh">纪录30分:长江遇见尼罗河(1)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="甘肃卫视" start="20251121233000 +0800" stop="20251121235959 +0800">
-  <title lang="zh">晚间剧场</title>
+ <programme channel="甘肃卫视" start="20251121233100 +0800" stop="20251121235959 +0800">
+  <title lang="zh">大漠枪神(40)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
- </programme>
- <programme channel="电子竞技" start="20251121003700 +0800" stop="20251121021400 +0800">
-  <title lang="zh">浙BA城市争霸赛A组:温州-余姚</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="电子竞技" start="20251121021400 +0800" stop="20251121040400 +0800">
-  <title lang="zh">浙BA城市争霸赛A组:舟山-杭州</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="电子竞技" start="20251121040400 +0800" stop="20251121050000 +0800">
-  <title lang="zh">实境之旅:桂林</title>
-  <desc lang="zh">这里的山，平地拔起，千姿百态；漓江的水，蜿蜒曲折，明洁如镜；山多有洞，洞幽景奇；洞中怪石，鬼斧神工，琳琅满目，于是形成了“山青、水秀、洞奇、石美”的“桂林四绝”，而自古就有“桂林山水甲天下”的美称</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="电子竞技" start="20251121050000 +0800" stop="20251121064900 +0800">
-  <title lang="zh">浙BA城市争霸赛A组:舟山-杭州</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
  </programme>
  <programme channel="电子竞技" start="20251121064900 +0800" stop="20251121083400 +0800">
   <title lang="zh">浙BA城市争霸赛B组:绍兴-嘉兴</title>
@@ -31468,41 +31263,6 @@
   <desc lang="zh">从14至19岁小学生的角度来看巴西，将纪录片与虚构方式相结合，探讨了暴力、种族主义和毒品交易等主题。</desc>
   <source>bfgd</source>
  </programme>
- <programme channel="精品剧场" start="20251121015100 +0800" stop="20251121023600 +0800">
-  <title lang="zh">热血勇士(21)</title>
-  <desc lang="zh">二十世纪三十年代初鲁南闹匪患，青年军官高临峰为报家仇，主动请缨去陵沂城剿匪。当地驻军、安青帮、日本黑龙会与土匪沆瀣一气，剿匪举步维艰。中共地下党员高华君和沈岚岚为他指点迷津，帮他识破了昔日恋人安藤加代的真面目，摆脱了姐夫白龙飞的亲情拉拢，以蒙面侠黑旋风的方式伸张正义，并收获了沈岚岚的爱情</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="精品剧场" start="20251121023600 +0800" stop="20251121032100 +0800">
-  <title lang="zh">热血勇士(22)</title>
-  <desc lang="zh">二十世纪三十年代初鲁南闹匪患，青年军官高临峰为报家仇，主动请缨去陵沂城剿匪。当地驻军、安青帮、日本黑龙会与土匪沆瀣一气，剿匪举步维艰。中共地下党员高华君和沈岚岚为他指点迷津，帮他识破了昔日恋人安藤加代的真面目，摆脱了姐夫白龙飞的亲情拉拢，以蒙面侠黑旋风的方式伸张正义，并收获了沈岚岚的爱情</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="精品剧场" start="20251121032100 +0800" stop="20251121050000 +0800">
-  <title lang="zh">实境之旅:桂林</title>
-  <desc lang="zh">这里的山，平地拔起，千姿百态；漓江的水，蜿蜒曲折，明洁如镜；山多有洞，洞幽景奇；洞中怪石，鬼斧神工，琳琅满目，于是形成了“山青、水秀、洞奇、石美”的“桂林四绝”，而自古就有“桂林山水甲天下”的美称</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="精品剧场" start="20251121050000 +0800" stop="20251121054300 +0800">
-  <title lang="zh">春光灿烂猪九妹(15)</title>
-  <desc lang="zh">朱九妹、钱多文、孙志国、李增原为上界啸天战士，因为种种原因被贬入凡间投胎做人。二郎神发现魔界入侵中土，为了抵御侵袭，他找到了四位啸天战士，朱九妹，钱多文，李增，孙志国四人从平凡甚至有着这样那样的缺点的普通人，最终成长为团结一致、目标明确、英勇善战的巨灵战士，这四位战士毅然决然接受使命寻找对付魔界的办法</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="精品剧场" start="20251121054300 +0800" stop="20251121062700 +0800">
-  <title lang="zh">春光灿烂猪九妹(16)</title>
-  <desc lang="zh">朱九妹、钱多文、孙志国、李增原为上界啸天战士，因为种种原因被贬入凡间投胎做人。二郎神发现魔界入侵中土，为了抵御侵袭，他找到了四位啸天战士，朱九妹，钱多文，李增，孙志国四人从平凡甚至有着这样那样的缺点的普通人，最终成长为团结一致、目标明确、英勇善战的巨灵战士，这四位战士毅然决然接受使命寻找对付魔界的办法</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="精品剧场" start="20251121062700 +0800" stop="20251121071100 +0800">
-  <title lang="zh">春光灿烂猪九妹(17)</title>
-  <desc lang="zh">朱九妹、钱多文、孙志国、李增原为上界啸天战士，因为种种原因被贬入凡间投胎做人。二郎神发现魔界入侵中土，为了抵御侵袭，他找到了四位啸天战士，朱九妹，钱多文，李增，孙志国四人从平凡甚至有着这样那样的缺点的普通人，最终成长为团结一致、目标明确、英勇善战的巨灵战士，这四位战士毅然决然接受使命寻找对付魔界的办法</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="精品剧场" start="20251121071100 +0800" stop="20251121075500 +0800">
-  <title lang="zh">春光灿烂猪九妹(18)</title>
-  <desc lang="zh">朱九妹、钱多文、孙志国、李增原为上界啸天战士，因为种种原因被贬入凡间投胎做人。二郎神发现魔界入侵中土，为了抵御侵袭，他找到了四位啸天战士，朱九妹，钱多文，李增，孙志国四人从平凡甚至有着这样那样的缺点的普通人，最终成长为团结一致、目标明确、英勇善战的巨灵战士，这四位战士毅然决然接受使命寻找对付魔界的办法</desc>
-  <source>bfgd</source>
- </programme>
  <programme channel="精品剧场" start="20251121075500 +0800" stop="20251121084000 +0800">
   <title lang="zh">川流(21)</title>
   <desc lang="zh">讲述了二十世纪四十年代，一群热血青年根植于四川古城文化厚土，在国难当头、民族危亡之际，义无反顾投身疆场，勇毅机智地开展对敌斗争，历经跌宕曲折，为和平解放贡献出青春生命的故事</desc>
@@ -31929,7 +31689,7 @@
   <source>sc96655</source>
  </programme>
  <programme channel="西藏卫视" start="20251121000100 +0800" stop="20251121000400 +0800">
-  <title lang="zh">创收栏目</title>
+  <title lang="zh">开始</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
@@ -32219,7 +31979,7 @@
   <source>sc96655</source>
  </programme>
  <programme channel="贵州卫视" start="20251121000100 +0800" stop="20251121000200 +0800">
-  <title lang="zh">国宝时刻(20)</title>
+  <title lang="zh">开始</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
@@ -35798,31 +35558,6 @@
   <desc lang="zh"></desc>
   <source>bfgd</source>
  </programme>
- <programme channel="风尚音乐" start="20251121002400 +0800" stop="20251121021800 +0800">
-  <title lang="zh">河北梆子:金铃记</title>
-  <desc lang="zh">河北梆子是中国梆子声腔的一个重要支脉，形成于清道光年间，清光绪初年进入兴盛时期。河北梆子在剧种方面不仅擅长于表现历史题材，而且能很好地反映现实生活；在舞台艺术上，无论是音乐、表演以及舞台美术方面，都有极大的变化和明显的提高，从而使河北梆子增添了明朗、刚劲、华丽、委婉的特点，流行于河北、天津、北京以及山东、河南、山西部分地区，成为中国北方影响较大的传统戏曲剧种之一</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="风尚音乐" start="20251121021800 +0800" stop="20251121042800 +0800">
-  <title lang="zh">花灯戏:红梅赞</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="风尚音乐" start="20251121042800 +0800" stop="20251121050000 +0800">
-  <title lang="zh">实境之旅:桂林</title>
-  <desc lang="zh">这里的山，平地拔起，千姿百态；漓江的水，蜿蜒曲折，明洁如镜；山多有洞，洞幽景奇；洞中怪石，鬼斧神工，琳琅满目，于是形成了“山青、水秀、洞奇、石美”的“桂林四绝”，而自古就有“桂林山水甲天下”的美称</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="风尚音乐" start="20251121050000 +0800" stop="20251121053600 +0800">
-  <title lang="zh">天赐的声音Ⅵ(9)</title>
-  <desc lang="zh">由乐坛元老带领中生代和新生代音乐人以“合作改编＋合作演唱”的方式切磋技艺，演绎经典歌曲，打磨年度“天赐金曲”。</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="风尚音乐" start="20251121053600 +0800" stop="20251121061900 +0800">
-  <title lang="zh">天赐的声音Ⅵ(10)</title>
-  <desc lang="zh">由乐坛元老带领中生代和新生代音乐人以“合作改编＋合作演唱”的方式切磋技艺，演绎经典歌曲，打磨年度“天赐金曲”。</desc>
-  <source>bfgd</source>
- </programme>
  <programme channel="风尚音乐" start="20251121061900 +0800" stop="20251121081600 +0800">
   <title lang="zh">黄梅戏:寂寞汉卿</title>
   <desc lang="zh"></desc>
@@ -35926,56 +35661,6 @@
  <programme channel="风尚音乐" start="20251121235900 +0800" stop="20251121235959 +0800">
   <title lang="zh">竹笛课(1):初识竹笛</title>
   <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="高清娱乐" start="20251121015700 +0800" stop="20251121024700 +0800">
-  <title lang="zh">影响世界的中国植物:本草</title>
-  <desc lang="zh">由植物天堂、茶树、桑树、水稻、大豆、本草、竹子、水果、园林、花卉十集内容组成，用震撼而温暖的镜头语言，介绍了21科28种植物的生命旅程，并探索它们是如何影响世界的。</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="高清娱乐" start="20251121024700 +0800" stop="20251121031400 +0800">
-  <title lang="zh">觅江南:又见南朝</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="高清娱乐" start="20251121031400 +0800" stop="20251121034400 +0800">
-  <title lang="zh">觅江南:云山箬水-桑岭村张兰村</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="高清娱乐" start="20251121034400 +0800" stop="20251121050000 +0800">
-  <title lang="zh">实境之旅:桂林</title>
-  <desc lang="zh">这里的山，平地拔起，千姿百态；漓江的水，蜿蜒曲折，明洁如镜；山多有洞，洞幽景奇；洞中怪石，鬼斧神工，琳琅满目，于是形成了“山青、水秀、洞奇、石美”的“桂林四绝”，而自古就有“桂林山水甲天下”的美称</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="高清娱乐" start="20251121050000 +0800" stop="20251121053000 +0800">
-  <title lang="zh">觅江南:古城旧影-盐官古城</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="高清娱乐" start="20251121053000 +0800" stop="20251121055900 +0800">
-  <title lang="zh">觅江南:古城旧影-临海古城</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="高清娱乐" start="20251121055900 +0800" stop="20251121061300 +0800">
-  <title lang="zh">拿手菜:高丽寨朝鲜菜</title>
-  <desc lang="zh">每期邀请一位从业多年的厨师，请他们讲授做菜步骤，让大家一起来学做几道拿手好菜，讲述拿手菜背后的故事。</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="高清娱乐" start="20251121061300 +0800" stop="20251121062900 +0800">
-  <title lang="zh">拿手菜:关东八大碗</title>
-  <desc lang="zh">每期邀请一位从业多年的厨师，请他们讲授做菜步骤，让大家一起来学做几道拿手好菜，讲述拿手菜背后的故事。</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="高清娱乐" start="20251121062900 +0800" stop="20251121064300 +0800">
-  <title lang="zh">拿手菜:双椒鱼头王</title>
-  <desc lang="zh">每期邀请一位从业多年的厨师，请他们讲授做菜步骤，让大家一起来学做几道拿手好菜，讲述拿手菜背后的故事。</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="高清娱乐" start="20251121064300 +0800" stop="20251121070100 +0800">
-  <title lang="zh">拿手菜:广式砂锅粥</title>
-  <desc lang="zh">每期邀请一位从业多年的厨师，请他们讲授做菜步骤，让大家一起来学做几道拿手好菜，讲述拿手菜背后的故事。</desc>
   <source>bfgd</source>
  </programme>
  <programme channel="高清娱乐" start="20251121070100 +0800" stop="20251121081800 +0800">
@@ -40783,8 +40468,53 @@
   <desc lang="zh">1918年的上海，为给码头工人筹备扫盲班，女学生钟婉和休学务工的同学谢一白意外合作。两人在为工人权益并肩作战中，逐渐拥有共同的信仰与向往。五四运动前夕，众人帮助学生代表何葆仁顺利前往北京，助力五四运动开展</desc>
   <source>bfgd</source>
  </programme>
- <programme channel="发现之旅" start="20251122214000 +0800" stop="20251122235959 +0800">
+ <programme channel="发现之旅" start="20251122214000 +0800" stop="20251122214500 +0800">
   <title lang="zh">晓屯聊摄影</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="发现之旅" start="20251122214500 +0800" stop="20251122220000 +0800">
+  <title lang="zh">国家生态</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="发现之旅" start="20251122220000 +0800" stop="20251122221500 +0800">
+  <title lang="zh">纪录东方</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="发现之旅" start="20251122221500 +0800" stop="20251122225700 +0800">
+  <title lang="zh">你要倾听的大地</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="发现之旅" start="20251122225700 +0800" stop="20251122230000 +0800">
+  <title lang="zh">频道宣传片</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="发现之旅" start="20251122230000 +0800" stop="20251122233000 +0800">
+  <title lang="zh">美丽中华行</title>
+  <desc lang="zh">以“生态文明、可持续发展”为主题，通过外景主持人和美丽体验员的深度体验，展示生态美景，品味健康美食，体验休闲农业，推介最有特色的生态旅游资源，提供全面丰富的旅游资讯，全景式描绘中国生态旅游画卷，让观众足不出户领略地域中华的自然之美、和谐之美、人文之美，倡导新型生态旅游模式</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="发现之旅" start="20251122233000 +0800" stop="20251122234500 +0800">
+  <title lang="zh">聚焦先锋榜</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="发现之旅" start="20251122234500 +0800" stop="20251122235000 +0800">
+  <title lang="zh">重建中国茶道(25)</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="发现之旅" start="20251122235000 +0800" stop="20251122235500 +0800">
+  <title lang="zh">重建中国茶道(26)</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="发现之旅" start="20251122235500 +0800" stop="20251122235959 +0800">
+  <title lang="zh">重建中国茶道(27)</title>
   <desc lang="zh"></desc>
   <source>bfgd</source>
  </programme>
@@ -41928,9 +41658,59 @@
   <desc lang="zh">奇小怪真奇怪，不乐意写作业却喜欢上学，热衷捣蛋却常受表扬，还总能遇见奇怪的事。奇小怪是天性自由的小妖怪，也是搞笑逗乐的好伙伴。和怪怪奇小怪一起，走进与众不同的神奇学校，做快乐自在的小学生</desc>
   <source>bfgd</source>
  </programme>
- <programme channel="少儿动漫" start="20251122192200 +0800" stop="20251122235959 +0800">
+ <programme channel="少儿动漫" start="20251122192200 +0800" stop="20251122193500 +0800">
   <title lang="zh">怪怪奇小怪(8)</title>
   <desc lang="zh">奇小怪真奇怪，不乐意写作业却喜欢上学，热衷捣蛋却常受表扬，还总能遇见奇怪的事。奇小怪是天性自由的小妖怪，也是搞笑逗乐的好伙伴。和怪怪奇小怪一起，走进与众不同的神奇学校，做快乐自在的小学生</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="少儿动漫" start="20251122193500 +0800" stop="20251122211800 +0800">
+  <title lang="zh">海洋奇缘</title>
+  <desc lang="zh">讲述了作为航海世家后代的波利尼西亚公主莫阿娜，为了找寻传说中的神秘之岛，独自踏上了航海之旅的故事。</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="少儿动漫" start="20251122211800 +0800" stop="20251122213100 +0800">
+  <title lang="zh">超级飞侠-无限合体(13)</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="少儿动漫" start="20251122213100 +0800" stop="20251122214400 +0800">
+  <title lang="zh">超级飞侠-无限合体(14)</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="少儿动漫" start="20251122214400 +0800" stop="20251122215700 +0800">
+  <title lang="zh">超级飞侠-无限合体(15)</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="少儿动漫" start="20251122215700 +0800" stop="20251122221000 +0800">
+  <title lang="zh">超级飞侠-无限合体(16)</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="少儿动漫" start="20251122221000 +0800" stop="20251122222300 +0800">
+  <title lang="zh">超级飞侠-无限合体(17)</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="少儿动漫" start="20251122222300 +0800" stop="20251122223600 +0800">
+  <title lang="zh">超级飞侠-无限合体(18)</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="少儿动漫" start="20251122223600 +0800" stop="20251122225300 +0800">
+  <title lang="zh">虹猫蓝兔海底历险记(21)</title>
+  <desc lang="zh">小小发明家虹猫与海洋知识专家蓝兔误入深海，来到了人鱼王国，意外地卷入海底世界的巨大危机。原来，人类的海上石油、油井发生泄漏，整个海洋生物面临灭顶之灾。虹猫蓝兔决定和人鱼王子一起，寻找失落的海洋之心碎片，开启净化之光，拯救被污染的海洋</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="少儿动漫" start="20251122225300 +0800" stop="20251122231000 +0800">
+  <title lang="zh">虹猫蓝兔海底历险记(22)</title>
+  <desc lang="zh">小小发明家虹猫与海洋知识专家蓝兔误入深海，来到了人鱼王国，意外地卷入海底世界的巨大危机。原来，人类的海上石油、油井发生泄漏，整个海洋生物面临灭顶之灾。虹猫蓝兔决定和人鱼王子一起，寻找失落的海洋之心碎片，开启净化之光，拯救被污染的海洋</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="少儿动漫" start="20251122231000 +0800" stop="20251122235959 +0800">
+  <title lang="zh">虹猫蓝兔海底历险记(23)</title>
+  <desc lang="zh">小小发明家虹猫与海洋知识专家蓝兔误入深海，来到了人鱼王国，意外地卷入海底世界的巨大危机。原来，人类的海上石油、油井发生泄漏，整个海洋生物面临灭顶之灾。虹猫蓝兔决定和人鱼王子一起，寻找失落的海洋之心碎片，开启净化之光，拯救被污染的海洋</desc>
   <source>bfgd</source>
  </programme>
  <programme channel="山东卫视" start="20251122000000 +0800" stop="20251122000100 +0800">
@@ -42663,19 +42443,9 @@
   <desc lang="zh">该工程用视听语言讲述文物故事，用超高清技术赋能文化传承，以每集拍摄一件文物、每个文物5分钟的精炼体量制作传播。</desc>
   <source>bfgd</source>
  </programme>
- <programme channel="广西卫视" start="20251122214500 +0800" stop="20251122220500 +0800">
+ <programme channel="广西卫视" start="20251122214500 +0800" stop="20251122235959 +0800">
   <title lang="zh">广西故事</title>
   <desc lang="zh">立足广西特色，用广西声音来表达、广西元素来创作，把讲好广西故事与宣传社会主义核心价值观结合起，深刻表现美丽广西的文化内涵与人文情怀。</desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="广西卫视" start="20251122220500 +0800" stop="20251122222500 +0800">
-  <title lang="zh">百寿探秘精编版</title>
-  <desc lang="zh"></desc>
-  <source>bfgd</source>
- </programme>
- <programme channel="广西卫视" start="20251122222500 +0800" stop="20251122235959 +0800">
-  <title lang="zh">天衣无缝</title>
-  <desc lang="zh">讲述了一对生活在北京胡同里的林家父子之间的故事，他们之间因手艺的传承发生了很多时而欢喜时而感人的故事，历经重重困难最后父子连心将中国旗袍推向世界舞台。</desc>
   <source>bfgd</source>
  </programme>
  <programme channel="抚顺新闻综合" start="20251122000000 +0800" stop="20251122000400 +0800">
@@ -45184,86 +44954,101 @@
   <source>bfgd</source>
  </programme>
  <programme channel="深圳卫视" start="20251122000000 +0800" stop="20251122000100 +0800">
-  <title lang="zh">科创最前沿</title>
-  <desc lang="zh"></desc>
-  <source>sc96655</source>
- </programme>
- <programme channel="深圳卫视" start="20251122000100 +0800" stop="20251122000600 +0800">
-  <title lang="zh">科创最前沿</title>
-  <desc lang="zh"></desc>
-  <source>sc96655</source>
- </programme>
- <programme channel="深圳卫视" start="20251122000600 +0800" stop="20251122001900 +0800">
-  <title lang="zh">直财经</title>
-  <desc lang="zh"></desc>
-  <source>sc96655</source>
- </programme>
- <programme channel="深圳卫视" start="20251122001900 +0800" stop="20251122005700 +0800">
-  <title lang="zh">粤菜大师</title>
-  <desc lang="zh"></desc>
-  <source>sc96655</source>
- </programme>
- <programme channel="深圳卫视" start="20251122005700 +0800" stop="20251122012700 +0800">
   <title lang="zh">探秘时刻</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251122012700 +0800" stop="20251122020200 +0800">
-  <title lang="zh">粤菜大师</title>
+ <programme channel="深圳卫视" start="20251122000100 +0800" stop="20251122000400 +0800">
+  <title lang="zh">探秘时刻</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251122020200 +0800" stop="20251122024500 +0800">
-  <title lang="zh">直播港澳台</title>
-  <desc lang="zh"></desc>
-  <source>sc96655</source>
- </programme>
- <programme channel="深圳卫视" start="20251122024500 +0800" stop="20251122033200 +0800">
-  <title lang="zh">野山鹰</title>
-  <desc lang="zh"></desc>
-  <source>sc96655</source>
- </programme>
- <programme channel="深圳卫视" start="20251122033200 +0800" stop="20251122040000 +0800">
-  <title lang="zh">野山鹰</title>
-  <desc lang="zh"></desc>
-  <source>sc96655</source>
- </programme>
- <programme channel="深圳卫视" start="20251122040000 +0800" stop="20251122041900 +0800">
-  <title lang="zh">野山鹰</title>
-  <desc lang="zh"></desc>
-  <source>sc96655</source>
- </programme>
- <programme channel="深圳卫视" start="20251122041900 +0800" stop="20251122050600 +0800">
-  <title lang="zh">野山鹰</title>
-  <desc lang="zh"></desc>
-  <source>sc96655</source>
- </programme>
- <programme channel="深圳卫视" start="20251122050600 +0800" stop="20251122052200 +0800">
+ <programme channel="深圳卫视" start="20251122000400 +0800" stop="20251122001900 +0800">
   <title lang="zh">科创最前沿</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251122052200 +0800" stop="20251122053500 +0800">
+ <programme channel="深圳卫视" start="20251122001900 +0800" stop="20251122003300 +0800">
   <title lang="zh">直财经</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251122053500 +0800" stop="20251122062000 +0800">
+ <programme channel="深圳卫视" start="20251122003300 +0800" stop="20251122010700 +0800">
+  <title lang="zh">粤菜大师(5)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251122010700 +0800" stop="20251122013700 +0800">
+  <title lang="zh">探秘时刻</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251122013700 +0800" stop="20251122021200 +0800">
+  <title lang="zh">粤菜大师(5)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251122021200 +0800" stop="20251122025600 +0800">
   <title lang="zh">直播港澳台</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251122062000 +0800" stop="20251122063000 +0800">
+ <programme channel="深圳卫视" start="20251122025600 +0800" stop="20251122033600 +0800">
+  <title lang="zh">野山鹰(3)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251122033600 +0800" stop="20251122040000 +0800">
+  <title lang="zh">野山鹰(4)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251122040000 +0800" stop="20251122041600 +0800">
+  <title lang="zh">野山鹰(4)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251122041600 +0800" stop="20251122050100 +0800">
+  <title lang="zh">野山鹰(5)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251122050100 +0800" stop="20251122051600 +0800">
+  <title lang="zh">科创最前沿</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251122051600 +0800" stop="20251122055600 +0800">
+  <title lang="zh">直播港澳台</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251122055600 +0800" stop="20251122061000 +0800">
+  <title lang="zh">专题</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251122061000 +0800" stop="20251122062400 +0800">
   <title lang="zh">先行</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251122063000 +0800" stop="20251122070100 +0800">
-  <title lang="zh">温暖在身边</title>
+ <programme channel="深圳卫视" start="20251122062400 +0800" stop="20251122070100 +0800">
+  <title lang="zh">温暖在身边:广州彩瓷</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
- <programme channel="深圳卫视" start="20251122070100 +0800" stop="20251122080000 +0800">
+ <programme channel="深圳卫视" start="20251122070100 +0800" stop="20251122074200 +0800">
+  <title lang="zh">直播港澳台</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251122074200 +0800" stop="20251122075200 +0800">
+  <title lang="zh">专题</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="深圳卫视" start="20251122075200 +0800" stop="20251122080000 +0800">
   <title lang="zh">直播港澳台</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
@@ -45958,8 +45743,93 @@
   <desc lang="zh"></desc>
   <source>bfgd</source>
  </programme>
- <programme channel="炫动3D" start="20251122184400 +0800" stop="20251122235959 +0800">
+ <programme channel="炫动3D" start="20251122184400 +0800" stop="20251122185600 +0800">
   <title lang="zh">健身气功课(3):左右开弓似射雕</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="炫动3D" start="20251122185600 +0800" stop="20251122190700 +0800">
+  <title lang="zh">健身气功课(4):调理脾胃须单举</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="炫动3D" start="20251122190700 +0800" stop="20251122191700 +0800">
+  <title lang="zh">健身气功课(5):五劳七伤往后瞧</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="炫动3D" start="20251122191700 +0800" stop="20251122192800 +0800">
+  <title lang="zh">健身气功课(6):摇头摆尾去心火</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="炫动3D" start="20251122192800 +0800" stop="20251122193900 +0800">
+  <title lang="zh">健身气功课(7):两手攀足固肾腰</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="炫动3D" start="20251122193900 +0800" stop="20251122195000 +0800">
+  <title lang="zh">健身气功课(8):攒拳怒目增气力</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="炫动3D" start="20251122195000 +0800" stop="20251122200000 +0800">
+  <title lang="zh">健身气功课(9):背后七颠百病消</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="炫动3D" start="20251122200000 +0800" stop="20251122201500 +0800">
+  <title lang="zh">健身气功课(10):八段锦收式</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="炫动3D" start="20251122201500 +0800" stop="20251122202800 +0800">
+  <title lang="zh">调息(4):瑜伽呼吸法</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="炫动3D" start="20251122202800 +0800" stop="20251122204000 +0800">
+  <title lang="zh">调息:中国最古老的呼吸术与应用</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="炫动3D" start="20251122204000 +0800" stop="20251122205400 +0800">
+  <title lang="zh">调息(6):从体式找到适合呼吸法</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="炫动3D" start="20251122205400 +0800" stop="20251122211400 +0800">
+  <title lang="zh">冥想瑜伽专注呼吸</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="炫动3D" start="20251122211400 +0800" stop="20251122213500 +0800">
+  <title lang="zh">冥想瑜伽专注呼吸:基础冥想耐心</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="炫动3D" start="20251122213500 +0800" stop="20251122215200 +0800">
+  <title lang="zh">核心流瑜伽畅通身心</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="炫动3D" start="20251122215200 +0800" stop="20251122221300 +0800">
+  <title lang="zh">核心流瑜伽畅通身心</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="炫动3D" start="20251122221300 +0800" stop="20251122230600 +0800">
+  <title lang="zh">核心流瑜伽畅通身心</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="炫动3D" start="20251122230600 +0800" stop="20251122234800 +0800">
+  <title lang="zh">规律生活瑜伽修行:温柔伸展</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="炫动3D" start="20251122234800 +0800" stop="20251122235959 +0800">
+  <title lang="zh">修复瑜伽自我疗愈:压力释放</title>
   <desc lang="zh"></desc>
   <source>bfgd</source>
  </programme>
@@ -46214,12 +46084,12 @@
   <source>bfgd</source>
  </programme>
  <programme channel="甘肃卫视" start="20251122000000 +0800" stop="20251122000100 +0800">
-  <title lang="zh">晚间剧场</title>
+  <title lang="zh">大漠枪神(40)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
  <programme channel="甘肃卫视" start="20251122000100 +0800" stop="20251122002000 +0800">
-  <title lang="zh">晚间剧场</title>
+  <title lang="zh">大漠枪神(40)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
@@ -53993,6 +53863,311 @@
   <desc lang="zh"></desc>
   <source>sc96655</source>
  </programme>
+ <programme channel="发现之旅" start="20251123000000 +0800" stop="20251123000100 +0800">
+  <title lang="zh">重建中国茶道(27)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123000100 +0800" stop="20251123001500 +0800">
+  <title lang="zh">国家生态</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123001500 +0800" stop="20251123003000 +0800">
+  <title lang="zh">华夏传奇</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123003000 +0800" stop="20251123010000 +0800">
+  <title lang="zh">空姐新发现</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123010000 +0800" stop="20251123040000 +0800">
+  <title lang="zh">测试图</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123040000 +0800" stop="20251123042000 +0800">
+  <title lang="zh">测试图</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123042000 +0800" stop="20251123060000 +0800">
+  <title lang="zh">测试图</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123060000 +0800" stop="20251123061500 +0800">
+  <title lang="zh">国家生态</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123061500 +0800" stop="20251123063000 +0800">
+  <title lang="zh">纪录东方</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123063000 +0800" stop="20251123070000 +0800">
+  <title lang="zh">揽胜神州</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123070000 +0800" stop="20251123073000 +0800">
+  <title lang="zh">喜事</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123073000 +0800" stop="20251123073500 +0800">
+  <title lang="zh">青春之我(55)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123073500 +0800" stop="20251123074000 +0800">
+  <title lang="zh">青春之我(48)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123074000 +0800" stop="20251123075000 +0800">
+  <title lang="zh">你要倾听的大地</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123075000 +0800" stop="20251123080000 +0800">
+  <title lang="zh">佳酿之旅</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123080000 +0800" stop="20251123083000 +0800">
+  <title lang="zh">美丽中华行</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123083000 +0800" stop="20251123090000 +0800">
+  <title lang="zh">美丽家园</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123090000 +0800" stop="20251123095000 +0800">
+  <title lang="zh">家国</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123095000 +0800" stop="20251123100000 +0800">
+  <title lang="zh">佳酿之旅</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123100000 +0800" stop="20251123103000 +0800">
+  <title lang="zh">喜事</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123103000 +0800" stop="20251123103500 +0800">
+  <title lang="zh">青春之我(55)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123103500 +0800" stop="20251123104000 +0800">
+  <title lang="zh">青春之我(48)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123104000 +0800" stop="20251123104500 +0800">
+  <title lang="zh">晓屯聊摄影</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123104500 +0800" stop="20251123113500 +0800">
+  <title lang="zh">家国</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123113500 +0800" stop="20251123120000 +0800">
+  <title lang="zh">你要倾听的大地</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123120000 +0800" stop="20251123121500 +0800">
+  <title lang="zh">纪录东方</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123121500 +0800" stop="20251123123000 +0800">
+  <title lang="zh">聚焦先锋榜</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123123000 +0800" stop="20251123130000 +0800">
+  <title lang="zh">揽胜神州</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123130000 +0800" stop="20251123133000 +0800">
+  <title lang="zh">新昌悟语</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123133000 +0800" stop="20251123134500 +0800">
+  <title lang="zh">你要倾听的大地</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123134500 +0800" stop="20251123140000 +0800">
+  <title lang="zh">致敬榜样</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123140000 +0800" stop="20251123140500 +0800">
+  <title lang="zh">青春之我(55)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123140500 +0800" stop="20251123141000 +0800">
+  <title lang="zh">青春之我(48)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123141000 +0800" stop="20251123141500 +0800">
+  <title lang="zh">晓屯聊摄影</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123141500 +0800" stop="20251123145000 +0800">
+  <title lang="zh">重建中国茶道</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123145000 +0800" stop="20251123150000 +0800">
+  <title lang="zh">佳酿之旅</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123150000 +0800" stop="20251123153000 +0800">
+  <title lang="zh">美丽中华行</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123153000 +0800" stop="20251123160000 +0800">
+  <title lang="zh">喜事</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123160000 +0800" stop="20251123161500 +0800">
+  <title lang="zh">你要倾听的大地</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123161500 +0800" stop="20251123163000 +0800">
+  <title lang="zh">致敬榜样</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123163000 +0800" stop="20251123164500 +0800">
+  <title lang="zh">你要倾听的大地</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123164500 +0800" stop="20251123165000 +0800">
+  <title lang="zh">青春之我(55)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123165000 +0800" stop="20251123165500 +0800">
+  <title lang="zh">青春之我(48)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123165500 +0800" stop="20251123170000 +0800">
+  <title lang="zh">频道宣传片</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123170000 +0800" stop="20251123171500 +0800">
+  <title lang="zh">华夏传奇</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123171500 +0800" stop="20251123174300 +0800">
+  <title lang="zh">重建中国茶道</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123174300 +0800" stop="20251123175100 +0800">
+  <title lang="zh">重建中国茶道(10)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123175100 +0800" stop="20251123180000 +0800">
+  <title lang="zh">重建中国茶道(11)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123180000 +0800" stop="20251123183000 +0800">
+  <title lang="zh">空姐新发现</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123183000 +0800" stop="20251123190000 +0800">
+  <title lang="zh">新昌悟语</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123190000 +0800" stop="20251123190500 +0800">
+  <title lang="zh">你要倾听的大地</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123190500 +0800" stop="20251123193500 +0800">
+  <title lang="zh">空姐新发现</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123193500 +0800" stop="20251123201000 +0800">
+  <title lang="zh">你要倾听的大地</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123201000 +0800" stop="20251123210000 +0800">
+  <title lang="zh">家国</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123210000 +0800" stop="20251123213000 +0800">
+  <title lang="zh">新昌悟语</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123213000 +0800" stop="20251123213500 +0800">
+  <title lang="zh">青春之我(56)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123213500 +0800" stop="20251123214000 +0800">
+  <title lang="zh">青春之我(49)</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123214000 +0800" stop="20251123222300 +0800">
+  <title lang="zh">你要倾听的大地</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123222300 +0800" stop="20251123230000 +0800">
+  <title lang="zh">你要倾听的大地</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123230000 +0800" stop="20251123235000 +0800">
+  <title lang="zh">家国</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
+ <programme channel="发现之旅" start="20251123235000 +0800" stop="20251123235959 +0800">
+  <title lang="zh">佳酿之旅</title>
+  <desc lang="zh"></desc>
+  <source>sc96655</source>
+ </programme>
  <programme channel="吉林卫视" start="20251123000000 +0800" stop="20251123000100 +0800">
   <title lang="zh">欢乐送</title>
   <desc lang="zh"></desc>
@@ -55688,9 +55863,54 @@
   <desc lang="zh">六十年前的农历正月初八，年节已接近尾声，但对于云南人来说，却成了新年最热闹的一天。此时的云南昆明城，各路人马风云际会。云南王卢汉处变不惊，通电起义！</desc>
   <source>bfgd</source>
  </programme>
- <programme channel="探索纪录" start="20251123091200 +0800" stop="20251123235959 +0800">
+ <programme channel="探索纪录" start="20251123091200 +0800" stop="20251123093600 +0800">
   <title lang="zh">云岭和声(8)</title>
   <desc lang="zh">六十年前的农历正月初八，年节已接近尾声，但对于云南人来说，却成了新年最热闹的一天。此时的云南昆明城，各路人马风云际会。云南王卢汉处变不惊，通电起义！</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="探索纪录" start="20251123093600 +0800" stop="20251123100100 +0800">
+  <title lang="zh">云岭和声(9)</title>
+  <desc lang="zh">六十年前的农历正月初八，年节已接近尾声，但对于云南人来说，却成了新年最热闹的一天。此时的云南昆明城，各路人马风云际会。云南王卢汉处变不惊，通电起义！</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="探索纪录" start="20251123100100 +0800" stop="20251123102600 +0800">
+  <title lang="zh">云岭和声(10)</title>
+  <desc lang="zh">六十年前的农历正月初八，年节已接近尾声，但对于云南人来说，却成了新年最热闹的一天。此时的云南昆明城，各路人马风云际会。云南王卢汉处变不惊，通电起义！</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="探索纪录" start="20251123102600 +0800" stop="20251123105100 +0800">
+  <title lang="zh">云岭和声(11)</title>
+  <desc lang="zh">六十年前的农历正月初八，年节已接近尾声，但对于云南人来说，却成了新年最热闹的一天。此时的云南昆明城，各路人马风云际会。云南王卢汉处变不惊，通电起义！</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="探索纪录" start="20251123105100 +0800" stop="20251123113600 +0800">
+  <title lang="zh">卡车游内陆Ⅲ(1)</title>
+  <desc lang="zh">澳大利亚内陆是世界上最后一片未完全开垦的狂野之地。这片广阔、原始的土地有着地球上最难到达的地方。司机们将开着大卡车，克服重重困难，探索这片崎岖、壮阔的区域。无论是荒漠还是淹没道路的暴雨，或是可怕的沥青和尘土，这里随时能摧毁卡车和车上的司机</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="探索纪录" start="20251123113600 +0800" stop="20251123122000 +0800">
+  <title lang="zh">卡车游内陆Ⅲ(2)</title>
+  <desc lang="zh">澳大利亚内陆是世界上最后一片未完全开垦的狂野之地。这片广阔、原始的土地有着地球上最难到达的地方。司机们将开着大卡车，克服重重困难，探索这片崎岖、壮阔的区域。无论是荒漠还是淹没道路的暴雨，或是可怕的沥青和尘土，这里随时能摧毁卡车和车上的司机</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="探索纪录" start="20251123122000 +0800" stop="20251123130400 +0800">
+  <title lang="zh">卡车游内陆Ⅲ(3)</title>
+  <desc lang="zh">澳大利亚内陆是世界上最后一片未完全开垦的狂野之地。这片广阔、原始的土地有着地球上最难到达的地方。司机们将开着大卡车，克服重重困难，探索这片崎岖、壮阔的区域。无论是荒漠还是淹没道路的暴雨，或是可怕的沥青和尘土，这里随时能摧毁卡车和车上的司机</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="探索纪录" start="20251123130400 +0800" stop="20251123134800 +0800">
+  <title lang="zh">卡车游内陆Ⅲ(4)</title>
+  <desc lang="zh">澳大利亚内陆是世界上最后一片未完全开垦的狂野之地。这片广阔、原始的土地有着地球上最难到达的地方。司机们将开着大卡车，克服重重困难，探索这片崎岖、壮阔的区域。无论是荒漠还是淹没道路的暴雨，或是可怕的沥青和尘土，这里随时能摧毁卡车和车上的司机</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="探索纪录" start="20251123134800 +0800" stop="20251123143200 +0800">
+  <title lang="zh">卡车游内陆Ⅲ(5)</title>
+  <desc lang="zh">澳大利亚内陆是世界上最后一片未完全开垦的狂野之地。这片广阔、原始的土地有着地球上最难到达的地方。司机们将开着大卡车，克服重重困难，探索这片崎岖、壮阔的区域。无论是荒漠还是淹没道路的暴雨，或是可怕的沥青和尘土，这里随时能摧毁卡车和车上的司机</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="探索纪录" start="20251123143200 +0800" stop="20251123235959 +0800">
+  <title lang="zh">卡车游内陆Ⅲ(6)</title>
+  <desc lang="zh">澳大利亚内陆是世界上最后一片未完全开垦的狂野之地。这片广阔、原始的土地有着地球上最难到达的地方。司机们将开着大卡车，克服重重困难，探索这片崎岖、壮阔的区域。无论是荒漠还是淹没道路的暴雨，或是可怕的沥青和尘土，这里随时能摧毁卡车和车上的司机</desc>
   <source>bfgd</source>
  </programme>
  <programme channel="新疆卫视" start="20251123000000 +0800" stop="20251123000100 +0800">
@@ -56143,9 +56363,14 @@
   <desc lang="zh">远在冷峻严酷的北大西洋有一小块海域，底下蕴藏着非常珍贵的宝藏。在这面积1000平方海哩的小水域里，一群渔夫与海中最有价值的大西洋黑鲔鱼搏斗。跟这些海中巨无霸比起来，在美国麻州沿岸钓到的鲔鱼充其量只能算鱼饵罢了</desc>
   <source>bfgd</source>
  </programme>
- <programme channel="求索动物" start="20251123231200 +0800" stop="20251123235959 +0800">
+ <programme channel="求索动物" start="20251123231200 +0800" stop="20251123235700 +0800">
   <title lang="zh">钓鱼出奇招Ⅱ(1)</title>
   <desc lang="zh">艾瑞克杨是户外运动的菜鸟，也是一位职业摔角手。现在他走下摔角舞台，穿着紧身衣接受截然不同的全新挑战。在钓鱼出奇招中，艾瑞克成为终极业余钓客，任务是满足他对疯狂钓鱼大冒险的渴望</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="求索动物" start="20251123235700 +0800" stop="20251123235959 +0800">
+  <title lang="zh">宠物妙翻天(3)</title>
+  <desc lang="zh">介绍有趣饲主的故事，他们和奇特宠物建立起特殊情感，饲养包括大型短吻鳄、被驯化的水牛、致命的蝎子和野生水豚等动物。节目走遍世界各国，例如德国、哥斯大黎加、南非和印度，拜访世界上最奇特的动物和它们的饲主，了解这些人和他们的家庭为何与这些吓人、充满野性又凶猛的动物发展出密不可分的关系</desc>
   <source>bfgd</source>
  </programme>
  <programme channel="求索生活" start="20251123000000 +0800" stop="20251123000100 +0800">
@@ -56298,8 +56523,38 @@
   <desc lang="zh">介绍克尔奇家族和他们位于阿拉斯加荷马市郊的偏远社区。由大家长亚兹克尔奇带领，克尔奇家族在他们的农庄耕种和居住已经4代。这些以土地为生的荒地男女，在有限时间的夏季和秋季以种菜，打猎，钓鱼为食，从土地收集粮食并防护家畜的安全，以备度过阿拉斯加的严酷冬天</desc>
   <source>bfgd</source>
  </programme>
- <programme channel="求索生活" start="20251123192900 +0800" stop="20251123235959 +0800">
+ <programme channel="求索生活" start="20251123192900 +0800" stop="20251123201300 +0800">
   <title lang="zh">抢救餐厅总动员ⅩⅨ(8)</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="求索生活" start="20251123201300 +0800" stop="20251123205700 +0800">
+  <title lang="zh">时尚大买家(6)</title>
+  <desc lang="zh">这几乎是所有女性的终极梦想，走进高档百货，采购自己喜爱的服饰、配件、高跟鞋，不用考虑衣服吊牌标价，重点是不须为自己疯狂血拼后所留下的账单懊恼不已，而是通通带回家！</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="求索生活" start="20251123205700 +0800" stop="20251123214300 +0800">
+  <title lang="zh">伴娘也要美Ⅲ(6)</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="求索生活" start="20251123214300 +0800" stop="20251123222700 +0800">
+  <title lang="zh">树屋大师Ⅵ(10)</title>
+  <desc lang="zh">让观众跟随富有想像力的彼特尼尔森，一起爬入高踞在树顶上的壮丽空间，欣赏他为崇尚自然的人士所设计的私人别墅。彼特为许多客人冒险打造精彩的树屋，他设计过多卧房的梦幻树屋，还配有可使用的洗手间和电力设备，他也设计过简单的单房阁楼</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="求索生活" start="20251123222700 +0800" stop="20251123231300 +0800">
+  <title lang="zh">十口之家Ⅳ(23)</title>
+  <desc lang="zh">美籍韩国人Jon和他的美国妻子Kate一共生了8个孩子，主要讲述他们一起生活的故事，讲述孩子的教育管理以及一些很生活的事情。</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="求索生活" start="20251123231300 +0800" stop="20251123235400 +0800">
+  <title lang="zh">业余厨师大作战Ⅳ(10)</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="求索生活" start="20251123235400 +0800" stop="20251123235959 +0800">
+  <title lang="zh">宣传片</title>
   <desc lang="zh"></desc>
   <source>bfgd</source>
  </programme>
@@ -56453,8 +56708,38 @@
   <desc lang="zh"></desc>
   <source>bfgd</source>
  </programme>
- <programme channel="求索科学" start="20251123192800 +0800" stop="20251123235959 +0800">
+ <programme channel="求索科学" start="20251123192800 +0800" stop="20251123201200 +0800">
   <title lang="zh">报废车的复活Ⅴ(2)</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="求索科学" start="20251123201200 +0800" stop="20251123205800 +0800">
+  <title lang="zh">顶尖制造(1)</title>
+  <desc lang="zh">介绍十间超厉害工厂,包括生产劳斯莱斯汽车到打造Gibson吉他等各种商品的制造工厂。</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="求索科学" start="20251123205800 +0800" stop="20251123214000 +0800">
+  <title lang="zh">成为百万富翁发明家(7)</title>
+  <desc lang="zh">是寻访和挖掘被隐没的发明，并养成发明家为创业者的一档创客节目。</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="求索科学" start="20251123214000 +0800" stop="20251123222300 +0800">
+  <title lang="zh">同心协力救地球(9)</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="求索科学" start="20251123222300 +0800" stop="20251123230700 +0800">
+  <title lang="zh">英国皇家方舟号(8)</title>
+  <desc lang="zh">皇家方舟号飞船开始了为期五个月的任务，带领一支国际工作队横跨大西洋，进行为期十年的和平时期最大规模的海军部署。 </desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="求索科学" start="20251123230700 +0800" stop="20251123235100 +0800">
+  <title lang="zh">病魔缠身Ⅳ(3)</title>
+  <desc lang="zh">有时候最恐怖的怪物反而最不起眼，它们能够隐藏多久？它们会摧毁谁的生命？它们能否被消灭？为人类生存争取到最后一线希望。</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="求索科学" start="20251123235100 +0800" stop="20251123235959 +0800">
+  <title lang="zh">宣传片</title>
   <desc lang="zh"></desc>
   <source>bfgd</source>
  </programme>
@@ -58307,6 +58592,11 @@
   <title lang="zh">还珠(22)</title>
   <desc lang="zh"></desc>
   <source>sc96655</source>
+ </programme>
+ <programme channel="炫动3D" start="20251123000000 +0800" stop="20251123235959 +0800">
+  <title lang="zh">修复瑜伽自我疗愈:压力释放</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
  </programme>
  <programme channel="环球旅游" start="20251123000000 +0800" stop="20251123000100 +0800">
   <title lang="zh">乡间物语、小导游大视界</title>
@@ -61193,9 +61483,59 @@
   <desc lang="zh">每期邀请一位从业多年的厨师，请他们讲授做菜步骤，让大家一起来学做几道拿手好菜，讲述拿手菜背后的故事。</desc>
   <source>bfgd</source>
  </programme>
- <programme channel="高清娱乐" start="20251123070000 +0800" stop="20251123235959 +0800">
+ <programme channel="高清娱乐" start="20251123070000 +0800" stop="20251123073100 +0800">
   <title lang="zh">酒美中国(1):微醺的植物</title>
   <desc lang="zh">从中华美酒的酿造文明出发，讲述与美酒相关的艺术场景、酿造技艺和生活方式。</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="高清娱乐" start="20251123073100 +0800" stop="20251123080200 +0800">
+  <title lang="zh">酒美中国(2):自然的默契</title>
+  <desc lang="zh">从中华美酒的酿造文明出发，讲述与美酒相关的艺术场景、酿造技艺和生活方式。</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="高清娱乐" start="20251123080200 +0800" stop="20251123085200 +0800">
+  <title lang="zh">乡约(25)</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="高清娱乐" start="20251123085200 +0800" stop="20251123094200 +0800">
+  <title lang="zh">乡约(26)</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="高清娱乐" start="20251123094200 +0800" stop="20251123103200 +0800">
+  <title lang="zh">乡约(27)</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="高清娱乐" start="20251123103200 +0800" stop="20251123112200 +0800">
+  <title lang="zh">乡约(28)</title>
+  <desc lang="zh"></desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="高清娱乐" start="20251123112200 +0800" stop="20251123113700 +0800">
+  <title lang="zh">寻味安徽:木子烧烤金锅小厨</title>
+  <desc lang="zh">传播安徽美食文化，点亮安徽各地美食风味地图。围绕城市最具代表性或最富有特色的美食，体现安徽本地的风土人情和饮食文化，打造独具安徽特色的美食文化IP。</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="高清娱乐" start="20251123113700 +0800" stop="20251123115200 +0800">
+  <title lang="zh">寻味安徽:舒城</title>
+  <desc lang="zh">传播安徽美食文化，点亮安徽各地美食风味地图。围绕城市最具代表性或最富有特色的美食，体现安徽本地的风土人情和饮食文化，打造独具安徽特色的美食文化IP。</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="高清娱乐" start="20251123115200 +0800" stop="20251123120700 +0800">
+  <title lang="zh">寻味安徽:双胜龙虾西河古镇</title>
+  <desc lang="zh">传播安徽美食文化，点亮安徽各地美食风味地图。围绕城市最具代表性或最富有特色的美食，体现安徽本地的风土人情和饮食文化，打造独具安徽特色的美食文化IP。</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="高清娱乐" start="20251123120700 +0800" stop="20251123122100 +0800">
+  <title lang="zh">寻味安徽:宿松洲头乡</title>
+  <desc lang="zh">传播安徽美食文化，点亮安徽各地美食风味地图。围绕城市最具代表性或最富有特色的美食，体现安徽本地的风土人情和饮食文化，打造独具安徽特色的美食文化IP。</desc>
+  <source>bfgd</source>
+ </programme>
+ <programme channel="高清娱乐" start="20251123122100 +0800" stop="20251123235959 +0800">
+  <title lang="zh">一路向北:一路南瓮河</title>
+  <desc lang="zh">阿炳是一个油罐车司机，每天奔波在市区各个加油站之间送油。在某一天，他同时接到两个消息：一个是孩子所在的民工子弟学校被查封关门，孩子失学了；另外一个消息是，远在老家的母亲由于尿毒症，需要十几万的费用治疗，而且需要他尽快赶回家去探望</desc>
   <source>bfgd</source>
  </programme>
  <programme channel="黑龙江卫视" start="20251123000000 +0800" stop="20251123000100 +0800">
